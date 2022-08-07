@@ -117,7 +117,8 @@ body{
     fill-opacity: 0;
     stroke-dasharray: 2;
     stroke-dashoffset: 0;
-    width:6.8vw;
+    width:28vw;
+    height: 28vh;
     position: fixed;
     top: 50vh;
     left: 50%;
@@ -149,17 +150,17 @@ body{
     -o-animation-fill-mode : forwards;
     animation-fill-mode : forwards;
     
-    -webkit-animation-delay : 1s;
-    -moz-animation-delay : 1s;
-    -o-animation-delay : 1s;
-    animation-delay : 1s;
+    -webkit-animation-delay : 2s;
+    -moz-animation-delay : 2s;
+    -o-animation-delay : 2s;
+    animation-delay : 2s;
   }
   * {
     margin: 0;
     padding: 0;
   }
   body {
-    background-color:#000011;
+    background-color:#3d3d3d;
     height: 600vh;
     
   }
@@ -195,10 +196,10 @@ body{
     -o-animation-fill-mode : forwards;
     animation-fill-mode : forwards;
     
-    -webkit-animation-delay : 7s;
-    -moz-animation-delay : 7s;
-    -o-animation-delay : 7s;
-    animation-delay : 7s;
+    -webkit-animation-delay : 8s;
+    -moz-animation-delay : 8s;
+    -o-animation-delay : 8s;
+    animation-delay : 8s;
   }
 
   .text {
@@ -211,10 +212,18 @@ body{
     font-family: 'Lato', sans-serif;
     font-weight:lighter;
     font-size: 1rem;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .text.hidden {
+  .text.hidden2 {
     border-bottom: 0;
+    
+  }
+  .text.hidden {
+    
     font-family: 'Poiret One', cursive;
     font-weight:100;
     font-size: 1.4rem;
@@ -229,8 +238,6 @@ body{
   
   .text li {
     
-    float: left;
-    font-size: 2em;
     color: #fff;
     opacity: 0;
     transition: all 0.8s ease-in-out;
@@ -244,7 +251,7 @@ body{
     padding-left: 1rem;
   }
   .text.hidden.hidden1.hidden2 li.spaced {
-    max-width: 2rem;
+    max-width:fit-content;
   }
   .text.hidden1.hidden2 li.spaced {
     max-width: 2rem;
@@ -254,9 +261,18 @@ body{
   }
   .text.hidden.hidden1.hidden2 li {
     max-width: 2rem;
+    font-size: 3.8rem;
+  }
+  .text.hidden.hidden1.hidden2 li.ghost1 {
+    max-width: 0;
+  }
+  .text.hidden1.hidden2 li.ghost1 {
+    max-width: 0;
+    padding-left: 0;
   }
   .text.hidden1.hidden2 li {
     max-width: 2rem;
+    font-size: 2.2rem;
   }
   .text.hidden2 li {
     max-width: 0;
@@ -287,16 +303,13 @@ body{
     max-width: 0;
   }
   .text .ghost1{
-    position: fixed;
+    float: left;
     white-space: nowrap;
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     opacity: 1;
-    display: inline;
-    left: 0;
-    right: 0;
-    text-align: center;
-    width: 300px;
+    line-height: 38.4px;
+    
   }
   .text.hidden1.hidden li.ghost1{
     opacity: 0;
@@ -307,7 +320,21 @@ body{
     
   }
   .text.hidden2 li.ghost1{
-    min-width:fit-content
+    max-width: 5rem;
+    padding-left: 0.5rem;
+    font-size: 1.12rem;
+  }
+  .text.hidden.hidden1.hidden2 li.ghost1:nth-child(1){
+    max-width: 0;
+    padding-left: 0;
+  }
+  .text.hidden1.hidden2 li.ghost1:nth-child(1){
+    max-width: 0;
+    padding-left: 0;
+  }
+  .text.hidden2 li.ghost1:nth-child(1){
+    max-width: 5rem;
+    padding-left: 0;
   }
   .text.hidden1.hidden li.ghost{
     opacity: 0;
@@ -315,6 +342,54 @@ body{
   }
   .text.hidden1.hidden li{
     
-    display: inline;
+  }
+
+  /* mouse anima */
+  
+  .scroll-downs {
+    position: fixed;
+    top: 28vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    
+    width :34px;
+    height: 55px;
+  }
+  .mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid rgb(138, 138, 138);
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+    animation-name: delay;
+    animation-delay: 8s;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    opacity: 0;
+  }
+  .scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+    animation-delay: 8s;
+  }
+  @keyframes delay {
+    0% { opacity: 0; }
+    50% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15vh); opacity: 0;}
+  }
+  @keyframes scroll {
+    0% { opacity: 0; }
+    10% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(15px); opacity: 0;}
   }
 
