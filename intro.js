@@ -26,4 +26,17 @@ $(function() {
   });
 });
 
+$(function() {
+  var body = $(".bodysc");
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll > 100) {
+      body.removeClass("bodySc");
+    } 
+    else {
+      body.addClass("bodySc");
+    }
+  });
+});
 
