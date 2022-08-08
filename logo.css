@@ -453,9 +453,9 @@ body{
     opacity: 1;
     transition: opacity 0.7s ease-out;
     transition-delay: 1.4s;
-    border: 1px solid #fff;
+    border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 0.5vw;
-    padding: 1.34% 2.78% 1.4% 2.9%;
+    padding: 1.34% 2.76% 1.4% 2.9%;
   }
   .text.hidden2 .comlogo:hover{
     position: fixed;
@@ -470,6 +470,6 @@ body{
     
     border: 1px solid var(--blue);
     border-radius: 0.5vw;
-    padding: 1.34% 2.78% 1.4% 2.9%;
+    padding: 1.34% 2.76% 1.4% 2.9%;
   }
 
