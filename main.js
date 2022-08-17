@@ -15,7 +15,7 @@ if (document.location.search.match(/type=embed/gi)) {
  
  // smooth scroll
  const lenis = new Lenis({
-   lerp: 0.06,
+   lerp: 0.08,
    smooth: true,
    direction: 'vertical' });
  
