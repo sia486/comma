@@ -23,10 +23,19 @@ html::-webkit-scrollbar {
 
 }
 .hero-inner ~ div{
- overflow: visible !important;
- /* inset: 0 0 0 0 !important; */
-}
-
+  overflow: visible !important;
+ 
+  /* height: 100vh !important; */
+ }
+ /* a ~ div img{
+  overflow: visible !important;
+ } */
+ /* a ~ div div{
+   height: 100vh !important;
+ }
+ .section div div{
+  height: 100 !important;;
+ } */
 .bg1{
  background-image: url("./img_/msb1.png");
  background-size: cover;
