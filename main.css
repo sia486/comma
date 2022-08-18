@@ -107,7 +107,7 @@ html::-webkit-scrollbar {
   background-color: #202328;
 }
 .title1:hover + div img{
-  filter: brightness(350%) contrast(30%);
+  filter: brightness(860%) contrast(26%);
   
 }
 /* .title1_1{
