@@ -1,3 +1,11 @@
+jQuery(function($) {
+
+  window.onresize = function(){
+    document.location.reload();
+  };
+
+});
+
 window.console = window.console || function(t) {};
 
 if (document.location.search.match(/type=embed/gi)) {

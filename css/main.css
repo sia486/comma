@@ -10,6 +10,12 @@ overflow: overlay;
 /* scroll-snap-type: y proximity; */
 /* scroll-behavior: smooth; */
 }
+:root{
+  --white:#fff;
+  --dark:#000;
+  --blue: #4BA9FF;
+  --bgdark: #202328;
+}
 
 html::-webkit-scrollbar-thumb {
   background-color: hsla(0, 0%, 100%, 0.5);
@@ -52,7 +58,7 @@ html::-webkit-scrollbar {
   height: 100%;
   transition: all 0.12s ease-out;
  /* top: -100vh; */
- position: absolute;
+ /* position: absolute; */
  
  opacity: 1;
  /* transform: translateX(-12%) translateY(-47%); */
@@ -98,6 +104,8 @@ html::-webkit-scrollbar {
 .bg6{
  
 }
+
+
 .hero1{
   position: relative;
   /* height: 100vh; */
@@ -231,7 +239,7 @@ article {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 8vw;
-  color: white;
+  color: var(--white);
   position: fixed;
   top: 54%;
   left: 50%;
