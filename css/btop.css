@@ -1,10 +1,13 @@
 :root{
   --white:#fff;
   --dark:#000;
+  --blue: #4BA9FF;
+  --bgdark: #202328;
+  --bshadow:rgba(255, 255, 255, 0.85);
 }
 #btop {
     display: inline-block;
-    background-color: #fff;
+    background-color: var(--white);
     width: 42px;
     height: 42px;
     text-align: center;
@@ -17,6 +20,7 @@
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
+    border: 1px solid var(--white);
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
   }
   #btop::after {
@@ -26,14 +30,16 @@
     font-style: normal;
     font-size: 2em;
     line-height: 42px;
-    color: #000;
+    color: var(--dark);
   }
   #btop:hover {
     cursor: pointer;
-    background-color: #333;
+    border: 1.6px solid var(--blue);
+    background-color: var(--bgdark);
   }
   #btop:hover::after{
     content: url("../img_/btop.svg");
+    
   }
   /* #btop:active {
     background-color: #555;
