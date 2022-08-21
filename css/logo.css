@@ -1,12 +1,14 @@
+:root{
+  --white:#fff;
+  --dark:#000;
+  --blue: #4BA9FF;
+  --bluew: #2790F1;
+  --bgdark: #202328;
+  --bshadow:rgba(255, 255, 255, 0.7);
+}
 body{
-    font-family: 'Roboto', sans-serif;
-  }
-  :root{
-    --white:#fff;
-    --dark:#000;
-    --blue: #4BA9FF;
-    --bgdark: #202328;
-  }
+  font-family: 'Roboto', sans-serif;
+}
   /* @-webkit-keyframes dash {
     70%,80% {
       stroke-dashoffset: 0;
@@ -326,7 +328,7 @@ body{
   .text .ghost1{
     float: left;
     white-space: nowrap;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     opacity: 1;
     display: inline;

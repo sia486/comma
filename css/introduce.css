@@ -1,10 +1,19 @@
+:root{
+  --white:#fff;
+  --dark:#000;
+  --blue: #4BA9FF;
+  --bluew: #2790F1;
+  --bgdark: #202328;
+  --bshadow:rgba(255, 255, 255, 0.7);
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
 *{
     padding: 0;
     margin: 0;
   }
-  body{
-    
-  }
+  
   h1 {
     position: fixed;
     top: 50%;
