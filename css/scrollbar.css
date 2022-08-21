@@ -5,4 +5,8 @@ html::-webkit-scrollbar-thumb {
   }
   html::-webkit-scrollbar {
     width: 0.5vw;
+    background: transparent;
+  }
+  body{
+    overflow: overlay;
   }

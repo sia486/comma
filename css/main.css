@@ -5,7 +5,7 @@
 }
 html{
  background-color: #C7CCD7;
-overflow: overlay;
+
 /* scroll-snap-points-y: repeat(100vh); */
 /* scroll-snap-type: y proximity; */
 /* scroll-behavior: smooth; */
@@ -57,8 +57,8 @@ overflow: overlay;
  /* transform: translateX(-12%) translateY(-47%); */
 }
 .bg2{
- background-image: url("../img_/news.jpg");
- /* background: url("./img_/news.jpg") no-repeat center, url("./img_/news_on.jpg") no-repeat center; */
+ background-image: url("../img_/news1.jpg");
+ /* background: url("../img_/news.jpg") no-repeat center, url("../img_/news_on.jpg") no-repeat center; */
  background-size: 135vw;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,7 +68,7 @@ overflow: overlay;
   transition: all 0.12s ease-out;
 }
 .bg3{
- background-image: url("../img_/com.jpg");
+ background-image: url("../img_/coma.jpg");
  background-size: 135vw;
   background-position: center;
   background-repeat: no-repeat;
@@ -110,7 +110,7 @@ overflow: overlay;
 
 .title1:hover ~ div .bg1{
   background-image: url("../img_/msw1.png");
-  background-color: #202328;
+  background-color: var(--bgdark);
 }
 .title1:hover + div img{
   filter: brightness(860%) contrast(26%);
@@ -122,7 +122,7 @@ overflow: overlay;
 .title1::after{
   content: "Introduce";
   opacity: 1;
-  transition: all 0.15s ease-out;
+  transition: all 0.3s ease-out;
   position: absolute;
   /* left: 0;
   right: 0;
@@ -134,7 +134,7 @@ overflow: overlay;
   
   content: "comma";
   opacity: 0;
-  transition: all 0.15s ease-out;
+  transition: all 0.3s ease-out;
   position: absolute;
   /* left: 0;
   right: 0;
@@ -156,8 +156,40 @@ opacity: 0;
   /* display: inline; */
   /* visibility: visible; */
   }
+  section .bot:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 0;
+    transition: width 0s ease, background .3s ease;
+  }
+  section .bot:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 5px;
+    width: 0;
+    background: var(--white);
+    transition: width .3s ease;
+  }
+  section .bot:hover:before {
+    width: 100%;
+    background: var(--white);
+    transition: width .3s ease;
+  }
+  section .bot:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+  }
+  
 .title2:hover + div .bg2{
- background-image: url("../img_/news_on.jpg");
+ background-image: url("../img_/news_on1.jpg");
  background-size: 110vw;
 }
 .title3:hover + div .bg3{
@@ -169,7 +201,7 @@ opacity: 0;
  background-size: 109vw;
 }
 .title5:hover + div .bg5{
- background-image: url("../img_/por_on.jpg");
+ background-image: url("../img_/por_on1.jpg");
  background-size: 113vw;
 }
 .title6:hover + div .bg6{
@@ -210,6 +242,7 @@ article {
  clip: rect(auto, auto, auto, auto);
  font-family: ;
  z-index: 1;
+ 
 }
 .hero1 .hero-inner{
  -webkit-mask-image: url("../img_/comma.png");
@@ -229,7 +262,7 @@ article {
      
 }
 .title1, .title2, .title3, .title4, .title5 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 300;
   font-size: 8vw;
   color: var(--white);
@@ -246,6 +279,29 @@ article {
 }
 a{
  text-decoration: none;
+}
+
+.box:nth-child(1){
+  -webkit-animation: fade-in 1.4s 0.4s ease both;
+           animation: fade-in 1.4s 0.4s ease both;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 #con1{}
 

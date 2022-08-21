@@ -16,13 +16,13 @@ function preloading (imageArray) {
 
 preloading([
 
-	"../img_/news_on.jpg",
+	"../img_/news_on1.jpg",
     "../img_/com_on.jpg",
     "../img_/ser_on.jpg",
-    "../img_/por_on.jpg",
+    "../img_/por_on1.jpg",
     "../img_/cb4.jpg",
-    "../img_/news.jpg",
-    "../img_/com.jpg",
+    "../img_/news1.jpg",
+    "../img_/coma.jpg",
     "../img_/ser.jpg",
     "../img_/por.jpg",
     "../img_/msb.png",

@@ -25,9 +25,7 @@
   }
   #btop::after {
     content: url("../img_/btopd.svg");
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
+    
     font-size: 2em;
     line-height: 42px;
     color: var(--dark);
