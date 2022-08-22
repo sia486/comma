@@ -317,16 +317,7 @@ a{
 #con1{}
 
 
- .content {
-   position: relative;
-   background-image: url("../img_/botban.jpg");
-   background-size: 100vw;
-   background-repeat: no-repeat;
-   height: 57vh;
-   box-shadow: 0 -3vh 100px rgba(0, 0, 0, 1);
-   z-index: 200;
-   border-top: 1px solid rgba(0, 0, 0, 0.6);
- }
+ 
  
  
  .content__inner {
