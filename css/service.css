@@ -25,6 +25,7 @@
     background: #F0F0F0;
 
 }
+
 .titleh1{
     padding-top: 10vw;
     text-align: center;
@@ -38,7 +39,7 @@
 .ti2{
   margin-top: 2%;
     font-size: 22px;
-    font-weight: 400;
+    font-weight: 300;
 }
 .subcontainer{
     text-align: center;
@@ -52,7 +53,7 @@
 }
 .serbox1:nth-child(1){
   background: #202328;
-  box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.35);
   border-radius: 12px;
   width: 470px;
   height: 340px;
@@ -71,7 +72,7 @@
 }
 .serbox1:nth-child(2){
     background: #D2DAE7;
-    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.35);
     border-radius: 12px;
     width: 560px;
     height: 340px;
@@ -92,10 +93,13 @@
 .serbox1:nth-child(2) img{
   transform: translateY(6%);
 }
+.serbox1:nth-child(1) img{
+  transform: translateY(40%);
+}
 
 .serbox2{
     
-    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 3px 2px rgba(0, 0, 0, 0.4);
     border-radius: 12px;
     width: 330px;
     height: 340px;
@@ -134,7 +138,7 @@ transform: translateY(26%);
 .sertext4{
   position: absolute;
   left: 1.8rem;
-  top: 3.6rem;
+  top: 3.9rem;
   font-weight: 400;
   font-size: 0.8rem;
   color: var(--white);
@@ -143,14 +147,77 @@ transform: translateY(26%);
   color: var(--dark);
 }
 img{
-  transition: all 0.14s ease-out;
+  transition: all 0.1s ease-out;
 }
 .serbox1:nth-child(2):hover img{
-  transform: scale(1.15) translateY(4%);
-  
+  transform: scale(1.12) translateY(4%);
+
 }
 .serbox2:hover img{
-  transform: scale(1.15) translateY(24%);
+  transform: scale(1.12) translateY(24%);
+}
+
+/* logo */
+.title_logo{
+  text-align: left;
+  padding-top: 10vw;
+  margin: 0 12% 8% 12%;
+
+}
+.sect{
+  margin-top: 17%;
+}
+.sect:nth-child(1){
+  margin-top: 0%;
+}
+.ti1_ser{
+  font-weight: 400;
+    font-size: 42px;
+}
+.ti2_ser{
+  margin-top: 2%;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.ti2_ser1{
+    font-size: 1rem;
+    font-weight: 300;
+}
+.ser_logoimg{
+  margin-top: 5%;
+  text-align: center;
+}
+.ti1_ser1{
   
+  font-weight: 400;
+    font-size: 42px;
+}
+.ser_logoimg1{
+  text-align: center;
+  padding: 4%;
+  margin: 8% 20% 4% 20%;
+  border-radius: 0.7vw;
+  background-color: var(--bgdark);
+}
+.ser_logoimg2{
+  text-align: center;
+  padding: 4%;
+  margin: 8% 0 4% 0;
+  border-radius: 0.5vw;
+  background-color: var(--bgdark);
+  white-space: nowrap;
+  
+}
+.ser_logoimg2 img:nth-child(1){
+  margin-left: -14%;
+  
+}
+.ser_logoimg1b{
+  text-align: center;
+  padding: 4%;
+  margin: 8% 0 4% 0;
+  border-radius: 0.7vw;
+  /* background-color: var(--bgdark); */
+  white-space: nowrap;
   
 }
