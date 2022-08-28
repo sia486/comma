@@ -15,13 +15,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Lato:wght@100&family=Poiret+One&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
     <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script> 
+    
     <title>comma</title>
 
 </head>
 
-<body>
+<body  data-200="background-color:rgb(240,240,240);"
+data-600="background-color:rgb(32,35,40);"
+data-3800="background-color:rgb(32,35,40);"
+data-4200="background-color:rgb(240,240,240);">
 
 <a id="btop"></a>
 
@@ -48,27 +53,28 @@
     </div>
 </header>
     
-<div class="framecontainer">
+<div class="framecontainer" data-200="background-color:rgb(240,240,240);"
+                            data-600="background-color:rgb(32,35,40);"
+                            data-3800="background-color:rgb(32,35,40);"
+                            data-4200="background-color:rgb(240,240,240);">
     <div class="title_logo">
-        <div class="sect">
+        <div class="sect" data-trigger>
             <h1 class="ti1_ser">
                 Logo
             </h1>
             
             <h2 class="ti2_ser">
-                심볼과 로고타입이 결합된 시그니처 형태가 가장 기본이 되는 로고입니다.
+                심볼과 로고타입이 결합된 형태가 가장 기본이 되는 로고입니다. 로고는 심볼과 시그니처로 사용할 수 있으며, 일관된 커뮤니케이션을 위해 형태나 색상, 스타일의 변형, 
+                타 그래픽 요소와의 결합 없이 그대로 사용해야 합니다.
             </h2>
 
-            <h2 class="ti2_ser1">로고는 심볼과 시그니처로 사용할 수 있으며, 일관된 커뮤니케이션을 위해 형태나 색상, 스타일의 변형, 
-            타 그래픽 요소와의 결합 없이 그대로 사용해야 합니다.
-            </h2>
 
             <div class="ser_logoimg">
-                <img src="../../img/ser_logod.svg" alt="" height="240px">
+                <img src="../../img/ser_commad.svg" alt="" height="280px">
             </div>
         </div>
 
-        <div class="sect">
+        <div class="sect" data-trigger>
             <h2 class="ti1_ser">
                 Construction
             </h2>
@@ -81,7 +87,7 @@
                     </h2>
         </div>
         
-        <div class="sect">
+        <div class="sect" data-trigger>
             <h2 class="ti1_ser">
                 Clear Space
             </h2>
@@ -98,35 +104,42 @@
                     </h2>
         </div>
 
-        <div class="sect">
+        <div class="sect" data-trigger>
             <h2 class="ti1_ser">
                 Using Our Logo
             </h2>
             <h2 class="ti2_ser">
                 일관된 브랜드 자산 운용을 위한 로고 규정입니다. 모양과 비율을 변형하거나, 회전, 장식할 수 없으며 색상을 임의로 변경하거나 효과를 추가할 수 없고,
-                토스 로고 내에 텍스트를 쓰거나 의인화할 수 없습니다.본 규정은 어떤 상황에서도 예외없이 유지되어야 합니다.
+                comma 로고 내에 텍스트를 쓰거나 의인화할 수 없습니다. 블랙 타입 로고와 화이트 타입 로고 모두 규정이 동일하게 적용되며 본 규정은 어떤 상황에서도 예외없이 유지되어야 합니다.
             </h2>
 
             <div class="ser_logoimg2_w">
-                <img src="../../img_/serboxtop.png" alt="" width="1000px">
+                <img src="../../img/ser_commausing.svg" alt="" height="120px">
                 
             </div>
-
+            
             <div class="ser_boxtop">
-
                 
                 <div class="ser_box">
                     <div class="ser_boxinner">
-                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp로고를 회전하지 마세요.
+                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp;로고를 회전하지 마세요.
                     </div>
                     <div class="ser_logoimg3">
                         <img class="h" src="../../img/serbox1.svg" alt="">
                     </div>
                 </div>
+                <div class="ser_box">
+                    <div class="ser_boxinner">
+                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp;문구를 단독으로 사용하지 마세요.
+                    </div>
+                    <div class="ser_logoimg3">
+                        <img class="w" src="../../img/logo_text.svg" alt="">
+                    </div>
+                </div>
 
                 <div class="ser_box">
                     <div class="ser_boxinner">
-                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp로고에 그라데이션을 임의로 넣지 마세요.
+                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp;로고에 그라데이션을 임의로 넣지 마세요.
                     </div>
                     <div class="ser_logoimg3">
                         <img class="h" src="../../img/serbox3.svg" alt="">
@@ -135,7 +148,7 @@
                 
                 <div class="ser_box">
                     <div class="ser_boxinner">
-                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp브랜드 컬러로 지정된 것 외의 색상을 사용하지 마세요.
+                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp;브랜드 컬러로 지정된 것 외의 색상을 사용하지 마세요.
                     </div>
                     <div class="ser_logoimg3">
                         <img src="../../img/serbox4.svg" alt="">
@@ -143,7 +156,7 @@
                 </div>
                 <div class="ser_box">
                     <div class="ser_boxinner">
-                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp심볼에 다른 서체를 결합하여 사용하지 마세요.
+                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp;심볼에 다른 서체를 결합하여 사용하지 마세요.
                     </div>
                     <div class="ser_logoimg3">
                         <img src="../../img/serbox5.svg" alt="">
@@ -151,54 +164,33 @@
                 </div>
                 <div class="ser_box">
                     <div class="ser_boxinner">
-                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp로고를 본문 안에서 사용하지 마세요.
+                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp;로고를 본문 안에서 사용하지 마세요.
                     </div>
                     <div class="ser_logoimg3">
                         <img class="w" src="../../img/serbox6.svg" alt="">
                     </div>
                 </div>
+               
                 <div class="ser_box">
                     <div class="ser_boxinner">
-                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp워드타입 로고만 사용하지 마세요.
-                    </div>
-                    <div class="ser_logoimg3">
-                        <img src="../../img/serbox7.svg" alt="">
-                    </div>
-                </div>
-                <div class="ser_box">
-                    <div class="ser_boxinner">
-                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp로고 안에 텍스트를 쓰지 마세요.
+                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp;로고 안에 텍스트를 쓰지 마세요.
                     </div>
                     <div class="ser_logoimg3">
                         <img class="h" src="../../img/serbox8.svg" alt="">
                     </div>
                 </div>
+                
                 <div class="ser_box">
                     <div class="ser_boxinner">
-                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp브랜드를 침해하는 배경색을 사용하지 마세요.
-                    </div>
-                    <div class="ser_logoimg3">
-                        <img src="../../img/comlogo.svg" alt="">
-                    </div>
-                </div>
-                <div class="ser_box">
-                    <div class="ser_boxinner">
-                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp로고에 그림자를 넣지마세요.
+                        <i class="fa-solid fa-ban" style="color: rgb(192, 8, 8);"></i>&nbsp;&nbsp;로고에 그림자를 넣지마세요.
                     </div>
                     <div class="ser_logoimg3">
                         <img class="h" src="../../img/serbox1.svg" alt="">
                     </div>
                 </div>
 
-                <div class="ser_box">
-                    <div class="ser_boxinner">
-                        <!-- 로고에 그림자를 넣지마세요 -->
-                    </div>
-                    <div class="ser_logoimg3">
-                        <!-- <img class="h" src="../../img/serbox1.svg" alt=""> -->
-                    </div>
-                </div>
-                
+           
+
             
             </div>
                     
@@ -206,12 +198,12 @@
                 
         </div>
 
-        <div class="sect">
+        <div class="sect" data-trigger>
             <h2 class="ti1_ser">
                 Partnership
             </h2>
             <h2 class="ti2_ser">
-                심볼과 로고타입이 결합된 시그니처 형태가 가장 기본이 되는 로고이며, 심볼은 아이콘으로 사용할 수 있지만 로고타입만 사용하는것은 불가합니다.
+                심볼과 로고타입이 결합된 시그니처 형태가 가장 기본이 되는 로고이며, 심볼은 아이콘으로 사용할 수 있지만 로고타입만 사용하는것은 지양합니다.
             </h2>
             
                 <div class="ser_logoimg1b">
@@ -221,23 +213,95 @@
                     
 
                     <h2 class="ti2_ser1">
-                        ①  파트너사 로고가 심볼 + 로고타입 조합인 경우 토스의 로고타입 가이드선을 기준으로 적용합니다.
+                        파트너사 로고가 심볼 + 로고타입 조합인 경우 comma의 로고타입 가이드선을 기준으로 적용합니다.
                     </h2>
 
                     <h2 class="ti2_ser1">
-                        ②  심볼이 로고타입에 비해 상대적으로 큰 경우 심볼을 로고 분리선의 높이 기준으로 적용합니다.
+                        심볼이 로고타입에 비해 상대적으로 큰 경우 심볼을 로고 분리선의 높이 기준으로 적용합니다.
                     </h2>
 
                     <h2 class="ti2_ser1">
-                        ③  파트너사 로고가 워드마크인 경우 토스의 심볼 하부 가이드선을 기준으로 적용합니다.
+                        파트너사 로고가 워드마크인 경우 comma의 로고타입 하부 가이드선을 기준으로 적용합니다.
                     </h2>
-
-                    <h2 class="ti2_ser1">
-                        ④  파트너사 로고가 상하 조합형인 경우 토스의 로고타입 가이드선을 기준으로 적용합니다.
-                    </h2>
-                    
         </div>
 
+        <div class="sect" data-trigger>
+            <h2 class="ti1_ser">
+                Download
+            </h2>
+            <h2 class="ti2_ser">
+                .zip파일에 Black, White의 .ai, .png 파일이 포함되어 있습니다.
+            </h2>
+            
+                
+                    
+
+                <div class="ser_boxtop">
+
+                    <a href="../../brandresource/comma_brandresource_all.zip" download="comma_brandresource_all" class="ser_box">
+                        <div class="ser_boxinner">
+                            comma 전체 브랜드 리소스 
+                        </div>
+                        <div class="ser_logoimg3">
+                            <img class="w1" src="../../img_/comma_logofull_white.png" alt="">
+                        </div>
+                        <span class="downbt"><img src="../../img/downbt.svg" alt=""></span>
+                    </a>
+
+                    <a href="../../brandresource/comma_logo.zip" download="comma_logo" class="ser_box">
+                        <div class="ser_boxinner">
+                            comma 로고
+                        </div>
+                        <div class="ser_logoimg3">
+                            <img class="w1" src="../../img_/comma_logo_white.png" alt="">
+                        </div>
+                        <span class="downbt"><img src="../../img/downbt.svg" alt=""></span>
+                    </a>
+
+                    <a href="../../brandresource/comma_symbol.zip" download="comma_symbol" class="ser_box">
+                        <div class="ser_boxinner">
+                            comma 심볼
+                        </div>
+                        <div class="ser_logoimg3">
+                            <img class="hh" src="../../img/serbox1.svg"" alt="">
+                        </div>
+                        <span class="downbt"><img src="../../img/downbt.svg" alt=""></span>
+                    </a>
+                    
+                    <a href="../../brandresource/comma_bank.zip" download="comma_bank" class="ser_box">
+                        <div class="ser_boxinner">
+                            comma 뱅크
+                        </div>
+                        <div class="ser_logoimg3">
+                            <img class="ww" src="../../img_/comma_bank_white.png" alt="">
+                        </div>
+                        <span class="downbt"><img src="../../img/downbt.svg" alt=""></span>
+                    </a>
+                    
+                    <a href="../../brandresource/comma_pay.zip" download="comma_pay" class="ser_box">
+                        <div class="ser_boxinner">
+                            comma 페이
+                        </div>
+                        <div class="ser_logoimg3">
+                            <img class="ww" src="../../img_/comma_pay_white.png" alt="">
+                        </div>
+                        <span class="downbt"><img src="../../img/downbt.svg" alt=""></span>
+                    </a>
+
+                    <a href="../../brandresource/comma_application.zip" download="comma_application" class="ser_box">
+                        <div class="ser_boxinner">
+                            comma 애플리케이션
+                        </div>
+                        <div class="ser_logoimg3">
+                            <img class="ww" src="../../img_/comma_application_white.png" alt="">
+                        </div>
+                        <span class="downbt"><img src="../../img/downbt.svg" alt=""></span>
+                    </a>
+
+                    
+
+                </div>
+        </div>
     </div>
 
 </div>
@@ -247,6 +311,9 @@
 <script src="../../js/nav.js"></script>
 <script src="../../js/btop.js"></script>
 <script src="../../js/news.js"></script>
+<script src="../../js/ser.js"></script>
+
+
 
 
 
