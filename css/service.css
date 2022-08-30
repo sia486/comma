@@ -1,12 +1,4 @@
-:root{
-    --white:#fff;
-    --dark:#000;
-    --blue: #4BA9FF;
-    --bluew: #2790F1;
-    --bgdark: #202328;
-    --bshadow:rgba(255, 255, 255, 0.7);
-  }
-  body{
+body{
     font-family: 'Inter', sans-serif;
     /* background: #DADADA; */
     transition: all 0.1s ease-out;
@@ -132,10 +124,11 @@ transform: translateY(26%);
   display: flex;
   justify-content: space-around;
   flex-wrap:wrap;
-  margin: 0% 12% 8% 12%;
+  margin: 0% 8% 8%;
+  
 }
 .ser_box{
-  border: 2px solid rgba(255, 255, 255, 0.02);
+  border: 2px solid rgba(255, 255, 255, 0.05);
   width: 24rem;
   height: 16rem;
   display: inline-block;
@@ -144,7 +137,39 @@ transform: translateY(26%);
   margin-top: 6%;
   flex: 1 0 40%;
   position: relative;
+  transition: all 0.08s ease-out;
   /* box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.35); */
+}
+.ser_box_w{
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  width: 24rem;
+  height: 16rem;
+  display: inline-block;
+  border-radius: 0.5vw;
+  
+  flex: 1 0 40%;
+  position: relative;
+  transition: all 0.08s ease-out;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.35);
+}
+.ser_box_b{
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  width: 24rem;
+  height: 16rem;
+  display: inline-block;
+  border-radius: 0.5vw;
+  background: var(--bgdark);
+  flex: 1 0 40%;
+  margin-left: 12%;
+  position: relative;
+  transition: all 0.08s ease-out;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.35);
+}
+.ser_box img{
+  margin-top: 8%;
+}
+.ser_box:hover{
+  background: #353a3f;
 }
 .ser_box:nth-child(even){
   margin-left: 12%;
@@ -165,7 +190,7 @@ transform: translateY(26%);
 }
 .ser_boxinner{
   margin-top: 5%;
-  margin-left: 4%;
+  margin-left: 6%;
   font-size: 0.84rem;
   color: rgb(227, 227, 227);
 }
@@ -177,7 +202,10 @@ transform: translateY(26%);
   font-size: 1.5rem;
     color: var(--white);
 }
+.sect:nth-child(2) .serimg2{
+margin-left: -5%;
 
+}
 .sertext4{
   position: absolute;
   left: 1.8rem;
@@ -208,7 +236,7 @@ img{
 
 }
 .sect{
-  margin-top: 22%;
+  margin-top: 20%;
 }
 
 .sect:nth-child(1){
@@ -282,17 +310,19 @@ img{
 }
 .ser_logoimg1{
   text-align: center;
-  /* padding: 4%; */
-  margin: 8% 20% 0% 20%;
-  border-radius: 0.6vw;
-  /* background-color: var(--bgdark); */
-  /* box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.35); */
+
+  margin: 0% 20% 0% 20%;
+
 }
+.sect:nth-child(2) .ser_logoimg1{
+  margin: 0 auto;
+}
+
 .ser_logoimg2{
   text-align: center;
   
   margin: 0% 0 6% 0;
-  border-radius: 0.5vw;
+
   /* background-color: var(--bgdark); */
   white-space: nowrap;
   /* box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.35); */
@@ -302,10 +332,12 @@ img{
   text-align: center;
   
   margin: 0% 0 6% 0;
-  border-radius: 0.5vw;
+
   
   white-space: nowrap;
   
+}.sect:nth-child(4) .ser_logoimg2_w{
+  margin: 10% 0 8%;
 }
 .ser_logoimg2 img:nth-child(1){
   margin-left: -14%;
@@ -328,7 +360,7 @@ img{
   
   /* margin: 20% 10% 10%; */
 }
-.ser_logoimg3 img{
+/* .ser_logoimg3 img{
   width: 8.6rem;
 
 }
@@ -347,7 +379,7 @@ img{
 .ser_logoimg3 .ww{
   height: 2.5rem;
   width: fit-content;
-}
+} */
 .ser_box:nth-child(1) img{
   transform:  rotateZ(0deg);
 }
@@ -373,10 +405,202 @@ img{
 [data-trigger]{
   opacity: 0;
   position: relative;
-  top: 2rem;
-  transition: 0.3s ease-out;
+  top: 3rem;
+  transition: 0.35s ease-out;
 }
 [data-trigger].visible{
   opacity: 1;
   top: 0;
+  position: relative;
 }
+
+
+/* 이미지 크기 */
+.serimg1{
+  height: 18rem;
+}
+.serimg2{
+  width: 110%;
+  
+}
+.serimg3{
+  height: 21rem;
+}
+.serimg3_1{
+  height: 21rem;
+}
+.serimg4{
+  height: 8rem;
+}
+.serimg5{
+  width: 5rem;
+}
+.serimg5_w{
+  width: 10rem;
+}
+.serimg5_ww{
+  width: 15rem;
+}
+.serimg6{
+  height: 19rem;
+}
+.serimg7{
+  height: 2.7rem;
+}
+.serimg7_w{
+  height: 4.5rem;
+}
+.serimg7_ww{
+  height: 5.7rem;
+}
+
+/* color */
+.ser_colorbox{
+  text-align: center;
+  position: relative;
+}
+.ser_colortop{
+  display: inline-block;
+  position: relative;
+  /* width: fit-content; */
+}
+.ser_color{
+  
+  display: inline-block;
+  position: relative;
+  border-radius: 100%;
+  background:var(--bgdark);
+  width: 22rem;
+  height: 22rem;
+  left: -25%;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.4);
+}
+.ser_color1{
+  
+  position: relative;
+  border-radius: 100%;
+  background: #f5f5f5;
+  width: 22rem;
+  height: 22rem;
+  left: 50%;
+  box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.35);
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
+}
+.ser_primarycolorh3{
+  margin: 0 0 3% 0;
+  color: var(--bgdark);
+  font-weight: 500;
+  font-size: 1rem;
+  /* color: #e2e2e2; */
+}
+.colorbox{
+  /*  */
+}
+.colorbox1{
+  /* position: absolute;
+  margin-top: 16%;
+  display: inline-block;
+  text-align: left;
+  right: 0; */
+  
+}
+.color_top{
+  color: var(--bgdark);
+  font-weight: 500;
+  font-size: 1.6rem;
+  margin: 46% 0 10%;
+}
+
+.colorboxtop{
+  display: inline-block;
+  position: absolute;
+  left: auto;
+  right: 0;
+  text-align: left;
+}
+.colorboxtop:nth-child(2){
+  display: inline-block;
+  position: absolute;
+  right: auto;
+  left: 0;
+  
+}
+/* .ser_appiconimg{
+  transform: scale(1.6);
+}
+.ser_appphone{
+  width: 31rem;
+}
+.ser_logoimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ser_logoimg .ser_appphone:nth-child(1){
+  width: 12rem;
+  margin: 0 8rem 0 6rem;
+}
+.ser_logoimg .ser_appphone:nth-child(2){
+  
+} */
+.sect_fixed{
+  /* margin-top: 20%; */
+  position: fixed;
+}
+
+.ser_iconbg{
+  background-image: url("../img/ser_appiconb.svg");
+  background-size: contain;
+  background-position:center;
+  background-repeat: no-repeat;
+  width: 38rem;
+  height: 38rem;
+  position: absolute;
+  transition: all 0.25s ease-out;
+  left: 50%;
+}
+.ser_iconbg1{
+  background-image: url("../img_/ser_appphone.png");
+  background-size: contain;
+  background-position:center;
+  background-repeat: no-repeat;
+  width: 38rem;
+  height: 38rem;
+  position: absolute;
+  transition: all 0.25s ease-out;
+  left: 50%;
+}
+.phone{
+  
+}
+.ti1_ser_b{
+color: #f0f0f0;
+font-weight: 400;
+    font-size: 2rem;
+    transition: all 0.2s ease-out;
+   
+}
+.ti1_ser_w{
+color: var(--bgdark);
+font-weight: 400;
+    font-size: 2rem;
+    transition: all 0.2s ease-out;
+   
+}
+.ti2_ser_b{
+color: #f0f0f0;
+margin: 2% 0% 8%;
+    font-size: 0.9rem;
+    font-weight: 300;
+    transition: all 0.2s ease-out;
+    
+}
+.ti2_ser_w{
+color: var(--bgdark);
+margin: 2% 0% 8%;
+    font-size: 0.9rem;
+    font-weight: 300;
+    transition: all 0.2s ease-out;
+    
+}
+

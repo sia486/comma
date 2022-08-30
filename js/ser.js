@@ -48,3 +48,60 @@ const trigger = new ScrollTrigger.default({
 });
 
 trigger.add('[data-trigger');
+
+$(function() {
+    var text = $(".phone");
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+  
+      if (scroll > 100) {
+        text.removeClass("ser_iconbg1");
+      } 
+      else {
+        text.addClass("ser_iconbg1");
+      }
+    });
+  });
+  
+//   $(function() {
+//     var text = $(".sect_fixed");
+//     $(window).scroll(function() {
+//       var scroll = $(window).scrollTop();
+  
+//       if (scroll > 368) {
+//         text.removeClass("");
+//       } 
+//       else {
+//         text.addClass("");
+//       }
+//     });
+//   });
+  
+  
+$(function() {
+    var text = $(".fixed");
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+  
+      if (scroll > 100) {
+        text.removeClass("ti1_ser_w");
+      } 
+      else {
+        text.addClass("ti1_ser_w");
+      }
+    });
+  });
+
+$(function() {
+    var text = $(".fixed1");
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+  
+      if (scroll > 100) {
+        text.removeClass("ti2_ser_w");
+      } 
+      else {
+        text.addClass("ti2_ser_w");
+      }
+    });
+  });
