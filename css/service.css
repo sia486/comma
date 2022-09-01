@@ -9,8 +9,8 @@ body{
   }
 .framecontainer{
   position: relative;
-    margin: 0 10vw;
-    padding-bottom: 16vw;
+    margin: 0 10%;
+    padding-bottom: 16%;
     /* width: 80%; */
     /* display:flex;
     justify-content: center; */
@@ -546,6 +546,7 @@ img{
 .sect_fixed{
   /* margin-top: 20%; */
   position: fixed;
+  
 }
 
 .ser_iconbg{
@@ -553,38 +554,46 @@ img{
   background-size: contain;
   background-position:center;
   background-repeat: no-repeat;
-  width: 38rem;
-  height: 38rem;
-  position: absolute;
+  width: 45rem;
+  height: 45rem;
+  
   transition: all 0.25s ease-out;
-  left: 50%;
+  
+  
+  
 }
 .ser_iconbg1{
   background-image: url("../img_/ser_appphone.png");
   background-size: contain;
   background-position:center;
   background-repeat: no-repeat;
-  width: 38rem;
-  height: 38rem;
-  position: absolute;
+  width: 45rem;
+  height: 45rem;
+  
   transition: all 0.25s ease-out;
-  left: 50%;
+  
+  
 }
-.phone{
+.phonebox{
+  position: fixed;
+  
+  left: 50%;
+  transform: translateX(-50%);
   
 }
 .ti1_ser_b{
 color: #f0f0f0;
 font-weight: 400;
     font-size: 2rem;
-    transition: all 0.2s ease-out;
+    transition: all 0.1s ease-out;
    
 }
 .ti1_ser_w{
 color: var(--bgdark);
 font-weight: 400;
     font-size: 2rem;
-    transition: all 0.2s ease-out;
+    transition: all 0.1s ease-out;
+    
    
 }
 .ti2_ser_b{
@@ -592,15 +601,24 @@ color: #f0f0f0;
 margin: 2% 0% 8%;
     font-size: 0.9rem;
     font-weight: 300;
-    transition: all 0.2s ease-out;
+    transition: all 0.1s ease-out;
     
+    
+}
+.ti2_ser_b::after{
+  content: "아이콘으로 사용할 때, 심볼을 상하좌우 중앙에 위치시킵니다.";
+  
+  color: #f0f0f0;
 }
 .ti2_ser_w{
 color: var(--bgdark);
 margin: 2% 0% 8%;
     font-size: 0.9rem;
     font-weight: 300;
-    transition: all 0.2s ease-out;
-    
+    transition: all 0.1s ease-out;
+}
+.ti2_ser_w::after{
+  content: "주목도를 위해 앱 아이콘에 한하여  그라데이션을 사용합니다." ; 
+  color: var(--bgdark);
 }
 
