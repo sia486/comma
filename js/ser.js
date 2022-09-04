@@ -54,7 +54,7 @@ $(function() {
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
   
-      if (scroll > 250) {
+      if (scroll > 300) {
         text.removeClass("ser_iconbg1");
       } 
       else {
@@ -83,7 +83,7 @@ $(function() {
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
   
-      if (scroll > 250) {
+      if (scroll > 300) {
         text.removeClass("ti1_ser_w");
       } 
       else {
@@ -97,7 +97,7 @@ $(function() {
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
   
-      if (scroll > 250) {
+      if (scroll > 300) {
         text.removeClass("ti2_ser_w");
       } 
       else {

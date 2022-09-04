@@ -1,22 +1,23 @@
 body{
-    font-family: 'Inter', sans-serif;
+    font-family: 'roboto', sans-serif;
     /* background: #DADADA; */
     transition: all 0.1s ease-out;
   }
   *{
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
   }
 .framecontainer{
   position: relative;
-    margin: 0 10%;
-    padding-bottom: 16%;
-    /* width: 80%; */
-    /* display:flex;
-    justify-content: center; */
-    /* align-items: center; */
-    /* background: #F0F0F0; */
-    transition: all 0.1s ease-out;
+      margin: 0 10%;
+      padding-bottom: 16%;
+      /* width: 80%; */
+      /* display:flex;
+      justify-content: center; */
+      /* align-items: center; */
+      /* background: #F0F0F0; */
+      transition: all 0.1s ease-out;
 
 }
 
@@ -194,6 +195,13 @@ transform: translateY(26%);
   font-size: 0.84rem;
   color: rgb(227, 227, 227);
 }
+.ser_boxinner1{
+  position: absolute;
+  top: -15%;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--bgdark);
+}
 .sertext{
   position: absolute;
   left: 1.8rem;
@@ -236,7 +244,7 @@ img{
 
 }
 .sect{
-  margin-top: 20%;
+  margin-top: 18%;
 }
 
 .sect:nth-child(1){
@@ -244,7 +252,7 @@ img{
 }
 .ti1_ser{
   font-weight: 400;
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #F0F0F0;
 }
 /* .ti1_ser_1{
@@ -265,7 +273,7 @@ img{
   color: var(--bgdark);
 }
 .ti2_ser{
-  margin: 2% 0% 8%;
+  margin: 1rem 0% 4rem;
     font-size: 0.9rem;
     font-weight: 300;
     color: #F0F0F0;
@@ -384,12 +392,12 @@ img{
   transform:  rotateZ(0deg);
 }
 .ser_box:nth-child(7) img{
-  height: 7.8rem;
+  /* height: 7.8rem; */
 }
 
 
 .ser_box:nth-child(9) img{
-  filter: drop-shadow(1px 1px 2px rgb(142, 142, 142));
+  /* filter: drop-shadow(1px 1px 2px rgb(142, 142, 142)); */
 }
 .ser_box:nth-child(10){
   visibility: hidden;
@@ -557,7 +565,7 @@ img{
   width: 45rem;
   height: 45rem;
   
-  transition: all 0.25s ease-out;
+  transition: all 0.4s ease-out;
   
   
   
@@ -570,7 +578,7 @@ img{
   width: 45rem;
   height: 45rem;
   
-  transition: all 0.25s ease-out;
+  transition: all 0.4s ease-out;
   
   
 }
@@ -578,47 +586,229 @@ img{
   position: fixed;
   
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-12%);
   
 }
+
 .ti1_ser_b{
 color: #f0f0f0;
 font-weight: 400;
-    font-size: 2rem;
+    font-size: 2.4rem;
     transition: all 0.1s ease-out;
    
 }
 .ti1_ser_w{
 color: var(--bgdark);
 font-weight: 400;
-    font-size: 2rem;
+    font-size: 2.4rem;
     transition: all 0.1s ease-out;
     
    
 }
 .ti2_ser_b{
 color: #f0f0f0;
-margin: 2% 0% 8%;
+margin: 1rem 0% 3rem;
     font-size: 0.9rem;
     font-weight: 300;
-    transition: all 0.1s ease-out;
+    transition: all 0.2s ease-out;
     
     
 }
 .ti2_ser_b::after{
-  content: "아이콘으로 사용할 때, 심볼을 상하좌우 중앙에 위치시킵니다.";
-  
+  content: "아이콘으로 사용할 때, 심볼을 상하좌우 중앙에 위치시킵니다.\A항상 설정된 비율을 유지하고 아이콘을 최대한 30*30px 보다 작게 넣지 마세요.";
+  white-space: pre;
   color: #f0f0f0;
+  font-size: 0.9rem;
+    font-weight: 300;
+    transition: all 0.2s ease-out;
 }
 .ti2_ser_w{
 color: var(--bgdark);
-margin: 2% 0% 8%;
+margin: 1rem 0% 3rem;
     font-size: 0.9rem;
     font-weight: 300;
-    transition: all 0.1s ease-out;
+    transition: all 0.2s ease-out;
 }
 .ti2_ser_w::after{
-  content: "주목도를 위해 앱 아이콘에 한하여  그라데이션을 사용합니다." ; 
+  content: "최소 크기는 아이콘의 가독성과 시각적 효과가 손상되지 않게 보호합니다.\A주목도를 위해 앱 아이콘에 한하여  그라데이션을 사용합니다."; 
   color: var(--bgdark);
+  white-space: pre;
+  font-size: 0.9rem;
+    font-weight: 300;
+    transition: all 0.2s ease-out;
 }
 
+/* text rules */
+
+.ser_textrules{
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 3.4%;
+  padding-bottom: 1%;
+}
+.ti2_ser p{
+  margin-bottom: 0.15rem;
+}
+.ti2_ser p:nth-last-child(1){
+  margin-bottom: 0rem;
+}
+.rules{
+ margin-top: 1.6%;
+ color: var(--bluew);
+ font-weight: 400;
+ font-size: 1.1rem;
+}
+.ser_textrules i{
+  position: absolute;
+  left: 40%;
+  font-size: 1.05rem;
+
+}
+.ser_textrules i:after{
+  color: rgb(192, 8, 8);
+  font-weight: 400;
+  font-family: 'roboto', sans-serif;
+  margin-left: 0.5rem;
+  font-size: 1.05rem;
+}
+.ser_textrules:nth-child(3) i:after{
+  content: "<comma>, [comma]";
+  
+}
+.ser_textrules:nth-child(4) i:after{
+  content: "commaapplication, commapay";
+  
+}
+.ser_textrules:nth-child(5) i:after{
+  content: "COMMA, Comma Bank";
+  
+}
+.ser_textrules:nth-child(6) i:after{
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  content: "comma";
+  
+}
+.ser_textrules:nth-child(7) i:after{
+  content: "콤마 뱅크, 콤마 페이";
+  
+}
+.ser_textrules:nth-child(8) i:after{
+  content: "commafinance, commalogo";
+  
+}
+.ti1_text{
+  margin-top: 1rem;
+  font-weight: 500;
+  font-family: 'roboto', sans-serif;
+  font-size: 1.2rem;
+}
+.ser_textflex{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap:wrap;
+  column-gap: 10%;
+}
+.ser_textflex .ser_textrules{
+  display: inline-block;
+  flex: 1 0 40%;
+  
+}
+.ser_textflex .ser_textrules{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.ser_textflex .ser_textrules:nth-child(odd){
+/* padding-right: -20%; */
+}
+.ser_textflex .rules{
+  margin-top: 3%;
+  color: var(--bgdark);
+  font-weight: 400;
+  font-size: 0.9rem;
+ }
+ .rules p:nth-child(3){
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0.4rem;
+ }
+.rules p{
+  margin-bottom: 0.35rem;
+}
+.ser_textrules .textrules_top{
+  border-left: 0.2rem solid var(--bluew);
+  padding-left: 0.75rem;
+  height: 1.5rem;
+  line-height: 1.5rem;
+}
+.ser_textrules li{
+  list-style-type: decimal;
+}
+.sect:nth-child(2) .ser_textrules .rules{
+  font-size: 1rem;
+  font-weight: 300;
+}
+.sect:nth-child(2) .ser_textrules{
+  border-bottom: 0.08rem solid rgba(32, 35, 40, 0.6);
+}
+.sect:nth-child(3) .ser_textrules{
+  border-bottom: 0.08rem solid rgba(32, 35, 40, 0.6);
+}
+.ser_boxfull{
+  border: 2px solid rgba(255, 255, 255, 0.05);
+  width: 24rem;
+  height: 16rem;
+  display: inline-block;
+  border-radius: 0.5vw;
+  /* background: var(--bgdark); */
+  margin-top: 6%;
+  flex: 1 0 40%;
+  position: relative;
+  transition: all 0.08s ease-out;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.ser_boxfull:nth-child(1){
+  background-image: url("../img_/buildimg.jpg");
+  
+}
+.ser_boxfull:nth-child(2){
+  background-image: url("../img_/presswork.jpg");
+  
+}
+.ser_boxfull:nth-child(3){
+  background-image: url("../img_/presswork5.jpg");
+  
+}
+.ser_boxfull:nth-child(even){
+  margin-left: 12%;
+}
+.margin{
+  margin-top: 8%;
+}
+.margin:nth-child(1){
+  margin-top: 3%;
+}
+.margin:nth-child(2){
+  margin-top: 3%;
+}
+.ser_box.margin img{
+  margin-top: 0;
+}
+.ser_box.margin:nth-last-child(1){
+  visibility: hidden;
+}
+.ser_box.margin .downbt_top{
+  top: -18%;
+  position: absolute;
+  right: 0;
+  transform: scale(0.75);
+}
+.ser_boxfull.margin .downbt_top{
+  top: -18%;
+  position: absolute;
+  right: 0;
+  transform: scale(0.75);
+}
