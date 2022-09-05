@@ -45,8 +45,8 @@ html{
  } */
 .bg1{
  background-image: url("../img_/msb1.png");
- background-size: 135vw;
-  background-position: center;
+ background-size: 120vw;
+  background-position: 25% 0 !important;
   background-repeat: no-repeat;
   /* background-blend-mode:normal; */
   
@@ -116,7 +116,7 @@ html{
   background-color: var(--bgdark);
 }
 .title1:hover + div img{
-  filter: brightness(860%) contrast(26%);
+  filter: brightness(960%) contrast(36%);
   
 }
 /* .title1_1{
