@@ -12,51 +12,160 @@
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poiret+One&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poiret+One&family=Roboto:wght@100;200;300;400;500&display=swap" rel="stylesheet">
   <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js"></script> 
 
    <title>comma</title>
 
  </head>
-  <!-- <script>
-  window.console = window.console || function(t) {};
-</script>
-
-  
-  
-  <script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script> -->
 
 <body>
-  <h1>Just scroll!</h1>
-   
-    
-  <div class="top">
-    <div class="intro mac"></div>
-    <div id="mac" class="mac"></div>
+  <header>
+    <div class="header">
+    <nav id="navigation">
+        <a href="../../main/main.html" class="logo"><span class="logospan">comma</span></a>
+        
+        <!-- <a aria-label="mobile menu" class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        </a> -->
+        <ul class="menu-left">
+            <li><a href="../main/main.html">About</a></li>
+            <li><a href="#exp">Resume</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact"></a></li>
+            <li><a href="#contact"></a></li>
+        </ul>
 
-    <div class="contentmo">
-        <h2>Apple iMac scrolling effect.</h2>
-        <p>
-        The standard Lorem Ipsum passage, used since the 1500s
-
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-
-Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45 BC
-
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
-        </p>
+        
+    </nav>
+    <ul class="centernav">
+            <li><a href="../logo/logo.html">Logo</a></li>
+            <li><a href="../color/color.html">Color</a></li>
+            <li><a href="../app icon/appicon.html">App Icon</a></li>
+            <li><a href="../text rules/textrules.html">Text Rules</a></li>
+            <li><a href="../press/press.html">Press</a></li>
+        </ul>
     </div>
+</header>
 
-<div class="fasterContent">
-  <p>I want to move this content at a different speed than the rest.</p>
+<div class="outer">
+  <div class="hero-hardware">
+    <!-- <img class="placeholder" src="https://www.apple.com/v/macos/big-sur/a/images/overview/hero/hero_desktop__gd4s9ddcapu2_large_2x.jpg" /> -->
+  </div>
 </div>
 
+<div class="introduce_title">
+  <h1 data-trigger>Introduce comma</h1>
+  <p>
+    당신의 경제적 자유는 실현되고 있나요?
+  </p>
+  <p>
+    근로소득으로만 실현하기 힘든 지금.
+  </p>
+  <p>
+    투자가 필수가 된 현재.
+  </p>
+  <p>
+    투자를 쉽고 건강하게 할 수는 없을까?
+  </p>
+  <p>
+    각기 다른 어려운 환경에서 개인이 할 수 있는 최선의 선택.
+  </p>
+  <p>
+    투자자, 예비 투자자들에게 국내외 다양한 투자 정보 제공.
+  </p>
+  <p>
+    기초적인 투자 준비부터 모두가 웃을 수 있는 노후 준비까지 함께 할 수 있는 맞춤화 재테크 서비스
+  </p>
+  <p>
+    각기 다른 어려운 환경에서 개인이 할 수 있는 최선의 선택.
+  </p>
+  <div class="introduce_box">
+  <p>
+    comma는 다양한 재테크 활동을 쉽게 접근하고 배울 수 있는 서비스가 필요하다는 것을 느꼈습니다.
+  </p>
+
+  <p>
+    사람들로 하여금 '재테크가 그렇게 낯설고 어려운 것만은 아니라는 인식' 과 '경제적 자유라는 목표'를 위해 함께 하겠습니다.
+  </p>
+  </div>
+  <p>
+    변화를 열망하는 사람들이 모여, 역사에 남을만한 변화를 만듭니다.
+  </p>
+  <p>
+    각기 다른 어려운 환경에서 개인이 할 수 있는 최선의 선택.
+  </p>
+  <div class="introduce_slide">
+    <p>
+      당신도 전 세계적인 투자자들과 함께 하세요.
+    </p>
+
+  <div class="boslider">
+    <div class="boslide-track">
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="50" width="150" alt="" />
+      </div>
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="50" width="150" alt="" />
+      </div>
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="50" width="150" alt="" />
+      </div>
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="50" width="150" alt="" />
+      </div>
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="50" width="150" alt="" />
+      </div>
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="50" width="150" alt="" />
+      </div>
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="50" width="150" alt="" />
+      </div>
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="50" width="150" alt="" />
+      </div>
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="50" width="150" alt="" />
+      </div>
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="50" width="150" alt="" />
+      </div>
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="50" width="150" alt="" />
+      </div>
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="50" width="150" alt="" />
+      </div>
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="50" width="150" alt="" />
+      </div>
+      <div class="boslide">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="50" width="150" alt="" />
+      </div>
+    </div>
+  </div>
+
+
+
+  
 </div>
-      <script src="../js/introduce.js">
+</div>
+  
+
+
+  <script src="../js/nav.js"></script>
+  <script src="../js/btop.js"></script>
+  <script src="../js/introduce.js"></script>
 
     </script>
 
