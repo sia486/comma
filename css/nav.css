@@ -93,7 +93,7 @@ body{
     align-items: center;
     position: relative;
     animation-name: display;
-    animation-duration: 0.9s;
+    animation-duration: 0.72s;
     animation-delay: 0s;
     opacity: 1;
     animation-timing-function: ease-out;
@@ -110,7 +110,7 @@ body{
   .centernav li{
     margin-left: 4rem;
     font-size: 1.05rem;
-    border-right: 0.1rem solid var(--white-main);
+    border-right: 0.1rem solid rgba(255, 255, 255, 0.15);
     padding-right: 4rem;
     
   }
@@ -185,7 +185,7 @@ body{
     border-image-slice: 1;
     /* margin-bottom: 0.15rem; */
     animation-name: header;
-    animation-duration: 0.56s;
+    animation-duration: 0.5s;
     animation-delay: 0s;
     animation-timing-function: ease-out;
     box-shadow: 0 0.16rem 0.26rem rgba(0, 0, 0, 0.7);

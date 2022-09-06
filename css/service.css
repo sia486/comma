@@ -147,30 +147,53 @@ transform: translateY(26%);
   height: 16rem;
   display: inline-block;
   border-radius: 0.5vw;
-  
+  margin-left: 12%;
   flex: 1 0 40%;
   position: relative;
   transition: all 0.08s ease-out;
   box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.35);
 }
 .ser_box_w:hover img{
-  display: none;
+  opacity: 0;
   
 }
 .ser_box_w:hover .ser_logoimg3::after{
+  
+  opacity: 1;
+}
+.ser_box_w .ser_logoimg3::after{
+  position: absolute;
+  left: 50%;
+  top: 50%;
   color: var(--bgdark);
   content: "R245 G245 B245\A #F5F5F5\A C0 M0 Y0 K4\A H0° S0% L96%";
+  font-size: 1.25rem;
   white-space: pre;
-  font-weight: 200;
+  font-weight: 400;
+  transition: all 0.08s ease-out;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+  line-height: 1.8rem;
+}
+.ser_box_b .ser_logoimg3::after{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: var(--white-main);
+  content: "R32 G35 B40\A #202328\A C20 M13 Y0 K84\A H225° S11% L15%";
+  font-size: 1.25rem;
+  white-space: pre;
+  font-weight: 300;
+  transition: all 0.08s ease-out;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%);
+  line-height: 1.8rem;
 }
 .ser_box_b:hover img{
-  display: none;
+  opacity: 0;
 }
 .ser_box_b:hover .ser_logoimg3::after{
-  color: var(--white-main);
-  content: "R245 G245 B245\A #F5F5F5\A C0 M0 Y0 K4\A H0° S0% L96%";
-  white-space: pre;
-  font-weight: 200;
+  opacity: 1;
 }
 .ser_box_b{
   border: 2px solid rgba(255, 255, 255, 0.05);
@@ -180,7 +203,7 @@ transform: translateY(26%);
   border-radius: 0.5vw;
   background: var(--bgdark);
   flex: 1 0 40%;
-  margin-left: 12%;
+
   position: relative;
   transition: all 0.08s ease-out;
   box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.35);
@@ -212,7 +235,7 @@ transform: translateY(26%);
   margin-top: 5%;
   margin-left: 6%;
   font-size: 0.84rem;
-  color: rgb(227, 227, 227);
+  color: rgb(240, 240, 240);
 }
 .ser_boxinner1{
   position: absolute;
@@ -542,14 +565,14 @@ img{
   display: inline-block;
   position: absolute;
   left: auto;
-  right: 0;
+  right: 2.2%;
   text-align: left;
 }
 .colorboxtop:nth-child(2){
   display: inline-block;
   position: absolute;
   right: auto;
-  left: 0;
+  left: 2.2%;
   
 }
 
