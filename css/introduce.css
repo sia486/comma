@@ -77,21 +77,27 @@ body{
   }
   .introduce_box{
     border: 0.1rem solid var(--bgdark);
-    background-color: rgba(32, 35, 40, 0.8);
+    background-color: rgba(32, 35, 40, 0.7);
     position: relative;
     border-radius: 1rem;
     width: 42rem;
     left: 50%;
-    padding: 2% 3%;
+    padding: 3% 4%;
     transform: translateX(-50%);
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.14rem;
+  }
+  .introduce_box p{
+    color: var(--white);
   }
   .introduce_slide{
-
+    
   }
-  .introduce_slide p{
+  .introduce_slide h3{
     text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
   }
 
   @-webkit-keyframes scroll {
@@ -99,7 +105,7 @@ body{
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-150px * 7));
+      transform: translateX(calc(-22vw * 8));
     }
   }
   
@@ -108,25 +114,24 @@ body{
       transform: translateX(0);
     }
     100% {
-      transform: translateX(calc(-150px * 7));
+      transform: translateX(calc(-22vw * 8));
     }
   }
   .boslider {
-    background: white;
+    /* background: white; */
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 4vw;
+    height: 16vw;
     /* margin: auto; */
     overflow: hidden;
     position: relative;
-    width: 100%;
     
   }
   .boslider::before, .boslider::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
-    height: 4vw;
+    height: 16vw;
     position: absolute;
-    width: 200px;
+    width: 22vw;
     z-index: 2;
   }
   .boslider::after {
@@ -139,12 +144,62 @@ body{
     top: 0;
   }
   .boslider .boslide-track {
-    -webkit-animation: scroll 40s linear infinite;
-            animation: scroll 40s linear infinite;
+    -webkit-animation: scroll 72s linear infinite alternate;
+            animation: scroll 72s linear infinite alternate;
     display: flex;
-    width: calc(150px * 14);
+    width: calc(22vw * 13);
+    align-items: center;
   }
   .boslider .boslide {
-    height: 50px;
-    width: 150px;
+
+  }
+  .boslide{
+    background-image: url("../img_/introduce_slide/trezor.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 24vw;
+    height: 16vw;
+    margin-right: 2%;
+  }
+  .boslide:nth-child(2){
+    background-image: url("../img_/introduce_slide/caary.png");
+    width: 15vw;
+    height: 10vw;
+  }
+  .boslide:nth-child(3){
+    background-image: url("../img_/introduce_slide/auroom.png");
+  }
+  .boslide:nth-child(4){
+    background-image: url("../img_/introduce_slide/base.png");
+    width: 23vw;
+    height: 10vw;
+  }
+  .boslide:nth-child(5){
+    background-image: url("../img_/introduce_slide/bithumb.png");
+  }
+  .boslide:nth-child(6){
+    background-image: url("../img_/introduce_slide/bitmex.png");
+  }
+  .boslide:nth-child(7){
+    background-image: url("../img_/introduce_slide/ribbit.png");
+  }
+  .boslide:nth-child(8){
+    background-image: url("../img_/introduce_slide/coinone.png");
+  }
+  .boslide:nth-child(9){
+    background-image: url("../img_/introduce_slide/gic.png");
+    width: 18vw;
+    height: 9vw;
+  }
+  .boslide:nth-child(10){
+    background-image: url("../img_/introduce_slide/goodwater.png");
+    width: 23vw;
+    height: 17vw;
+  }
+  .boslide:nth-child(12){
+    background-image: url("../img_/introduce_slide/paypal.png");
+  }
+  .boslide:nth-child(13){
+    background-image: url("../img_/introduce_slide/ledger.png");
   }

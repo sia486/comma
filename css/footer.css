@@ -3,7 +3,7 @@
     background-image: url("../img/botban.svg");
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 30rem;
+    min-height: 16%;
     /* box-shadow: 0 -1vh 0px rgba(0, 0, 0, 0.3); */
     z-index: 200;
     border-top: 1px solid rgba(0, 0, 0, 0.6);
