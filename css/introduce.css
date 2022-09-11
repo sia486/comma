@@ -14,6 +14,8 @@ body{
     margin: 0;
   }
 
+  
+
   .outer {
     height: 100vh;
     overflow: hidden;
@@ -63,32 +65,37 @@ body{
     text-align: center;
     margin-bottom: 3%;
    }
-
-   [data-trigger]{
-    opacity: 1;
+  .introduce_meet{
+    background-image: url("../img_/introduce_meet.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 120vh;
     position: relative;
-    top: 3rem;
-    transition: 0.35s ease-out;
-  }
-  [data-trigger].visible{
-    opacity: 1;
-    top: 0;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(50px);
   }
   .introduce_box{
-    border: 0.1rem solid var(--bgdark);
-    background-color: rgba(32, 35, 40, 0.7);
-    position: relative;
+    /* border: 0.12rem solid var(--dark); */
+    background-color: rgba(32, 35, 40, 0.95);
     border-radius: 1rem;
-    width: 42rem;
-    left: 50%;
-    padding: 3% 4%;
-    transform: translateX(-50%);
+    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
+    width: 34%;
+    padding: 4% 6%;
     text-align: center;
     font-size: 1.14rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
   }
   .introduce_box p{
     color: var(--white);
+  }
+  .introduce_box p:nth-child(1){
+    margin-bottom: 3%;
   }
   .introduce_slide{
     
@@ -97,7 +104,7 @@ body{
     text-align: center;
     font-size: 1.6rem;
     font-weight: 300;
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
   }
 
   @-webkit-keyframes scroll {
@@ -124,7 +131,7 @@ body{
     /* margin: auto; */
     overflow: hidden;
     position: relative;
-    
+    margin-bottom: 14%;
   }
   .boslider::before, .boslider::after {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
@@ -202,4 +209,48 @@ body{
   }
   .boslide:nth-child(13){
     background-image: url("../img_/introduce_slide/ledger.png");
+  }
+
+  [data-trigger]{
+    opacity: 0;
+    position: relative;
+    top: 54%;
+    transition: 0.6s ease-out;
+  }
+  [data-trigger].visible{
+    opacity: 1;
+    top: 50%;
+    position: relative;
+  }
+  .introduce_fixed {
+    height: 180vh;
+  }
+  
+  .animate {
+    position: sticky;
+    top: 45vh;
+    opacity: 0;
+    width: 20%;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  .trigger {
+    width: 100%;
+    /* height: 10px; */
+    margin-bottom: 10vh;
+  }
+  .introduce_blur{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    
+  }
+  [data-trigger1]{
+    transition: all 0.5s ease-out;
+  }
+  [data-trigger1].visible{
+    backdrop-filter: blur(10px);
   }
