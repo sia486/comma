@@ -19,25 +19,24 @@ body{
   .outer {
     height: 100vh;
     overflow: hidden;
-    
+    /* padding-bottom: 10% !important; */
     /* width: 100%; */
     /* will-change: transform; */
-    
+    /* inset: 0px auto auto 0px !important; */
   }
   
   .hero-hardware {
   background-repeat: no-repeat;
-    background-image: url("../img_/display.png");
+    background-image: url("../img_/display4.png");
     background-size: contain;
     background-position: center;
     position: relative;
-    height: 78%;
-    margin-top: 10%;
+    top: 16%;
+    height: 60%;
+    /* margin-top: 15%; */
+    padding-top: 5%;
     position: relative;
-
-    transform: scale(2.6);
-    transform-origin: center center;
-
+    transform-origin: center 30%;
     /*   will-change: transform; */
     z-index: 5;
   }
@@ -56,7 +55,7 @@ body{
   }
    */
    .introduce_title{
-    margin: 0% 0% 18.5%;
+    margin: -3.2% 0% 18.5%;
    }
    .introduce_title h1{
     font-family: 'Roboto', sans-serif;
@@ -103,7 +102,7 @@ body{
   .introduce_slide h3{
     text-align: center;
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 400;
     margin-bottom: 8rem;
   }
 
@@ -370,6 +369,14 @@ body{
   .introduce_con {
     height: 450vh;
   }
+  .introduce_con p{
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  .introduce_fixed p{
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
   .animate {
     position: sticky;
     top: 45vh;
@@ -388,17 +395,17 @@ body{
 
   .animate_6 {
     position: sticky;
-    top: 45vh;
+    top: 43vh;
     opacity: 0;
     width: 20%;
     left: 50%;
     right: 50%;
-    transform: translateX(-50%) translateY(-10%) !important;
+    transform: translateX(-50%) translateY(0%) !important;
     height: fit-content;
   }
   .animate_5 {
     position: sticky;
-    top: 45vh;
+    top: 48vh;
     opacity: 0;
     width: 100%;
     

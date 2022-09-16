@@ -5,7 +5,7 @@ const { to, set, timeline, registerPlugin } = gsap;
 registerPlugin(ScrollTrigger);
 
 function initialiseElements() {
-  gsap.from(".hero-hardware", { transform: "scale(2.4)" });
+  gsap.from(".hero-hardware", { transform: "scale(3)" });
 
 }
 
@@ -17,7 +17,7 @@ const zoomTimeline = () => {
       trigger: ".outer",
       pin: true,
       scrub: true,
-      start: "start start",
+      start: "bottom bottom",
       
     }
   });
