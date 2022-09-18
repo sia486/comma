@@ -8,10 +8,12 @@
 }
 body{
   font-family: 'Roboto', sans-serif;
+  /* background:#202328; */
 }
 *{
     padding: 0;
     margin: 0;
+    
   }
 
   
@@ -27,6 +29,38 @@ body{
   
   .hero-hardware {
   background-repeat: no-repeat;
+    background-image: url("../img_/display5.png");
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    top: 16%;
+    height: 60%;
+    /* margin-top: 15%; */
+    padding-top: 5%;
+    position: relative;
+    transform-origin: center 30%;
+    /*   will-change: transform; */
+    z-index: 5;
+    transition: background-image 0.3s ease-out;
+  }
+  .hidden{
+    background-repeat: no-repeat;
+    background-image: url("../img_/display3.png");
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    top: 16%;
+    height: 60%;
+    /* margin-top: 15%; */
+    padding-top: 5%;
+    position: relative;
+    transform-origin: center 30%;
+    /*   will-change: transform; */
+    z-index: 5;
+    transition: background-image 0.3s ease-out;
+  }
+  .hidden1{
+    background-repeat: no-repeat;
     background-image: url("../img_/display4.png");
     background-size: contain;
     background-position: center;
@@ -39,6 +73,7 @@ body{
     transform-origin: center 30%;
     /*   will-change: transform; */
     z-index: 5;
+    transition: background-image 0.3s ease-out;
   }
 /*   
   img.placeholder {
@@ -55,7 +90,7 @@ body{
   }
    */
    .introduce_title{
-    margin: -3.2% 0% 18.5%;
+    margin: -8vh 0% 18.5%;
    }
    .introduce_title h1{
     font-family: 'Roboto', sans-serif;
@@ -74,7 +109,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 12.5%;
+    margin-bottom: 15%;
   }
   .introduce_box{
     /* border: 0.12rem solid var(--dark); */
@@ -358,24 +393,24 @@ body{
   }
   [data-trigger6]{
     opacity: 0;
-    transition: all 0.7s ease-out;
+    transition: all 0.8s ease-out;
     
   }
   [data-trigger6].visible{
     opacity: 1;
     transform: translateY(-50%);
-    transition: all 0.7s ease-out;
+    transition: all 0.8s ease-out;
   }
   .introduce_con {
     height: 450vh;
   }
   .introduce_con p{
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 600;
   }
   .introduce_fixed p{
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 600;
   }
   .animate {
     position: sticky;
@@ -397,7 +432,7 @@ body{
     position: sticky;
     top: 43vh;
     opacity: 0;
-    width: 20%;
+    width: 22%;
     left: 50%;
     right: 50%;
     transform: translateX(-50%) translateY(0%) !important;
@@ -411,4 +446,74 @@ body{
     
     transform: translateY(-10%) !important;
     height: fit-content;
+  }
+  .ser_boxtop{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+    margin: 0% 8% 8%;
+    
+  }
+  .ser_box{
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    /* width: 48%; */
+    height: 30vh;
+    display: inline-block;
+    border-radius: 0.5vw;
+    background: var(--bgdark);
+    margin-top: 6%;
+    flex: 1 0 40%;
+    position: relative;
+    transition: all 0.08s ease-out;
+    /* box-shadow: 1px 3px 4px rgba(0, 0, 0, 0.35); */
+  }
+  .ser_boxinner{
+    margin-top: 5%;
+    margin-left: 6%;
+    font-size: 0.84rem;
+    color: rgb(240, 240, 240);
+  }
+  .ser_logoimg3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-40%);
+    
+    /* margin: 20% 10% 10%; */
+  }
+  .serimg5{
+    width: 5rem;
+  }
+  .serimg5_w{
+    width: 10rem;
+  }
+  .serimg5_ww{
+    width: 15rem;
+  }
+  .ser_box img{
+    margin-top: 8%;
+  }
+  .ser_box:hover{
+    background: #353a3f;
+  }
+  .ser_box:nth-child(even){
+    margin-left: 12%;
+    
+  }
+  .introduce_content{
+    margin: 0% 10% 20%;
+  }
+  .introduce_content1{
+    margin: 0% 10%;
+  }
+  .ti1_ser{
+    font-weight: 400;
+      font-size: 2.4rem;
+      text-align: center;
+  }
+  .ti2_ser{
+    margin: 1rem 0% 4rem;
+      font-size: 0.9rem;
+      font-weight: 300;
+      text-align: center;
   }

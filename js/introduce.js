@@ -5,7 +5,7 @@ const { to, set, timeline, registerPlugin } = gsap;
 registerPlugin(ScrollTrigger);
 
 function initialiseElements() {
-  gsap.from(".hero-hardware", { transform: "scale(3)" });
+  gsap.from(".hero-hardware", { transform: "scale(3.04)" });
 
 }
 
@@ -199,7 +199,7 @@ const trigger3 = new ScrollTrigger.default({
                     // get passed the trigger, rect (DOMRect) and the scroll
                     // direction, a string of either top, left, right or
                     // bottom.
-                    return 0.4
+                    return 0.5
                 }
             },
             // Setting an offset of 0.2 on the viewport means the trigger
@@ -420,3 +420,31 @@ trigger6.add('[data-trigger6');
       .setTween(timeline2)
       .addTo(controller1);
   }
+
+  $(function() {
+    var outer = $(".hero-hardware");
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+  
+      if (scroll > 400) {
+        outer.removeClass("hidden1");
+      } 
+      else {
+        outer.addClass("hidden1");
+      }
+    });
+  });
+  
+  $(function() {
+    var outer = $(".hero-hardware");
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+  
+      if (scroll > 900) {
+        outer.removeClass("hidden");
+      } 
+      else {
+        outer.addClass("hidden");
+      }
+    });
+  });
