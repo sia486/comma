@@ -1,4 +1,16 @@
+jQuery(function($) {
 
+  window.onresize = function(){
+    document.location.reload();
+  };
+
+});
+
+window.console = window.console || function(t) {};
+
+if (document.location.search.match(/type=embed/gi)) {
+	window.parent.postMessage("resize", "*");
+ }
 
 const { to, set, timeline, registerPlugin } = gsap;
 
@@ -372,6 +384,54 @@ const trigger6 = new ScrollTrigger.default({
 
 trigger6.add('[data-trigger6');
 
+const trigger7 = new ScrollTrigger.default({
+    trigger: {
+        // If the trigger should just work one time
+        once: true,
+        offset: {
+            // Set an offset based on the elements position, returning an
+            // integer = offset in px, float = offset in percentage of either
+            // width (when setting the x offset) or height (when setting y)
+            //
+            // So setting an yOffset of 0.2 means 20% of the elements height,
+            // the callback / class will be toggled when the element is 20%
+            // in the viewport.
+            element: {
+                x: 0,
+                y: (trigger, rect, direction) => {
+                    // You can add custom offsets according to callbacks, you
+                    // get passed the trigger, rect (DOMRect) and the scroll
+                    // direction, a string of either top, left, right or
+                    // bottom.
+                    return 0.2
+                }
+            },
+            // Setting an offset of 0.2 on the viewport means the trigger
+            // will be called when the element is 20% in the viewport. So if
+            // your screen is 1200x600px, the trigger will be called when the
+            // user has scrolled for 120px.
+            
+            // viewport: {
+            //     x: 0,
+            //     y: (trigger, frame, direction) => {
+            //         // We check if the trigger is visible, if so, the offset
+            //         // on the viewport is 0, otherwise it's 20% of the height
+            //         // of the viewport. This causes the triggers to animate
+            //         // 'on screen' when the element is in the viewport, but
+            //         // don't trigger the 'out' class until the element is out
+            //         // of the viewport.
+
+            //         // This is the same as returning Math.ceil(0.2 * frame.h)
+            //         return trigger.visible ? 0 : 0.2
+            //     }
+            // }
+        },
+        
+    },
+});
+
+trigger7.add('[data-trigger7');
+
   var controller1 = new ScrollMagic.Controller();
   var animateElem = [".animate_1", ".animate_2", ".animate_3", ".animate_4", ".animate_5", ".animate_6" ];
   var triggerElem = [".trigger_1", ".trigger_2", ".trigger_3", ".trigger_4", ".trigger_5", ".trigger_6" ];
@@ -448,3 +508,90 @@ trigger6.add('[data-trigger6');
       }
     });
   });
+
+  $('.slider').each(function() {
+    var $this = $(this);
+    var $group = $this.find('.slide_group');
+    var $slides = $this.find('.slide');
+    var bulletArray = [];
+    var currentIndex = 0;
+    var timeout;
+    
+    function move(newIndex) {
+      var animateLeft, slideLeft;
+      
+      advance();
+      
+      if ($group.is(':animated') || currentIndex === newIndex) {
+        return;
+      }
+      
+      bulletArray[currentIndex].removeClass('active');
+      bulletArray[newIndex].addClass('active');
+      
+      if (newIndex > currentIndex) {
+        slideLeft = '100%';
+        animateLeft = '-100%';
+      } else {
+        slideLeft = '-100%';
+        animateLeft = '100%';
+      }
+      
+      $slides.eq(newIndex).css({
+        display: 'block',
+        left: slideLeft
+      });
+      $group.animate({
+        left: animateLeft
+      }, function() {
+        $slides.eq(currentIndex).css({
+          display: 'none'
+        });
+        $slides.eq(newIndex).css({
+          left: 0
+        });
+        $group.css({
+          left: 0
+        });
+        currentIndex = newIndex;
+      });
+    }
+    
+    function advance() {
+      
+    }
+    
+    $('.next_btn').on('click', function() {
+      if (currentIndex < ($slides.length - 1)) {
+        move(currentIndex + 1);
+      } else {
+        move(0);
+      }
+    });
+    
+    $('.previous_btn').on('click', function() {
+      if (currentIndex !== 0) {
+        move(currentIndex - 1);
+      } else {
+        move(3);
+      }
+    });
+    
+    $.each($slides, function(index) {
+      var $button = $('<a class="slide_btn">&bull;</a>');
+      
+      if (index === currentIndex) {
+        $button.addClass('active');
+      }
+      $button.on('click', function() {
+        move(index);
+      }).appendTo('.slide_buttons');
+      bulletArray.push($button);
+    });
+    
+    advance();
+  });
+  // $(window).scroll(function () { 
+  //   var scrollValue = $(document).scrollTop(); 
+  //     console.log(scrollValue); 
+  // });

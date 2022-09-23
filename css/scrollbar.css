@@ -1,10 +1,10 @@
 html::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10rem;
+    background-color: rgba(152, 196, 255, 0.7);
+    border-radius: 8rem;
     
   }
   html::-webkit-scrollbar {
-    width: 0.45vw;
+    width: 1rem;
     background: transparent;
   }
   body{
