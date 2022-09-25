@@ -509,10 +509,10 @@ trigger7.add('[data-trigger7');
     });
   });
 
-  $('.slider').each(function() {
+  $('.introduce_history').each(function() {
     var $this = $(this);
-    var $group = $this.find('.slide_group');
-    var $slides = $this.find('.slide');
+    var $group = $this.find('.introduce_view');
+    var $slides = $this.find('.introduce_group');
     var bulletArray = [];
     var currentIndex = 0;
     var timeout;
@@ -585,7 +585,7 @@ trigger7.add('[data-trigger7');
       }
       $button.on('click', function() {
         move(index);
-      }).appendTo('.slide_buttons');
+      }).appendTo('.slide_view');
       bulletArray.push($button);
     });
     
@@ -595,3 +595,39 @@ trigger7.add('[data-trigger7');
   //   var scrollValue = $(document).scrollTop(); 
   //     console.log(scrollValue); 
   // });
+
+  var numAnimation = document.querySelectorAll('.introduce_num');
+  console.log(numAnimation);
+
+  function changeNum(idx) {
+    var num = 0;
+    var intervalTime = 5.8;
+    var targetNum = numAnimation[idx].getAttribute('data-rate');
+
+    if(targetNum > 99){
+
+      var num = 100;
+    }
+    if(targetNum > 899){
+      intervalTime = 1;
+      var num = 500;
+    }
+    if(targetNum > 999){
+      intervalTime = 1;
+      var num = 2600;
+    }
+    var timer = setInterval(function(){
+      ++num;
+      numAnimation[idx].innerHTML = num;
+      if (num == targetNum) {
+        clearInterval(timer);
+      }
+    }, intervalTime);
+  }
+  const button = document.querySelector('.next_btn');
+
+  button.addEventListener('click', function() {    
+  for (var i = 0; i < numAnimation.length; i++) {
+    changeNum(i);
+  }
+  })

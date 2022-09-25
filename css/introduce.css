@@ -656,20 +656,21 @@ body{
     margin-left: 0.7%;
   }
   .ti1_introduce_left{
+    position: absolute;
     font-weight: 400;
     font-size: 2.4rem;
     text-align: center;
-    padding-top: 5%;
-    margin-bottom: 5%;
+    top: 10%;
     
   }
   .introduce_history{
-    
+    position: relative;
     color: var(--white-main);
-    margin-bottom: 16%;
+    margin-bottom: 20%;
+
   }
   .introduce_history_box{
-    padding: 0 0 8%;
+    margin-top: 12%;
     border-left: 0.25rem solid;
     border-image: linear-gradient(to bottom, #4BA9FF 20%, #4ba8ff00 80%) 1;
   }
@@ -684,7 +685,7 @@ body{
   }
 
   .introduce_history_box .span_box{
-    margin-bottom: 16%;
+    margin-bottom: 18%;
     display: flex;
     flex-basis: 100%;
     align-items: center;
@@ -762,37 +763,57 @@ body{
   }
    */
    .introduce_boxinner_bl1{
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(7px) brightness(25%);
-   }
-   .introduce_flex{
     display: flex;
     flex: 1 0 30%;
     column-gap: 20%;
     justify-content: center;
-    background-image: url("../img_/build3.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter:brightness(10%);
    }
-   .introduce_flex:nth-child(1){
+   .introduce_group:last-child .introduce_boxinner_bl1{
+    display: flex;
+    flex: 1 0 30%;
+    column-gap: 20%;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backdrop-filter:brightness(8%);
+   }
+   .introduce_flex{
+    width: 100%;
+    height: 100%;
+    
+   }
+   .introduce_group:nth-last-child(1) .introduce_flex{
 
    }
 
    .introduce_rotate{
-    position: relative;
-    width: 100%;
-    height: 100%;
-   }
-   .introduce_view{
+    height: 85vh;
     overflow: hidden;
     position: relative;
    }
-   .introduce_group{
-    height: 100%;
+   .introduce_view{
     position: relative;
     width: 100%;
+    height: 100%;
+   }
+   .introduce_group{
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-image: url("../img_/build3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   .introduce_group:last-child{
+    background-image: url("../img_/build1.jpg");
+
    }
 
 
@@ -829,5 +850,40 @@ body{
   opacity: 1;
 }
 .introduce_chart{
-  background: #fff;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 34%;
+  text-align: center;
+  flex-basis: 10%;
+}
+.introduce_chart h4{
+  display: block;
+  white-space: nowrap;
+}
+.introduce_group:first-child {
+  display: block;
+  
+}
+.introduce_group:first-child .previous_btn{
+ visibility: hidden;
+}
+.introduce_group:last-child .next_btn{
+  visibility: hidden;
+}
+.introduce_num{
+  font-size: 3.1rem;
+  white-space: nowrap;
+  margin-bottom: 20%;
+}
+.num_box .introduce_num:first-child::after{
+  content: "만 +";
+}
+.num_box:nth-child(3) .introduce_num::after{
+  content: "개 +";
+}
+.num_box{
+  height: 150px;
+  width: 200px;
 }
