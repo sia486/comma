@@ -601,7 +601,7 @@ trigger7.add('[data-trigger7');
 
   function changeNum(idx) {
     var num = 0;
-    var intervalTime = 5.8;
+    var intervalTime = 7;
     var targetNum = numAnimation[idx].getAttribute('data-rate');
 
     if(targetNum > 99){
@@ -610,11 +610,15 @@ trigger7.add('[data-trigger7');
     }
     if(targetNum > 899){
       intervalTime = 1;
-      var num = 500;
+      var num = 480;
     }
     if(targetNum > 999){
       intervalTime = 1;
-      var num = 2600;
+      var num = 2500;
+    }
+    if(targetNum > 2999){
+      intervalTime = 1;
+      var num = 3800;
     }
     var timer = setInterval(function(){
       ++num;
