@@ -112,24 +112,18 @@ body{
     margin-bottom: 15%;
   }
   .introduce_box{
-    /* border: 0.12rem solid var(--dark); */
-    background-color: rgba(32, 35, 40, 0.95);
-    border-radius: 1rem;
-    /* box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); */
-    width: 30%;
-    padding: 3% 5%;
+    text-shadow: 2px 2px 12px #000;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     position: absolute;
     left: 50%;
     top: 50%;
     color: rgba(255, 255, 255, 0);
     transform: translateX(-50%) translateY(-50%);
   }
-  .introduce_box p{
-  }
+
   .introduce_box p:nth-child(1){
-    margin-bottom: 3%;
+    margin-bottom: 0.8%;
   }
   .introduce_slide{
     
@@ -248,14 +242,14 @@ body{
     top: 58%;
     transition: 0.4s ease-out;
     color: rgba(255, 255, 255, 0);
-    background-color: rgba(32, 35, 40, 0);
+
   }
   [data-trigger].visible{
     /* opacity: 1; */
     top: 50%;
     position: relative;
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(32, 35, 40, 0.95);
+  
   }
   [data-trigger3]{
     opacity: 0;
@@ -366,6 +360,7 @@ body{
     font-size: 1.4rem;
     font-weight: 400;
     color: var(--white);
+    text-shadow: 2px 2px 12px #000;
   }
   .a{
     width: fit-content;

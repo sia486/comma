@@ -26,31 +26,38 @@
  </head>
  
  <body>
-
-  <a id="btop"></a>
-
   <header>
-    <div class="container">
+    <div class="header">
       <nav id="navigation">
         <a href="../main/main.html" class="logo"><span class="logospan">comma</span></a>
-        <a aria-label="mobile menu" class="nav-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </a>
-          <ul class="menu-left">
-            <li><a href="#about">About</a></li>
-            <li><a href="#exp">Resume</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#contact"></a></li>
-            <li><a href="#contact"></a></li>
-          </ul>
+        
+        <!-- <a aria-label="mobile menu" class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        </a> -->
+        <ul class="menu-left">
+          <li><a href="../main/main.html">About</a></li>
+          <li><a href="#exp">Resume</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact"></a></li>
+          <li><a href="#contact"></a></li>
+        </ul>
       </nav>
+
+      <ul class="centernav">
+            <li><a href="../introduce/introduce.html">Introduce</a></li>
+            <li><a href="../news/news.html">News</a></li>
+            <li><a href="../community/community.html">Community</a></li>
+            <li><a href="../service/service.html">Service</a></li>
+            <li><a href="../portfolio/portfolio.html">Portfolio</a></li>
+      </ul>
     </div>
   </header>
-    
+  <a id="btop"></a>
+
   <div class="slider">
     <div class="slide_viewer">
       <div class="slide_buttons">
@@ -148,12 +155,21 @@
     </div>
   </div>
 
+  <input id="searchInput" value="" type="text">
+  <button id="search">검색</button>
   
+
+  <div id="title"></div>
+  <div id="content"></div>
+  <a id="url"></a>
   
+  <footer class="content"></footer>
        
        <script src="../js/nav.js"></script>
        <script src="../js/btop.js"></script>
        <script src="../js/news.js"></script>
+       <!-- <script src="../js/newapi.js"></script> -->
+       <script src="../php/search.php"></script>
        
  
    
