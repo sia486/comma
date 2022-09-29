@@ -1,8 +1,9 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <?php
   $client_id = "gJoPzZDweObC2fRMH_cL";
   $client_secret = "1auCJXPtQr";
-  $encText = urlencode("코로나");
-  $url = "https://openapi.naver.com/v1/search/news?query=".$encText; // json 결과
+  $encText = urlencode($_POST["SEARVALUE"]);
+  $url = "https://openapi.naver.com/v1/search/news.json?query=".$encText; // json 결과
 //  $url = "https://openapi.naver.com/v1/search/blog.xml?query=".$encText; // xml 결과
   $is_post = false;
   $ch = curl_init();
@@ -16,8 +17,7 @@
   curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
   $response = curl_exec ($ch);
   $status_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-  echo "status_code:".$status_code."
-";
+  // echo "status_code:".$status_code."";
   curl_close ($ch);
   if($status_code == 200) {
     echo $response;
