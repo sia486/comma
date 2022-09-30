@@ -1,4 +1,4 @@
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
 <?php
   $client_id = "gJoPzZDweObC2fRMH_cL";
   $client_secret = "1auCJXPtQr";
