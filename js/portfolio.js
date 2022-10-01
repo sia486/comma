@@ -19,11 +19,11 @@ $('.slider').each(function () {
         bulletArray[newIndex].addClass('active');
 
         if (newIndex > currentIndex) {
-            slideLeft = '100%';
-            animateLeft = '-100%';
+            slideLeft = '50%';
+            animateLeft = '-50%';
         } else {
-            slideLeft = '-100%';
-            animateLeft = '100%';
+            slideLeft = '-50%';
+            animateLeft = '50%';
         }
 
         $slides.eq(newIndex).css({
@@ -34,7 +34,7 @@ $('.slider').each(function () {
             left: animateLeft
         }, function () {
             $slides.eq(currentIndex).css({
-                display: 'none'
+                opacity:0.2
             });
             $slides.eq(newIndex).css({
                 left: 0
