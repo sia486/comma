@@ -16,22 +16,44 @@ body {
 }
 
 .portfolio_my {
-    position: relative;
-    width: 70%;
-    
-    
+  position: relative;
+  width: 32%;
+  /* margin: 0 18%; */
+  padding: 0.6% 0;
+}
+.portfolio_my::before{
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 0;
+  width: 1%;
+  height: 100%;
+  border-left: 0.2rem solid;
+  border-image: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+.portfolio_my::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10%;
+  width: 1%;
+  height: 100%;
+  border-right: 0.2rem solid;
+  border-image: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
 }
 
 .portfolio_myleft {
     /* width: 100vw; */
     position: relative;
-    width: 70%;
+    width: 50%;
 }
 
 .portfolio_myright {
     /* width: 100vw; */
     position: relative;
-    width: 70%;
+    width: 50%;
 }
 
 .title_horizon{
@@ -43,25 +65,165 @@ body {
     font-size: 2rem;
     margin-bottom: 3%;
 }
+.graph{
+  position: relative;
+  
+}
 .title_horizon1{
     position: relative;
-    margin:0 0 2% 5%;
+    width: 30%;
+    height: 1.8rem;
+    vertical-align: middle;
+    line-height: 1.8rem;
+}
+#app-cover {
+  display: table;
+  width: 600px;
+  margin: 80px auto;
+  counter-reset: button-counter;
+}
+
+.row {
+  display: table-row;
+}
+
+.toggle-button-cover {
+  display: table-cell;
+  position: relative;
+  width: 200px;
+  height: 140px;
+  box-sizing: border-box;
+}
+
+.button-cover {
+  height: 100px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 10px 20px -8px #c5d6d6;
+  border-radius: 4px;
+}
+
+.button-cover:before {
+  counter-increment: button-counter;
+  content: counter(button-counter);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #d7e3e3;
+  font-size: 12px;
+  line-height: 1;
+  padding: 5px;
+}
+
+.button-cover,
+.knobs,
+.layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button {
+  position: relative;
+  margin:0 3% 0 10%;
+  top: 0;
+  width: 74px;
+  height: 36px;
+  overflow: hidden;
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 100px;
+}
+
+.button.b2 {
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #ebf7fc;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+/* Button 1 */
+#button-1 .knobs:before {
+  content: "YES";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 10px;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  padding: 9px 4px;
+  background-color: #03a9f4;
+  border-radius: 50%;
+  transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
+}
+
+#button-1 .checkbox:checked + .knobs:before {
+  content: "NO";
+  left: 42px;
+  background-color: #f44336;
+}
+
+#button-1 .checkbox:checked ~ .layer {
+  background-color: #fcebeb;
+}
+
+#button-1 .knobs,
+#button-1 .knobs:before,
+#button-1 .layer {
+  transition: 0.3s ease all;
+}
+
+.title_mar1{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
 }
 .title_horizon li {
+  position: relative;
     float: left;
     margin-right: 3%;
     list-style: none;
     line-height: 2.2rem;
 }
 .title_horizon h3:first-child {
-    font-size: 2.2rem;
+    font-size: 2rem;
     display: inline-block;
     margin-right: 5%;
+    font-weight: 500;
 }
 .title_horizon h3:nth-child(2) {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: inline-block;
     margin-right: 16%;
+    font-weight: 500;
 }
 .title_horizon p{
     font-size: 0.9rem;
@@ -71,16 +233,48 @@ body {
     right: 5%;
     color: var(--blue);
 }
+li{
+  list-style: none;
+}
 .title_horizon1 li {
     float: left;
-    margin-right: 3%;
-    list-style: none;
-    font-size: 0.8rem;
+    margin-right: 8%;
+    font-size: 0.9rem;
+    white-space: nowrap;
 }
-.title_horizon1::after{
+.title_horizon1 li::before{
+  content:'';
+  display:inline-block;
+  width:0.7rem;
+  height:0.7rem;
+  margin:-5% 12% 0 0;
+  vertical-align:middle;
+  background:var(--white);
+  border-radius:50%
+}
+.clear::after{
   content: "";
   display: block;
   clear: both;
+}
+.period_graph{
+  position: relative;
+}
+.period_button{
+  width: 20%;
+  border: 0.2rem solid white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 2%;
+  background:var(--bluew);
+  border-radius: 0.4rem;
+
+}
+.period_button span{
+  /* background:var(--bluew); */
+  padding: 0.5% 0.7%;
+  border-radius: 0.4rem;
+  border: 0.1rem solid white;
 }
 .vertical {
     position: relative;
@@ -90,26 +284,132 @@ body {
 }
 
 .vertical li {
-    margin-bottom: 1.4%;
+    margin-bottom: 2.4%;
     list-style: none;
+}
+.vertical li:nth-child(1)::after{
+  content: "6,500";
+}
+.vertical li:nth-child(2)::after{
+  content: "6,000";
+}
+.vertical li:nth-child(3)::after{
+  content: "5,500";
+}
+.vertical li:nth-child(4)::after{
+  content: "5,000";
+}
+.vertical li:nth-child(5)::after{
+  content: "4,500";
+}
+.vertical li:nth-child(6)::after{
+  content: "4,000";
+}
+.vertical li:nth-child(7)::after{
+  content: "3,500";
+}
+.vertical li:nth-child(8)::after{
+  content: "3,000";
+}
+.vertical li:nth-child(9)::after{
+  content: "2,500";
 }
 
 .horizon li {
     float: left;
     list-style: none;
-    margin-right: 1.4%;
+    margin-right: 5.7%;
 }
+
 .horizon li:first-child {
     visibility: hidden;
 }
+.horizon li:nth-child(1)::after{
+  content: "4월";
+}
+.horizon li:nth-child(2)::after{
+  content: "5월";
+}
+.horizon li:nth-child(3)::after{
+  content: "6월";
+}
+.horizon li:nth-child(4)::after{
+  content: "7월";
+}
+.horizon li:nth-child(5)::after{
+  content: "8월";
+}
+.horizon li:nth-child(6)::after{
+  content: "9월";
+}
+.horizon li:nth-child(7)::after{
+  content: "10월";
+}
+.horizon li:nth-child(8)::after{
+  content: "11월";
+}
+.horizon li:nth-child(9)::after{
+  content: "12월";
+}
+.horizon li:nth-child(10)::after{
+  content: "1월";
+}
+.horizon li:nth-child(11)::after{
+  content: "2월";
+}
+.horizon li:nth-child(12)::after{
+  content: "3월";
+}
+.horizon li:nth-child(13)::after{
+  content: "4월";
+}
 .moneyNum{
-  margin: 0 0 2% 4%;
-}
-li{
-  list-style: none;
+  margin: 0 0 3% 0;
+  font-size: 2rem;
 }
 
-
+.report_text{
+  position: relative;
+  margin-top: 4%;
+}
+.report_text h3{
+  position: relative;
+  margin-bottom: 4%;
+  border-left: 0.14rem solid;
+  border-image: linear-gradient(180deg, rgba(240,240,240,0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240,240,240,0) 100%);
+  border-image-slice: 1;
+  padding-left: 1%;
+  line-height: 2.4rem;
+}
+.report_text h3::before{
+  position: absolute;
+  top: 75%;
+  left: 1%;
+  content: "Portfolio Report";
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.report_text h3::after{
+  position: absolute;
+  right: 0;
+  content: "";
+  width: 1.7rem;
+  height: 1.7rem;
+  background-image: url("../img/Help.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.report_text p{
+  position: relative;
+  margin-left: 3%;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+.report_text p:nth-child(2){
+  margin-bottom: 1.2%;
+}
+  
 .slide_buttons {
     left: 0;
     position: absolute;
@@ -266,19 +566,19 @@ a.slide_btn {
   
 
   #Slide3:checked ~ .overflow-wrapper{
-    transform: translateX(-30%);
+    transform: translateX(-29.12%);
   }
   #Slide1:checked ~ .overflow-wrapper{
     transform: translateX(0%);
   }
   #Slide2:checked ~ .overflow-wrapper{
-    transform: translateX(-30%);
+    transform: translateX(-29.12%);
   }
   #Slide4:checked ~ .overflow-wrapper{
-    transform: translateX(-60%);
+    transform: translateX(-58.3%);
   }
   #Slide5:checked ~ .overflow-wrapper{
-    transform: translateX(-30%);
+    transform: translateX(-29.12%);
   }
   #Slide5:checked ~ .next_btn{
     visibility: hidden;
@@ -304,14 +604,31 @@ a.slide_btn {
   #Slide2:checked + .previous_btn{
     visibility: hidden;
   }
-
+  .previous_btn::after{
+    content: "포트폴리오 현황분석";
+    position: absolute;
+    left: 140%;
+    top: 0;
+    line-height: 65px;
+    white-space: nowrap;
+    font-size: 1.1rem;
+  }
+  .next_btn::after{
+    content: "포트폴리오 상세분석";
+    position: absolute;
+    right: 140%;
+    top: 0;
+    line-height: 65px;
+    white-space: nowrap;
+    font-size: 1.1rem;
+  }
   .overflow-wrapper {
-    width: 260%;
+    width: 240%;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 20%;
+    top: 12%;
     left: 0;
     right: 0;
     overflow-y: hidden;
