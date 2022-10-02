@@ -17,19 +17,21 @@ body {
 
 .portfolio_my {
     position: relative;
-    left: 50%;
-    top:50%;
-    width: 60%;
-    transform: translateX(-50%) translateY(-60%);
+    width: 70%;
+    
     
 }
 
 .portfolio_myleft {
-    width: 100vw;
+    /* width: 100vw; */
+    position: relative;
+    width: 70%;
 }
 
 .portfolio_myright {
-    width: 100vw;
+    /* width: 100vw; */
+    position: relative;
+    width: 70%;
 }
 
 .title_horizon{
@@ -43,7 +45,7 @@ body {
 }
 .title_horizon1{
     position: relative;
-    margin:0 0 8% 8%;
+    margin:0 0 2% 5%;
 }
 .title_horizon li {
     float: left;
@@ -75,7 +77,11 @@ body {
     list-style: none;
     font-size: 0.8rem;
 }
-
+.title_horizon1::after{
+  content: "";
+  display: block;
+  clear: both;
+}
 .vertical {
     position: relative;
 }
@@ -96,8 +102,12 @@ body {
 .horizon li:first-child {
     visibility: hidden;
 }
-
-
+.moneyNum{
+  margin: 0 0 2% 4%;
+}
+li{
+  list-style: none;
+}
 
 
 .slide_buttons {
@@ -181,7 +191,7 @@ a.slide_btn {
 }
 
 #slider-wrapper {
-    width: 100%;
+    /* width: 100%; */
     height: 100vh;
     position: relative;
     margin-bottom: 0px;
@@ -254,24 +264,21 @@ a.slide_btn {
   }
 
   
-  .control {
-    display: none;
-  }
 
   #Slide3:checked ~ .overflow-wrapper{
-    left: 0%;
+    transform: translateX(-30%);
   }
   #Slide1:checked ~ .overflow-wrapper{
-    left: 70%;
+    transform: translateX(0%);
   }
   #Slide2:checked ~ .overflow-wrapper{
-    left: 0%;
+    transform: translateX(-30%);
   }
   #Slide4:checked ~ .overflow-wrapper{
-    left: -70%;
+    transform: translateX(-60%);
   }
   #Slide5:checked ~ .overflow-wrapper{
-    left: 0%;
+    transform: translateX(-30%);
   }
   #Slide5:checked ~ .next_btn{
     visibility: hidden;
@@ -299,11 +306,14 @@ a.slide_btn {
   }
 
   .overflow-wrapper {
-    width: 100%;
-    height: 100vh;
+    width: 260%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
-    top: 0;
+    top: 20%;
     left: 0;
+    right: 0;
     overflow-y: hidden;
     z-index: 1;
     -webkit-transition: all 0.3s ease-in-out;
@@ -312,6 +322,3 @@ a.slide_btn {
     transition: all 0.3s ease-in-out;
   }
 
-  .slide img {
-    width: 100%;
-  }
