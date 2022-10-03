@@ -79,3 +79,4 @@ $('.slider').each(function () {
 
     advance();
 });
+
