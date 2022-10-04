@@ -179,7 +179,7 @@ body {
 }
 
 .grafico {
-  padding: 2rem 1rem 1rem;
+  padding: 1.4rem 1.4rem 1rem;
   /* width: 100%; */
   height: 100%;
   position: relative;
@@ -283,7 +283,7 @@ body {
   position: relative;
   left: 0;
   bottom: 0rem;
-  width: 95%;
+  width: 98%;
   padding: 0 0 0 2rem;
   height: 100%;
 }
@@ -309,7 +309,7 @@ body {
 }
 
 .eje-x li {
-  width: 7.8%;
+  width: 8%;
   float: left;
   text-align: right;
 }
@@ -795,8 +795,8 @@ input[type=radio] {
 
 .bh{
   position: absolute;
-  top: 0;
-  width: 60vw;
+  top: -9%;
+  width: 70vw;
   height: 50vh;
   background-image: url("data:image/svg+xml,%3Csvg width='499' height='352' viewBox='0 0 499 352' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.453348' filter='url(%23filter0_f_37141_53089-482382)'%3E%3Cpath d='M129.578 187.005C129.578 187.005 150.272 175.894 152.108 167.206C165.14 105.527 160.806 115.336 164.397 105.761C167.435 97.6602 172.016 156.5 183.513 174.716C195.272 193.346 219.537 97.1312 234.035 105.761C246.597 113.238 248.657 175.006 258.613 174.716C271.383 174.345 275.174 116.002 279.778 116.002C282.325 116.002 287.192 157.111 295.48 167.206C296.334 168.246 303.579 156.365 304.356 156.965C306.895 158.929 331.788 161.945 334.396 161.062C348.164 156.395 339.733 116.002 344.637 116.002C347.15 116.002 344.172 146.388 359.656 152.869C374.829 159.219 408.724 141.462 386.965 161.062C378.658 168.545 258.613 199.977 258.613 199.977C258.613 199.977 253.823 247.929 247.007 247.085C227.59 244.68 215.756 202.344 209.457 204.756C194.458 210.499 202.609 239.85 187.61 236.161C184.264 235.339 182.756 205.612 179.417 204.756C155.047 198.51 105 212.266 105 212.266L129.578 187.005Z' fill='url(%23paint0_linear_37141_53089-408866)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_37141_53089-482382' x='0.644981' y='0.644981' width='497.761' height='350.806' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='52.1775' result='effect1_foregroundBlur_37141_53089'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_37141_53089-408866' x1='257.737' y1='39.2957' x2='140.785' y2='265.593' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%2305FFC3' stop-opacity='0.389719'/%3E%3Cstop offset='0.363677' stop-color='%233DB1CB'/%3E%3Cstop offset='0.790756' stop-color='%236F80DA'/%3E%3Cstop offset='1' stop-color='%23183B74'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
@@ -1399,4 +1399,358 @@ a.slide_btn {
 .original {
   color: #ef6670;
   font-size: 14px;
+}
+
+@media screen and (max-width:2900px) {
+  
+.title_horizon li {
+  position: relative;
+  margin-right: 3%;
+  list-style: none;
+  line-height: 2.2rem;
+}
+
+.title_mar {
+  position: relative;
+}
+
+.title_horizon h3:first-child {
+  position: relative;
+  font-size: 1.6rem;
+  display: inline-block;
+  margin-right: 5%;
+  font-weight: 500;
+}
+
+.title_horizon h3:nth-child(2) {
+  position: relative;
+  font-size: 1.1rem;
+  display: inline-block;
+  margin-right: 16%;
+  font-weight: 500;
+}
+.moneyNum{
+  margin: 0px 0px 2%;
+  font-size: 1.6rem;
+}
+.title_horizon p {
+  font-size: 0.85rem;
+  display: inline;
+  position: relative;
+  right: -25%;
+  /* top: 50%; */
+  /* right: -40%; */
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 0.8%;
+}
+
+.title_horizon p:last-child {
+  color: #2790F1;
+  margin-right: 0;
+  cursor: pointer;
+}
+
+.title_horizon p:nth-child(3)::after {
+  content: "|";
+  margin-left: 1%;
+}
+
+.title_horizon p:last-child:after {
+  position: absolute;
+  top: 10%;
+  right: -20%;
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  background-image: url("../img/barrow.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+
+}
+  .title_horizon1 li {
+    float: left;
+    margin-right: 7%;
+    font-size: 0.8rem;
+    white-space: nowrap;
+  }
+  
+  .title_horizon1 li:last-child {
+    margin-right: 0;
+  
+  }
+  
+  .title_horizon1 li::before {
+    content: '';
+    display: inline-block;
+    width: 0.7rem;
+    height: 0.7rem;
+    margin: -5% 12% 0 0;
+    vertical-align: middle;
+    background: var(--white);
+    border-radius: 50%
+  }
+  
+.button {
+  position: relative;
+  margin: 0 0 0 0;
+  top: 0;
+  width: 2.6rem;
+  height: 1.3rem;
+  box-shadow: 1px 1px 2px 0px #000 inset;
+
+
+}
+
+.button_box {
+  display: flex;
+  position: relative;
+  left: 0;
+  width: 13.5%;
+  justify-content: space-between;
+}
+
+.button:nth-child(1)::before {
+  content: "상세";
+  position: absolute;
+  top: 0;
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+  left: -2.1rem;
+  color: var(--white);
+}
+
+.button:nth-child(2)::before {
+  content: "평균";
+  position: absolute;
+  top: 0;
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+  left: -2.1rem;
+  color: var(--white);
+}
+
+.button:last-child {
+  margin: 0 0 0 0;
+
+}
+
+.button.r,
+.button.r .layer {
+  border-radius: 100px;
+}
+
+.button.b2 {
+  border-radius: 2px;
+}
+
+.checkbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.knobs {
+  z-index: 2;
+}
+
+.layer {
+  width: 100%;
+  background-color: #5F6063;
+  transition: 0.3s ease all;
+  z-index: 1;
+}
+
+#button-1 .knobs:before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  width: 0.9rem;
+  height: 0.9rem;
+  background-color: #E4E1E1;
+  border-radius: 50%;
+  transition: all 0.1s ease-out;
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#button-1 .checkbox:checked+.knobs:before {
+  content: "";
+  left: 1.45rem;
+  background-color: #E4E1E1;
+}
+
+#button-1 .checkbox:checked~.layer {
+  background-color: #2790F1;
+}
+
+#button-1 .knobs,
+#button-1 .knobs:before,
+#button-1 .layer {
+  transition: all 0.06s ease-out;
+}
+
+.period_button {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0.6% 0.4%;
+  font-size: 0.9rem;
+  margin-left: 2%;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.period_button label {
+  /* background:var(--bluew); */
+  cursor: pointer;
+  padding: 2% 0%;
+  margin: 0 5%;
+  border-radius: 0.4rem;
+  border-bottom: 0.1rem solid;
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 49%, rgba(255, 255, 255, 0) 50%, rgba(240, 240, 240, 0) 51%);
+  border-image-slice: 1;
+  transition: all 0.2s ease-out;
+}
+
+.report_text {
+  position: relative;
+  margin-top: 8%;
+}
+
+.report_text h3 {
+  position: relative;
+  margin-bottom: 4%;
+  border-left: 0.14rem solid;
+  border-image: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+  padding-left: 1%;
+  line-height: 2.4rem;
+  font-size: 1rem;
+}
+
+.report_text h3::before {
+  position: absolute;
+  top: 70%;
+  left: 1%;
+  content: "Portfolio Report";
+  font-weight: 300;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.report_text h3::after {
+  position: absolute;
+  right: 0;
+  content: "";
+  width: 1.7rem;
+  height: 1.7rem;
+  background-image: url("../img/Help.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.report_text p {
+  position: relative;
+  margin-left: 3%;
+  font-size: 0.9rem;
+  line-height: 1.4rem;
+}
+
+.report_text p:nth-child(2) {
+  margin-bottom: 1.2%;
+}
+
+
+/* 슿라이드 버튼*/
+.slide_buttons {
+  left: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  bottom: 30%;
+  z-index: 1;
+}
+
+a.slide_btn {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 40px;
+  margin: 0 0.1em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.slide_btn.active,
+.slide_btn:hover {
+  color: var(--bluew);
+  cursor: pointer;
+}
+
+.previous_btn {
+  bottom: 0;
+  left: 3vw;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.next_btn {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 3vw;
+  top: 0;
+  z-index: 2;
+}
+
+.previous_btn,
+.next_btn {
+  cursor: pointer;
+  height: 65px;
+  opacity: 0.5;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -ms-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  width: 65px;
+}
+
+.previous_btn:hover,
+.next_btn:hover {
+  opacity: 1;
+}
+
+.previous_btn::after {
+  content: "현황분석";
+  position: absolute;
+  left: 130%;
+  top: 0;
+  line-height: 6vh;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
+.next_btn::after {
+  content: "상세분석";
+  position: absolute;
+  right: 130%;
+  top: 0;
+  line-height: 6vh;
+  white-space: nowrap;
+  font-size: 1rem;
+}
+
 }
