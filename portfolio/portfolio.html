@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +13,9 @@
     <link rel="stylesheet" href="../css/boslider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Lato:wght@100&family=Poiret+One&family=Roboto:wght@100;300;400;500&display=swap"rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Lato:wght@100&family=Poiret+One&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
     <script src="https://kit.fontawesome.com/308b309426.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
@@ -62,7 +65,7 @@
             <input type="radio" name="slide" id="Slide1" />
             <div class="previous_btn" title="Previous">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" width="6vh" height="6vh" viewBox="-11 -11.5 65 66">
+                    y="0px" width="5vh" height="5vh" viewBox="-11 -11.5 65 66">
                     <g>
                         <g>
                             <path fill="#474544"
@@ -82,7 +85,7 @@
             <div class="previous_btn" title="Previous">
 
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" width="6vh" height="6vh" viewBox="-11 -11.5 65 66">
+                    y="0px" width="5vh" height="5vh" viewBox="-11 -11.5 65 66">
                     <g>
                         <g>
                             <path fill="#474544"
@@ -104,7 +107,7 @@
             <div class="next_btn" title="Next">
 
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" width="6vh" height="6vh" viewBox="-11 -11.5 65 66">
+                    y="0px" width="5vh" height="5vh" viewBox="-11 -11.5 65 66">
                     <g>
                         <g>
                             <path fill="#474544"
@@ -120,7 +123,7 @@
             <input type="radio" name="slide" id="Slide5" />
             <div class="next_btn" title="Next">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-                    y="0px" width="6vh" height="6vh" viewBox="-11 -11.5 65 66">
+                    y="0px" width="5vh" height="5vh" viewBox="-11 -11.5 65 66">
                     <g>
                         <g>
                             <path fill="#474544"
@@ -231,43 +234,44 @@
                         </ul>
                     </div>
                     <li class="moneyNum">₩ 145,433,234</li>
-                    <div class="title_mar1">
-                        <ul class="title_horizon1 clear">
-                            <li>종합 평균</li>
-                            <li>예•적금</li>
-                            <li>주식•ETF</li>
-                            <li>가상화폐</li>
 
-                        </ul>
-                        <div class="button_box">
-                            <div class="button r" id="button-1">
-                                <input type="checkbox" class="checkbox" />
-                                <div class="knobs"></div>
-                                <div class="layer"></div>
-                            </div>
-                            <div class="button r" id="button-1">
-                                <input type="checkbox" class="checkbox" />
-                                <div class="knobs"></div>
-                                <div class="layer"></div>
-                            </div>
-                        </div>
-                        <div class="period_button">
-                            <input type="radio" name="button" id="Graph_bt" />
-                            <label for="Graph_bt" id="gr_bt">일간</label>
-                            <input type="radio" name="button" id="Graph_bt1" />
-                            <label for="Graph_bt1" id="gr_bt">주간</label>
-                            <input type="radio" name="button" id="Graph_bt2" checked="checked" />
-                            <label for="Graph_bt2" id="gr_bt">월간</label>
-                            <input type="radio" name="button" id="Graph_bt3" />
-                            <label for="Graph_bt3" id="gr_bt">연간</label>
-                        </div>
-
-                    </div>
                     <div class="graph">
                         <div class="line-chart-block block">
                             <div class="line-chart">
+
+
+                                <input type="radio" name="button" id="cate_bt" checked="checked" />
+                                <label for="cate_bt" id="ca_bt">종합 평균</label>
+                                <input type="radio" name="button" id="cate_bt1" />
+                                <label for="cate_bt1" id="ca_bt">예•적금</label>
+                                <input type="radio" name="button" id="cate_bt2" />
+                                <label for="cate_bt2" id="ca_bt">주식•ETF</label>
+                                <input type="radio" name="button" id="cate_bt3" />
+                                <label for="cate_bt3" id="ca_bt">가상화폐</label>
+
+                                <input type="checkbox" name="toggle1" id="toggle1" checked="checked">
+                                <label for="toggle1">상세</label>
+                                <input type="checkbox" name="toggle2" id="toggle2" checked="checked">
+                                <label for="toggle2">평균</label>
+
+                                <input type="radio" name="button" class="gr_bt" id="Graph_bt" />
+                                <label for="Graph_bt" id="gr_bt">일간</label>
+                                <input type="radio" name="button" class="gr_bt" id="Graph_bt1" />
+                                <label for="Graph_bt1" id="gr_bt">주간</label>
+                                <input type="radio" name="button" class="gr_bt" id="Graph_bt2" checked="checked" />
+                                <label for="Graph_bt2" id="gr_bt">월간</label>
+                                <input type="radio" name="button" class="gr_bt" id="Graph_bt3" />
+                                <label for="Graph_bt3" id="gr_bt">연간</label>
+
+
+                                <div class="avg_graph"></div>
+                                <div class="avg_graph1"></div>
+                                <div class="avg_graph2"></div>
+                                <div class="avg_graph3"></div>
                                 <div class="bh"></div>
-                                
+                                <div class="point_bl">
+                                    <div class="point"></div>
+                                </div>
                                 <div class='grafico'>
                                     <ul class='eje-y'>
                                         <li data-ejeY='6,500'></li>
@@ -277,23 +281,27 @@
                                         <li data-ejeY='4,500'></li>
                                         <li data-ejeY='4,000'></li>
                                         <li data-ejeY='3,500'></li>
-                                        <li data-ejeY='3,500'></li>
                                     </ul>
-                                    <ul class='eje-x'>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                        <li></li>
-                                    </ul>
+                                    <div class="horizon_x">
+                                        <ul class='eje-x'>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                            <li></li>
+                                        </ul>
+                                    </div>
                                     <div class="graph_value">
                                         <!-- <svg version="1.2" xmlns="http://www.w3.org/2000/svg"
                                             xmlns:xlink="http://www.w3.org/1999/xlink" class="quiz-graph">
@@ -320,26 +328,9 @@
                                                     1400,150
 
                                                     "></polyline> -->
-                                                    
-                                                    <svg width="664" height="124" viewBox="0 0 664 124" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M522.257 8.05364C517.047 2.88414 508.593 3.04943 503.589 8.41864L495.987 16.5769C492.595 20.2164 487.779 22.1875 482.809 21.9707L447.993 20.4519C445.139 20.3274 442.311 21.1437 439.878 22.7302C432.695 27.4148 417.441 36.8216 405.091 40.6428C393.301 44.291 386.07 43.5766 374.059 42.39C373.559 42.3407 373.051 42.2905 372.534 42.2397C365.576 41.557 359.519 39.9024 353.961 38.3841C352.529 37.9932 351.131 37.6113 349.759 37.2573C343.002 35.5139 336.744 34.397 329.592 35.7161C322.931 36.945 316.514 41.4321 311.456 46.0754C306.441 50.6788 302.995 55.2178 302.266 56.2049C302.184 56.3159 302.118 56.412 302.032 56.5405C301.117 57.9178 295.666 66.0871 289.483 74.6357C286.393 78.9085 283.106 83.2947 280.103 86.9816C277.144 90.6149 274.329 93.7357 272.2 95.3322C270.9 96.3076 269.252 96.8334 267.521 97.0988C265.773 97.3668 263.795 97.3908 261.705 97.251C257.527 96.9715 252.664 96.0191 247.838 94.804C238.172 92.3702 228.351 88.8032 223.841 87.0913C221.892 86.3512 220.156 85.2458 218.639 83.8887C216.078 81.5963 211.393 77.4837 206.412 73.5017C201.38 69.4799 196.214 65.7307 192.644 64.0397C191.531 63.5122 190.114 63.5702 188.264 64.4224C186.407 65.278 184.379 66.8239 182.325 68.7903C178.231 72.7103 174.436 77.9105 172.198 81.2126C170.673 83.4621 168.697 85.4401 166.292 86.8641L138.556 103.287C133.585 106.23 127.459 106.448 122.292 103.864L108.253 96.8446C104.145 94.7906 99.2577 95.0567 95.3969 97.5447L82.1902 106.056C80.6095 107.074 78.8707 107.824 77.0446 108.273L46.9969 115.67L25.662 121.359C24.7971 121.59 23.9153 121.752 23.0249 121.843L2.20524 123.99C1.1065 124.103 0.123966 123.304 0.0106998 122.205C-0.102566 121.106 0.696324 120.124 1.79507 120.011L22.6148 117.864C23.2957 117.794 23.9699 117.67 24.6313 117.494L45.9848 111.8C45.9972 111.796 46.0097 111.793 46.0221 111.79L76.0885 104.389C77.4849 104.045 78.8146 103.472 80.0234 102.693L93.2301 94.1824C98.2788 90.9289 104.67 90.5808 110.042 93.2669L124.08 100.286C128.032 102.262 132.716 102.096 136.518 99.8449L164.254 83.4222C166.087 82.3369 167.648 80.796 168.887 78.9686C171.169 75.6002 175.154 70.1188 179.559 65.9011C181.755 63.7985 184.155 61.9116 186.59 60.7895C189.033 59.6641 191.77 59.1998 194.356 60.4247C198.399 62.3395 203.895 66.3693 208.909 70.3772C213.973 74.4249 218.719 78.5924 221.307 80.908C222.496 81.972 223.816 82.8032 225.261 83.3517C229.724 85.0461 239.375 88.5482 248.815 90.925C253.542 92.1152 258.14 93.0035 261.972 93.2599C263.888 93.3881 265.553 93.3539 266.915 93.145C268.295 92.9334 269.225 92.5636 269.8 92.1322C271.487 90.867 274.023 88.1119 277.001 84.4556C279.936 80.8528 283.172 76.5355 286.242 72.2915C292.379 63.8063 297.796 55.688 298.701 54.3267C298.813 54.1577 298.918 54.0055 299.048 53.8291C299.855 52.7358 303.474 47.9732 308.751 43.1288C313.984 38.3244 321.085 33.2179 328.867 31.7825C336.889 30.3028 343.833 31.5972 350.759 33.3842C352.228 33.7632 353.69 34.1623 355.162 34.5638C360.686 36.0708 366.336 37.6124 372.925 38.2589C373.395 38.305 373.857 38.3505 374.311 38.3953C386.375 39.5852 392.898 40.2286 403.909 36.8216C415.659 33.1857 430.487 24.0793 437.693 19.3798C440.785 17.3632 444.432 16.2928 448.167 16.4557L482.983 17.9745C486.784 18.1403 490.467 16.633 493.06 13.8498L500.663 5.69157C507.207 -1.32971 518.261 -1.54586 525.074 5.21425L555.192 35.0997C561.004 40.8661 570.634 39.8902 575.171 33.0753L583.866 20.0122C588.297 13.3553 596.769 10.6868 604.216 13.6023L611.557 16.4769C614.328 17.5618 617.388 17.6632 620.225 16.7641L660.625 3.95879C661.678 3.62505 662.802 4.20808 663.136 5.26102C663.47 6.31397 662.887 7.4381 661.834 7.77183L621.433 20.5771C617.724 21.7529 613.723 21.6204 610.099 20.2015L602.757 17.327C597.063 15.0975 590.585 17.1381 587.196 22.2287L578.5 35.2917C572.568 44.2036 559.974 45.4797 552.375 37.9391L522.257 8.05364Z" fill="url(#paint0_linear_37143_56089-222959)"/>
-                                                        <defs>
-                                                        <linearGradient id="paint0_linear_37143_56089-222959" x1="641.713" y1="-1.57316" x2="543.268" y2="335.378" gradientUnits="userSpaceOnUse">
-                                                        <stop stop-color="#979797" stop-opacity="0"/>
-                                                        <stop offset="0.146289" stop-color="#979797" stop-opacity="0"/>
-                                                        <stop offset="0.254052" stop-color="#979797" stop-opacity="0"/>
-                                                        <stop offset="0.328822" stop-color="white" stop-opacity="0.13"/>
-                                                        <stop offset="0.350277" stop-color="white"/>
-                                                        <stop offset="0.777721" stop-color="white"/>
-                                                        <stop offset="0.83785" stop-color="white" stop-opacity="0"/>
-                                                        <stop offset="1" stop-color="#5082E3" stop-opacity="0.01"/>
-                                                        <stop offset="1" stop-color="white" stop-opacity="0.01"/>
-                                                        </linearGradient>
-                                                        </defs>
-                                                        </svg>
-                                                        
-                                                        
-                                        </svg>
+
+
+                                        <!--                                         
                                         <span data-valor='25'>
                                             <span data-valor='8'>
                                                 <span data-valor='13'>
@@ -361,7 +352,7 @@
                                                     </span>
                                                 </span>
                                             </span>
-                                        </span>
+                                        </span> -->
                                     </div>
                                 </div>
 
@@ -373,7 +364,7 @@
                                 포트폴리오 리포트
                             </h3>
                             <p>
-                                
+
                                 sia 님은 원금손실 등 투자시 발생하는 위험을 피하는 투자자입니다. 자신의 재무능력과 투자위험 간에 균형을 맞추려는 경향이 있기도 합니다. 투자방법으로는
                                 느리더라도꾸준한게 중요하다고 생각합니다. 우량주 및 블루칩 등 안정성이 높은 자산에 집중투자하는 경향이 있습니다. 손실위험을 최소화하는 안정적인 투자를
                                 선호하며, 금융상품이나 종목을 선택할때도 위험이 최소화된 방향으로 투자하려 할 수 있습니다.
