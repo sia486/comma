@@ -80,3 +80,5 @@ $('.slider').each(function () {
     advance();
 });
 
+
+
