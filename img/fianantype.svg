@@ -1,0 +1,19 @@
+<svg width="298" height="298" viewBox="0 0 298 298" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="149" cy="149" r="125.5" stroke="#2790F1" stroke-opacity="0.08" stroke-width="2"/>
+<circle cx="149" cy="149" r="147.5" stroke="#2790F1" stroke-opacity="0.03" stroke-width="2"/>
+<circle cx="149" cy="149" r="108.5" stroke="url(#paint0_angular_18710_66178)" stroke-width="3"/>
+<mask id="mask0_18710_66178" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="39" y="39" width="220" height="220">
+<circle cx="149" cy="149" r="108.81" fill="white" stroke="white" stroke-width="2.38095"/>
+</mask>
+<g mask="url(#mask0_18710_66178)">
+<path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M315.787 207.527C315.787 207.527 278.648 182.09 216.259 203.407C153.87 224.724 7.37461 217.328 7.37461 217.328L24.2871 431.551H302.45L315.787 207.527Z" fill="#2790F1"/>
+<path opacity="0.295596" fill-rule="evenodd" clip-rule="evenodd" d="M-0.0767736 240.753C-0.0767736 240.753 90.8636 180.828 153.253 202.145C215.642 223.462 291.312 214.116 291.312 214.116L291.423 437.276H-79.25L-74.6018 258.804L-0.0767736 240.753Z" fill="#2790F1"/>
+<path opacity="0.85" fill-rule="evenodd" clip-rule="evenodd" d="M11.5 217.574C11.5 217.574 85.0625 199.699 147.451 221.016C209.84 242.333 303 197.125 303 197.125V441.597H24.8375L11.5 217.574Z" fill="#2790F1"/>
+</g>
+<defs>
+<radialGradient id="paint0_angular_18710_66178" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(149 149) rotate(90) scale(110)">
+<stop stop-color="#2790F1"/>
+<stop offset="1" stop-color="#0887FC" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>
