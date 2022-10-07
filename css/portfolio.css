@@ -5,7 +5,7 @@
 }
 
 body {
-  background: var(--bgdark);
+  background: #16191d;
   color: var(--white);
 }
 
@@ -23,7 +23,7 @@ body {
   padding: 0.6% 0;
 }
 
-.portfolio_my::before {
+/* .portfolio_my::before {
   content: "";
   position: absolute;
   left: -10%;
@@ -45,7 +45,7 @@ body {
   border-right: 0.2rem solid;
   border-image: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
   border-image-slice: 1;
-}
+} */
 
 .portfolio_myleft {
   /* width: 100vw; */
@@ -1224,7 +1224,7 @@ a.slide_btn {
   height: 100vh;
   position: relative;
   margin-bottom: 0px;
-  background: rgba(0, 0, 0, 0.5);
+  /* background: rgba(0, 0, 0, 0.5); */
   overflow: hidden;
 }
 
@@ -1301,6 +1301,9 @@ a.slide_btn {
 
 #Slide1:checked~.overflow-wrapper {
   transform: translateX(0%);
+}
+#Slide1:checked~.portfolio_my{
+  opacity: 0.2;
 }
 
 #Slide2:checked~.overflow-wrapper {
@@ -1383,6 +1386,57 @@ a.slide_btn {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.overflow-wrapper::before{
+  content: "";
+  position: absolute;
+  left: 29%;
+  top: 0;
+  width: 6%;
+  height: 100%;
+  background: linear-gradient(to left, #16191d60 0%, #16191d 100%);
+  border-right: 0.2rem solid;
+  border-image: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+  transition: all 0.1s ease-out;
+  z-index: 100;
+  /* backdrop-filter: blur(5px); */
+}
+.overflow-wrapper::after{
+  content: "";
+  position: absolute;
+  right: 29%;
+  top: 0;
+  width: 6%;
+  height: 100%;
+  background: linear-gradient(to right, #16191d60 0%, #16191d 100%);
+  border-left: 0.2rem solid;
+  border-image: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+  transition: all 0.1s ease-out;
+  z-index: 100;
+  /* backdrop-filter: blur(5px); */
+}
+/* .overflow-wrapper::before{
+  left: 35.5%;
+  width: 10%;
+  border-left: 0.2rem solid;
+}
+.overflow-wrapper::after{
+  right: 35.5%;
+  width: 10%;
+  border-right: 0.2rem solid;
+} */
+#Slide1:checked ~ .overflow-wrapper::before{
+  left: 35.5%;
+  border-right: 0;
+  border-left: 0.2rem solid;
+}
+#Slide4:checked ~ .overflow-wrapper::before{
+  left: 35.5%;
+  border-left: 0;
+  border-right: 0.2rem solid;
 }
 
 @media screen and (max-width:2200px) {
