@@ -57,7 +57,7 @@ body {
   width: 90%;
   display: flex;
   margin: 0 auto;
-  /* justify-content: space-evenly; */
+  justify-content:flex-start;
   flex-wrap: wrap;
   column-gap: 1.5%;
 }
@@ -165,20 +165,20 @@ body {
   font-weight: 400;
   opacity: 0.4;
 }
-.left_box1 h3:::before{
+.left_box1 h3::before{
   content: "Annual Profit";
 }
-.left_box2 h3:::before{
+.left_box2 h3::before{
   content: "Income and Outcome";
 }
-.left_box3 h3:::before{
+.left_box3 h3::before{
   content: "Portfolio Balance";
 }
-.left_box4 h3:::before{
+.left_box4 h3::before{
   content: "My Portfolio Type";
 }
-.left_box5 h3:::before{
-  content: "Current Rate of return ";
+.left_box5 h3::before{
+  content: "Current Rate of return";
 }
 [class^='left_box']::after {
   position: absolute;
@@ -210,9 +210,9 @@ body {
 .finantype{
   position: relative;
   left: 50%;
-  top: 40%;
-  width: 65%;
-  height: 65%;
+  top: 41%;
+  width: 70%;
+  height: 70%;
   transform: translateX(-50%) translateY(-50%);
   background-image: url("../img_/finantype.png");
   background-size: contain;
@@ -221,19 +221,178 @@ body {
 }
 .finantype1{
   position: absolute;
-  bottom: 12%;
+  bottom: 6%;
   left: 50%;
   text-align: center;
   transform: translateX(-50%);
   border: 1px solid #fff;
-  padding: 2% 3%;
-  border-radius: 0.5rem;
-  white-space: nowrap;
+  padding: 1.5% 2.5%;
+  border-radius: 0.4rem;
+  white-space: nowrap;font-size: 0.9rem;
 }
 .finantype1 span{
   color: #2790F1;
   text-decoration: underline;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+}
+.portfoltype{
+  position: relative;
+  left: 50%;
+  top: 64%;
+  width: 84%;
+  height: 84%;
+  transform: translateX(-50%) translateY(-50%);
+  background-image: url("../img_/portfoltype.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.portfoltype1{
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  border: 1px solid #fff;
+  padding: 1.5% 2.5%;
+  border-radius: 0.4rem;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+.portfoltype1 span{
+  color: #2790F1;
+  text-decoration: underline;
+}
+.porbalance{
+  position: relative;
+  left: 32%;
+  top: 52%;
+  width: 70%;
+  height: 70%;
+  transform: translateX(-50%) translateY(-50%);
+  background-image: url("../img_/porbalance.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.portbalance1{
+  position: absolute;
+  top: 60%;
+  right: 6%;
+  border: 1px solid #fff;
+  padding: 1.5% 2.5%;
+  border-radius: 0.4rem;
+  font-size: 0.9rem;
+}
+.portbalance1 span{
+  color: #2790F1;
+  text-decoration: underline;
+  
+}
+.incomeoutcome{
+  position: relative;
+  left: 50%;
+  top: 48%;
+  width: 80%;
+  height: 80%;
+  transform: translateX(-50%) translateY(-50%);
+  background-image: url("../img_/incomeoutcome.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.incomeoutcome1{
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  border: 1px solid #fff;
+  padding: 1.5% 2.5%;
+  border-radius: 0.4rem;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+.incomeoutcome1 span{
+  color: #2790F1;
+  text-decoration: underline;
+  
+}
+.annualprofit{
+  position: relative;
+  left: 50%;
+  top: 48%;
+  width: 90%;
+  height: 90%;
+  transform: translateX(-50%) translateY(-50%);
+  background-image: url("../img_/annualprofit.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.annualprofit1{
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  text-align: center;
+  transform: translateX(-50%);
+  border: 1px solid #fff;
+  padding: 1.5% 2.5%;
+  border-radius: 0.4rem;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+#income_bt {
+  /* background:var(--bluew); */
+  position: relative;
+  right: 0;
+  cursor: pointer;
+  padding: 1.2% 0.8% 1.2% 1.8%;
+  margin: 0 1.4% 0 1%;
+  border-bottom: 0.1rem solid;
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 49%, rgba(255, 255, 255, 0) 50%, rgba(240, 240, 240, 0) 51%);
+  border-image-slice: 1;
+  transition: all 0.2s ease-out;
+  z-index: 11;
+  font-size: 0.9rem;
+
+}
+#income_bt::after{
+  content: "|";
+  position: relative;
+  font-size: 1.4rem;
+  opacity: 0.3;
+  left: 2.8%;
+}
+#income_bt:nth-child(8)::after{
+  opacity: 0;
+}
+.in_bt{
+  position: relative;
+}
+#outcome_bt1:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+
+#outcome_bt2:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+
+#outcome_bt3:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+
+#outcome_bt:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+.icomebox{
+  position: relative;
+  top: 9%;
+  left: 0;
 }
 /* .finantype::after{
   content: "현재 목표 수익률 대비 25% 달성";
@@ -250,8 +409,127 @@ body {
   /* width: 100vw; */
   position: relative;
   width: 50%;
+  height: 80vh;
+}
+.rightflex_box{
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  justify-content:flex-end;
+  flex-wrap: wrap;
+  column-gap: 1.5%;
 }
 
+.right_box{
+  position: relative;
+  height: 41vh;
+  border: 0.16rem solid transparent;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.6rem;
+  background-image:linear-gradient(#202328,#202328), 
+  linear-gradient(107.42deg, #414955 1.37%, rgba(44, 50, 59, 0) 97.97%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.right_box1{
+  position: relative;
+  height: 39vh;
+  border: 0.16rem solid transparent;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.6rem;
+  background-image:linear-gradient(#202328,#202328), 
+  linear-gradient(107.42deg, #414955 1.37%, rgba(44, 50, 59, 0) 97.97%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.right_box2{
+  position: relative;
+  height: 44vh;
+  border: 0.16rem solid transparent;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.6rem;
+  background-image:linear-gradient(#202328,#202328), 
+  linear-gradient(107.42deg, #414955 1.37%, rgba(44, 50, 59, 0) 97.97%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.right_box3{
+  position: relative;
+  height: 36vh;
+  border: 0.16rem solid transparent;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.6rem;
+  background-image:linear-gradient(#202328,#202328), 
+  linear-gradient(107.42deg, #414955 1.37%, rgba(44, 50, 59, 0) 97.97%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.right_box4{
+  position: relative;
+  height: 34vh;
+  border: 0.16rem solid transparent;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.6rem;
+  background-image:linear-gradient(#202328,#202328), 
+  linear-gradient(107.42deg, #414955 1.37%, rgba(44, 50, 59, 0) 97.97%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.right_box5{
+  position: relative;
+  height: 46vh;
+  border: 0.16rem solid transparent;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.6rem;
+  background-image:linear-gradient(#202328,#202328), 
+  linear-gradient(107.42deg, #414955 1.37%, rgba(44, 50, 59, 0) 97.97%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.rightflex_box h3{
+  position: relative;
+  left: 5%;
+  top: 5%;
+  font-size: 1rem;
+  font-weight: 600;
+
+}
+.rightflex_box h3::before{
+  content: "Total Seed";
+  position: absolute;
+  left: 0;
+  top: 120%;
+  font-size: 0.8rem;
+  font-weight: 400;
+  opacity: 0.4;
+}
+.right_box1 h3::before{
+  content: "Total profit";
+}
+.right_box2 h3::before{
+  content: "Trading volume, Profit - Information";
+}
+.right_box3 h3::before{
+  content: "Profit Transition Information";
+}
+.right_box4 h3::before{
+  content: "View Traffic";
+}
+.right_box5 h3::before{
+  content: "Investment profit / loss";
+}
+[class^='right_box']::after {
+  position: absolute;
+  top: 5%;
+  right: 4%;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  background-image: url("../img/Help.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 .title_horizon {
   position: relative;
   margin: 1% 0 3% 0;
@@ -1393,9 +1671,9 @@ a.slide_btn {
   position: absolute;
   left: 29%;
   top: 0;
-  width: 6%;
+  width: 6.5%;
   height: 100%;
-  background: linear-gradient(to left, #16191d60 0%, #16191d 100%);
+  background: linear-gradient(to left, #16191d99 0%, #16191d 70%);
   border-right: 0.2rem solid;
   border-image: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
   border-image-slice: 1;
@@ -1408,9 +1686,9 @@ a.slide_btn {
   position: absolute;
   right: 29%;
   top: 0;
-  width: 6%;
+  width: 6.5%;
   height: 100%;
-  background: linear-gradient(to right, #16191d60 0%, #16191d 100%);
+  background: linear-gradient(to right, #16191d99 0%, #16191d 70%);
   border-left: 0.2rem solid;
   border-image: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
   border-image-slice: 1;
@@ -1433,8 +1711,8 @@ a.slide_btn {
   border-right: 0;
   border-left: 0.2rem solid;
 }
-#Slide4:checked ~ .overflow-wrapper::before{
-  left: 35.5%;
+#Slide4:checked ~ .overflow-wrapper::after{
+  right: 35.5%;
   border-left: 0;
   border-right: 0.2rem solid;
 }
