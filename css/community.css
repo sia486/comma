@@ -745,7 +745,7 @@ header{
   list-style: none;
 }
 .left_menu li{
-  margin-bottom: 1%;
+  margin-bottom: 12%;
   font-size: 1rem;
 }
 .margin1{
@@ -753,12 +753,12 @@ header{
 }
 .left_menu_bottom{
   list-style: none;
-  margin-top: 3%;
+  margin-top: 26%;
   font-size: 0.7rem;
 }
 .left_menu_bottom li{
   float: left;
-  margin-right: 0.5%;
+  margin-right: 7%;
 }
 
 a {
@@ -766,11 +766,11 @@ a {
 }
 
 .calendar-wrapper {
-  width:20rem;
+  width:18rem;
   height: fit-content;
-  border-radius:5px;
-  background:@calendar-bg;
-  
+  padding-bottom: 1.8rem;
+  margin-bottom: 1.3rem;
+  border-bottom: 0.1rem solid #ffffff60;
 }
 table {
   clear:both;
@@ -783,41 +783,40 @@ table {
 td {
   height:2.4rem;
   vertical-align:middle;
-  border-right:1px solid @calendar-border;
-  border-top:1px solid @calendar-border;
+  /* border-right:1px solid @calendar-border;
+  border-top:1px solid @calendar-border; */
   width:100% / 7;
-  
-}
-td.not-current {
-  color:@calendar-fade-color;
+  font-size:0.86rem;
+  color: #ffffff99;
 }
 
 td.today {
   font-weight:500;
-  color:@calendar-standout;
-  font-size:1.2em;
+  color:#2790F1;
+  font-size:1em;
+  border: 1px solid #2790F1;
 }
 .days{
-  border-bottom: 0.1rem solid #fff;
+  border-bottom: 0.05rem solid #fff;
 }
 
 #btnPrev {
   right: 3rem;
   float:right;
-  &:before {
+  /* &:before {
     content:'\f104';
     font-family:FontAwesome;
     padding-right:4px;
-  }
+  } */
 }
 #btnNext {
   right: 0;
   float:right;
-  &:after {
+  /* &:after {
     content:'\f105';
     font-family:FontAwesome;
     padding-left:4px;
-  }
+  } */
 }
 #btnPrev, #btnNext {
   line-height: 2.4rem;
@@ -831,23 +830,381 @@ td.today {
   font-family:"Roboto Condensed", sans-serif;
   text-transform:uppercase;
   transition:all 0.3s ease;
-  &:hover {
+  /* &:hover {
     color:@calendar-standout;
     font-weight:bold;
-  }
+  } */
 }
 
 tr td{
   text-align: center;
 }
 tr td:first-child{
-  color: #FF000080;
+  color: #fa2d2d;
 }
 
 tr:nth-child(1) td:first-child{
   color: #fff;
   text-align: left;
+  font-size: 1rem;
 }
 .days:nth-child(1) td:first-child{
   text-align: center;
+  color: #ffffff;
 }
+.days:nth-child(1) td:nth-child(2){
+  color: #ffffff;
+}
+.days:nth-child(1) td:nth-child(3){
+  color: #ffffff;
+}
+.days:nth-child(1) td:nth-child(4){
+  color: #ffffff;
+}
+.days:nth-child(1) td:nth-child(5){
+  color: #ffffff;
+}
+.days:nth-child(1) td:nth-child(6){
+  color: #ffffff;
+}
+.days:nth-child(1) td:nth-child(7){
+  color: #ffffff;
+}
+#date{
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+#day{
+  margin-top: 0.6rem;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+#sche{
+  margin: 6% 0 12% 0;
+  padding: 3% 0 3% 4%;
+  border-left: 0.1rem solid;
+  border-image: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+.sche{
+  font-size: 0.86rem;
+}
+.sche:last-child{
+  margin-top: 2%;
+  font-size: 0.86rem;
+  color: #ffffff60;
+}
+.follower{
+  font-size: 0.86rem;
+  line-height: 2rem;
+  padding: 0 5% 1.3rem;
+  margin-bottom: 1.8rem;
+  border-bottom: 0.1rem solid #ffffff60;
+}
+.follower::after{
+  position: absolute;
+  content: "";
+  right: 1rem;
+  width: 5rem;
+  height: 2rem;
+  background-image: url("../img_/follower.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.subscribe{
+  font-size: 0.86rem;
+  padding: 0 5% 3.6rem;
+  margin-bottom: 1.8rem;
+  border-bottom: 0.1rem solid #ffffff60;
+}
+.count{
+  margin-bottom: 1.5rem;
+}
+.listbox{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+  
+}
+.listbox .list{
+  flex: 1 1 30%;
+  position: relative;
+
+}
+.listbox .list::after{
+  position: absolute;
+  top: 3.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  text-align: center;
+}
+.listbox .list:nth-child(1){
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../img_/list.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.listbox .list:nth-child(1)::after{
+  content: "당충전";
+}
+.listbox .list:nth-child(2){
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../img_/list1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.listbox .list:nth-child(2)::after{
+  content: "Ackerman";
+}
+.listbox .list:nth-child(3){
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../img_/list2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.listbox .list:nth-child(3)::after{
+  content: "멘동샤";
+}
+.listbox .list:nth-child(4){
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../img_/list3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.listbox .list:nth-child(4)::after{
+  content: "잼많은땅콩";
+}
+.listbox .list:nth-child(5){
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../img_/list4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.listbox .list:nth-child(5)::after{
+  content: "오이12";
+}
+.listbox .list:nth-child(6){
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../img_/list5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.listbox .list:nth-child(6)::after{
+  content: "joniwoni";
+}
+.recentupload{
+  font-size: 0.86rem;
+  padding: 0 5% 1.8rem;
+  margin-bottom: 1.8rem;
+  border-bottom: 0.1rem solid #ffffff60;
+}
+.mar{
+  margin-bottom: 1.5rem;
+}
+.recent_listbox{
+  position: relative;
+}
+.recent_listbox .list{
+  width: 3rem;
+  height: 3rem;
+  background-image: url("../img_/relist.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 0.9rem;
+}
+.recent_listbox .list:last-child{
+  margin-bottom: 0;
+}
+.recent_listbox .list::before{
+  position: absolute;
+  content: "오리온";
+  left: 4.4rem;
+  line-height: 1.6rem;
+}
+.recent_listbox .list:nth-child(2):before{
+  content: "앙꼬삐약";
+}
+.recent_listbox .list:nth-child(3):before{
+  content: "세글자임";
+}
+.recent_listbox .list:nth-child(4):before{
+  content: "Zno";
+}
+.recent_listbox .list:nth-child(5):before{
+  content: "오기뚜밥";
+}
+.recent_listbox .list::after{
+  position: relative;
+  content: "미장 차트를  기술적 관점에...";
+  top: 1.8rem;
+  left: 4.4rem;
+  font-size: 0.8rem;
+  color: #ffffff60;
+  white-space: nowrap;
+}
+.recent_listbox .list:nth-child(2):after{
+  content: "국내 주식시장이 하락세로...";
+}
+.recent_listbox .list:nth-child(2):after{
+  content: "테슬라의 경영진 급여 수준...";
+}
+.recent_listbox .list:nth-child(2):after{
+  content: "투자자분들 적립식으로 차...";
+}
+.recent_listbox .list:nth-child(2):after{
+  content: "전체, 세부 공정 파트너쉽...";
+}
+.recent_listbox .list:nth-child(2){
+  background-image: url("../img_/relist1.png");
+}
+.recent_listbox .list:nth-child(3){
+  background-image: url("../img_/relist2.png");
+}
+.recent_listbox .list:nth-child(4){
+  background-image: url("../img_/relist3.png");
+}
+.recent_listbox .list:nth-child(5){
+  background-image: url("../img_/relist4.png");
+}
+.recentupload1{
+  font-size: 0.86rem;
+  padding: 0 5% 1rem;
+  margin-bottom: 1.3rem;
+  border-bottom: 0.1rem solid #ffffff60;
+}
+.recent_listbox1{
+  position: relative;
+}
+.recent_listbox1 .list{
+  width: 95%;
+  height: 15rem;
+  background-image: url("../img_/uplist.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 0.9rem;
+  border-bottom: 0.1rem solid #ffffff30;
+}
+.recent_listbox1 .list:last-child{
+  background-image: url("../img_/uplist1.png");
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+.recent_listbox1 .list:nth-child(1)::before{
+  position: absolute;
+  content: "Photo";
+}
+.recent_listbox1 .list:nth-child(1)::after{
+  position: absolute;
+  content: "5";
+  right: 1rem;
+}
+.recent_listbox1 .list:nth-child(2)::before{
+  position: absolute;
+  content: "Video";
+}
+.recent_listbox1 .list:nth-child(2)::after{
+  position: absolute;
+  content: "3";
+  right: 1rem;
+}
+.searchbar {
+  /* text-align: center; */
+  overflow-y: hidden;
+}
+
+
+.inner {
+  position: relative;
+  width: 40vw;
+  height: 2.6rem;
+  margin: 0 0 8rem 0;
+  border: 0.1rem solid #ebebeb;
+  border-radius: 10rem;
+  transition: all 0.1s ease-out;
+  z-index: 10;
+}
+
+input {
+  position: absolute;
+  width: 80%;
+  left: 3rem;
+  height: 2.6rem;
+  background-color:#202328;
+  border: 0;
+  font-size: 1rem;
+  color: #2790F1;
+  z-index: 10;
+}
+input:focus{
+  outline: none;
+}
+.inner ul{
+  position: relative;
+  left: 1rem;
+  top: -90%;
+  z-index: 9;
+  width: fit-content;
+}
+.category li{
+  list-style-type: none;
+}
+
+.searchbar:hover .category{
+  top: 140%;
+}
+.searchbar:hover .inner{
+  border-top: 0.1rem solid #ebebeb;
+  border-left: 0.1rem solid #ebebeb;
+  border-right: 0.1rem solid #ebebeb;
+  border-bottom: 0;
+}
+.inner:hover{
+  border: 0.1rem solid #2790F1;
+}
+.searching {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-46%);
+  color: #ebebeb;
+}
+
+i:hover {
+  cursor: pointer;
+}
+
+.icon_ect {
+  position: absolute;
+  right: 1.1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff90;
+}
+
+.fa-keyboard {
+  margin-right: 10px;
+  color: #ffffff99;
+}
+.category li{
+  margin-bottom: 10%;
+  width: 10rem;
+  padding: 0 0 0.6rem 0;
+  border-bottom: 0.1rem solid #ffffff60;
+}
+

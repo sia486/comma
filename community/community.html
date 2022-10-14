@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="../css/boslider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Lato:wght@100&family=Poiret+One&family=Roboto:wght@100;300;400;500&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Lato:wght@100&family=Poiret+One&family=Roboto:wght@100;300;400;500&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/308b309426.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
@@ -45,7 +46,7 @@
                     <li><a href="#contact"></a></li>
                     <li><a href="#contact"></a></li>
                 </ul>
-                
+
                 <input type="radio" name="button" id="cate_bt" checked="checked" />
                 <label for="cate_bt" id="ca_bt">•</label>
                 <input type="radio" name="button" id="cate_bt1" />
@@ -180,18 +181,18 @@
 
                 </div>
             </div>
-            
+
         </div>
     </header>
 
     <div class="framecontainer">
         <div class="leftbox">
             <ul class="left_menu">
-                <li>최근 인기 있는 커뮤니티</li>
-                <li>방문한 커뮤니티</li>
-                <li>최근 인기 있는 사용자</li>
-                <li>트렌드</li>
-                <li>재테크 팁</li>
+                <li><a href="#">최근 인기 있는 커뮤니티</a></li>
+                <li><a href="#">방문한 커뮤니티</a></li>
+                <li><a href="#">최근 인기 있는 사용자</a></li>
+                <li><a href="#">트렌드</a></li>
+                <li><a href="#">재테크 팁</a></li>
             </ul>
             <ul class="left_menu_bottom">
                 <li>개발자</li>
@@ -200,15 +201,74 @@
             </ul>
         </div>
         <div class="centerbox">
-
+            <div class="searchbar">
+                <div class="inner">
+                    <input type="search" placeholder="커뮤니티 검색">
+                    <div class="searching">
+                        <img src="../img/search.svg" alt="">
+                    </div>
+                    <div class="icon_ect">
+                        <i class="fas fa-keyboard"></i>
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <ul class="category">
+                        <li><a href="#">Microsoft</a></li>
+                        <li><a href="#">Tesla</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="rightbox">
-            <div class="calendar-wrapper">
-                <button id="btnNext" type="button">Next</button>
-                <button id="btnPrev" type="button">Prev</button>
-                <div id="divCal"></div>
-              </div>
-              
+            <div class="datebox">
+                <span id="date"></span>
+                <div id="day"></div>
+                <div id="sche">
+                    <div class="sche">Federal Reserve issues FOMC statement</div>
+                    <div class="sche">연방준비제도이사회 FOMC 성명</div>
+                </div>
+                <div class="calendar-wrapper">
+                    <button id="btnNext" type="button">Next</button>
+                    <button id="btnPrev" type="button">Prev</button>
+                    <div id="divCal"></div>
+                </div>
+
+                <div class="follower">최근에 추가된 팔로워</div>
+
+                <div class="subscribe">
+                    <div class="count">구독자</div>
+
+                    <div class="listbox">
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                    </div>
+                </div>
+
+                <div class="recentupload">
+                    <div class="mar">최근에 의견 업로드 한 사용자</div>
+
+                    <div class="recent_listbox">
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                    </div>
+                </div>
+
+                <div class="recentupload1">
+                    <div class="mar">최근 업로드</div>
+
+                    <div class="recent_listbox1">
+                        <div class="list"></div>
+                        <div class="list"></div>
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </body>

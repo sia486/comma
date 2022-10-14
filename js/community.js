@@ -245,3 +245,13 @@
   function getId(id) {
     return document.getElementById(id);
   }
+
+  let today = new Date();   
+
+let year = today.getFullYear();
+let month = today.getMonth() + 1; 
+let date = today.getDate(); 
+var week = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday:', 'Thursday:', 'Friday', 'Saturday');
+
+document.getElementById('date').innerHTML =year + ' / ' + month + ' / ' + date
+document.getElementById('day').innerHTML =week[today.getDay()]
