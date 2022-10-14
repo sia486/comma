@@ -1123,9 +1123,14 @@ tr:nth-child(1) td:first-child{
   content: "3";
   right: 1rem;
 }
+.centerbox{
+  position: relative;
+}
 .searchbar {
   /* text-align: center; */
-  overflow-y: hidden;
+  overflow: hidden;
+  position: relative;
+  top: -0.8%;
 }
 
 
@@ -1133,16 +1138,17 @@ tr:nth-child(1) td:first-child{
   position: relative;
   width: 40vw;
   height: 2.6rem;
-  margin: 0 0 8rem 0;
+  margin: 0 0 0 0;
   border: 0.1rem solid #ebebeb;
   border-radius: 10rem;
-  transition: all 0.1s ease-out;
+  background-color: #202328;
+  /* transition: all 0.05s ease-out; */
   z-index: 10;
 }
 
 input {
   position: absolute;
-  width: 80%;
+  width: 88.5%;
   left: 3rem;
   height: 2.6rem;
   background-color:#202328;
@@ -1150,32 +1156,23 @@ input {
   font-size: 1rem;
   color: #2790F1;
   z-index: 10;
+  overflow: hidden;
 }
 input:focus{
   outline: none;
 }
 .inner ul{
   position: relative;
-  left: 1rem;
-  top: -90%;
+  left: 3rem;
+  top: -100%;
   z-index: 9;
-  width: fit-content;
+  width: 86.5%;
+  transition: all 0.1s ease-out;
+  opacity: 0;
+
 }
 .category li{
   list-style-type: none;
-}
-
-.searchbar:hover .category{
-  top: 140%;
-}
-.searchbar:hover .inner{
-  border-top: 0.1rem solid #ebebeb;
-  border-left: 0.1rem solid #ebebeb;
-  border-right: 0.1rem solid #ebebeb;
-  border-bottom: 0;
-}
-.inner:hover{
-  border: 0.1rem solid #2790F1;
 }
 .searching {
   position: absolute;
@@ -1183,6 +1180,7 @@ input:focus{
   top: 50%;
   transform: translateY(-46%);
   color: #ebebeb;
+  background-color: #202328;
 }
 
 i:hover {
@@ -1202,9 +1200,313 @@ i:hover {
   color: #ffffff99;
 }
 .category li{
-  margin-bottom: 10%;
-  width: 10rem;
-  padding: 0 0 0.6rem 0;
+  margin-bottom: 1.5%;
+  width: 98%;
+  padding: 0 0 0.3rem 0;
+  /* border-bottom: 0.1rem solid #ffffff60; */
+  line-height: 2rem;
+}
+.category li::before{
+  position: absolute;
+  left: 0;
+  width: 2rem;
+  height: 2rem;
+  content: "";
+  background-image: url("../img_/tesla.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.category li:last-child::before{
+  background-image: url("../img_/maso.png");
+}
+.searchbar:hover .category{
+  top: 140%;
+  opacity: 1;
+}
+.searchbar:hover input{
   border-bottom: 0.1rem solid #ffffff60;
 }
+.searchbar:hover .inner{
+  border-radius: 0.5rem;
+  padding-bottom: 7.5rem;
+  margin: 0 0 0 0;
+}
+.searchbar:hover .icon_ect{
+  top: 0;
+  transform: translateY(59%);
+}
+.searchbar:hover .searching{
+  top: 0;
+  transform: translateY(37%);
+}
+.inner:hover{
+  border: 0.1rem solid #2790F1;
+}
+.recent_comm {
+  width: 100%;
+  position: absolute;
+  top: 4.5%;
+  font-size: 1rem;
 
+
+}
+.recent_comm1 {
+  width: 100%;
+  position: absolute;
+  top: 19%;
+  font-size: 1rem;
+}
+.recent_comm2 {
+  width: 100%;
+  position: absolute;
+  top: 33%;
+  font-size: 1rem;
+}
+.recent_comm ul{
+  margin-top: 3%;
+  padding-left: 0;
+  white-space: nowrap;
+  overflow-x: scroll;
+  height: 11rem;
+}
+.recent_comm1 ul{
+  margin-top: 3%;
+  padding-left: 0;
+  white-space: nowrap;
+  overflow-x: scroll;
+  height: 9rem;
+}
+.recent_comm2 ul{
+  margin-top: 3%;
+  padding-left: 0;
+  white-space: nowrap;
+  overflow-x: scroll;
+  height: 11rem;
+}
+.recent_comm ul li{
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 2%;
+}
+.recent_comm1 ul li{
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 2%;
+}
+.recent_comm2 ul li{
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 2%;
+}
+.recent_comm ul li{
+  width: 6.5rem;
+  height: 6.5rem;
+  background-image: url("../img_/nvidia.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.recent_comm ul li::before{
+  position: relative;
+  top: 110%;
+  content: "엔비디아";
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: block;
+  text-align:left
+}
+.recent_comm ul li::after{
+  position: relative;
+  top: 115%;
+  content: "$198.91 ▼";
+  color: #F53D26;
+  font-size: 0.9rem;
+  display: block;
+  text-align:left
+}
+.recent_comm ul li:nth-child(2):before{
+  content: "애플";
+}
+.recent_comm ul li:nth-child(2):after{
+  content: "$164.22 ▲";
+  color: #5CFFC4;
+}
+.recent_comm ul li:nth-child(3):before{
+  content: "마이크로소프트";
+}
+.recent_comm ul li:nth-child(3):after{
+  content: "$286.40 ▲";
+}
+.recent_comm ul li:nth-child(4):before{
+  content: "펩시";
+}
+.recent_comm ul li:nth-child(4):after{
+  content: "$170.41 ▲";
+  color: #5CFFC4;
+}
+.recent_comm ul li:nth-child(5):before{
+  content: "현대차";
+}
+.recent_comm ul li:nth-child(5):after{
+  content: "$18,800 ▲";
+  color: #5CFFC4;
+}
+.recent_comm ul li:nth-child(6):before{
+  content: "포스코인터내셔널";
+}
+.recent_comm ul li:nth-child(6):after{
+  content: "₩24,300 ▼";
+}
+.recent_comm ul li:nth-child(7):before{
+  content: "맥도날드";
+}
+.recent_comm ul li:nth-child(7):after{
+  content: "$250.78 ▲";
+  color: #5CFFC4;
+}
+.recent_comm ul li:nth-child(8):before{
+  content: "넷플릭스";
+}
+.recent_comm ul li:nth-child(8):after{
+  content: "$180.97 ▼";
+}
+.recent_comm ul li:nth-child(9):before{
+  content: "스타벅스";
+}
+.recent_comm ul li:nth-child(9):after{
+  content: "$76.52 ▼";
+}
+.recent_comm ul li:nth-child(10):before{
+  content: "애플";
+}
+.recent_comm ul li:nth-child(10):after{
+  content: "$164.22 ▲";
+  color: #5CFFC4;
+}
+.recent_comm ul li:nth-child(2){
+  background-image: url("../img_/aapl.png");
+}
+.recent_comm ul li:nth-child(3){
+  background-image: url("../img_/maicro.png");
+}
+.recent_comm ul li:nth-child(4){
+  background-image: url("../img_/pepsi.png");
+}
+.recent_comm ul li:nth-child(5){
+  background-image: url("../img_/hyundai.png");
+}
+.recent_comm ul li:nth-child(6){
+  background-image: url("../img_/posco.png");
+}
+.recent_comm ul li:nth-child(7){
+  background-image: url("../img_/mac.png");
+}
+.recent_comm ul li:nth-child(8){
+  background-image: url("../img_/netflix.png");
+}
+.recent_comm ul li:nth-child(9){
+  background-image: url("../img_/starbucks.png");
+}
+.recent_comm1 ul li{
+  width: 5.2rem;
+  height: 5.2rem;
+  background-image: url("../img_/adobe.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.recent_comm1 ul li:nth-child(2){
+  background-image: url("../img_/nike.png");
+}
+.recent_comm1 ul li:nth-child(3){
+  background-image: url("../img_/gogl.png");
+}
+.recent_comm1 ul li:nth-child(4){
+  background-image: url("../img_/kia.png");
+}
+.recent_comm1 ul li:nth-child(5){
+  background-image: url("../img_/meta.png");
+}
+.recent_comm1 ul li:nth-child(6){
+  background-image: url("../img_/naver.png");
+}
+.recent_comm1 ul li:nth-child(7){
+  background-image: url("../img_/tesla.png");
+}
+.recent_comm1 ul li:nth-child(8){
+  background-image: url("../img_/intel.png");
+}
+.recent_comm1 ul li:nth-child(9){
+  background-image: url("../img_/woori.png");
+}
+.recent_comm1 ul li:nth-child(10){
+  background-image: url("../img_/kt.png");
+}
+.recent_comm1 ul li:nth-child(11){
+  background-image: url("../img_/tsmc.png");
+}
+.recent_comm1 ul li:nth-child(12){
+  background-image: url("../img_/kakao.png");
+}
+.recent_comm1 ul li::after{
+  text-align: center;
+  position: relative;
+  top: 110%;
+  content: "어도비";
+  display: block;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.recent_comm1 ul li:nth-child(2):after{
+  content: "나이키";
+
+}
+.recent_comm1 ul li:nth-child(3):after{
+  content: "알파벳 a";
+
+}
+.recent_comm1 ul li:nth-child(4):after{
+  content: "기아";
+
+}
+.recent_comm1 ul li:nth-child(5):after{
+  content: "메타";
+
+}
+.recent_comm1 ul li:nth-child(6):after{
+  content: "네이버";
+
+}
+.recent_comm1 ul li:nth-child(7):after{
+  content: "테슬라";
+
+}
+.recent_comm1 ul li:nth-child(8):after{
+  content: "인텔";
+
+}
+.recent_comm1 ul li:nth-child(9):after{
+  content: "우리금융지주";
+
+}
+.recent_comm1 ul li:nth-child(10):after{
+  content: "KT";
+
+}
+.recent_comm1 ul li:nth-child(11):after{
+  content: "TSMC";
+
+}
+.recent_comm1 ul li:nth-child(12):after{
+  content: "카카오";
+
+}
+.recent_comm2 ul li{
+  width: 6rem;
+  height: 6rem;
+  background-image: url("../img_/tesla.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
