@@ -730,7 +730,7 @@ header{
   margin: 0 10%;
   padding: 5% 0 0 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   /* width: 80%; */
   /* display:flex;
   justify-content: center; */
@@ -743,6 +743,7 @@ header{
 .left_menu{
   position: relative;
   list-style: none;
+  padding: 0;
 }
 .left_menu li{
   margin-bottom: 12%;
@@ -755,6 +756,7 @@ header{
   list-style: none;
   margin-top: 26%;
   font-size: 0.7rem;
+  padding: 0;
 }
 .left_menu_bottom li{
   float: left;
@@ -766,6 +768,7 @@ a {
 }
 
 .calendar-wrapper {
+  position: relative;
   width:18rem;
   height: fit-content;
   padding-bottom: 1.8rem;
@@ -801,7 +804,7 @@ td.today {
 }
 
 #btnPrev {
-  right: 3rem;
+  right: 20%;
   float:right;
   /* &:before {
     content:'\f104';
@@ -824,6 +827,7 @@ td.today {
   background:transparent;
   border:none;
   outline:none;
+  display: inline-block;
   font-size:0.8rem;
   color:#fff;
   cursor:pointer;
@@ -895,6 +899,7 @@ tr:nth-child(1) td:first-child{
   color: #ffffff60;
 }
 .follower{
+  position: relative;
   font-size: 0.86rem;
   line-height: 2rem;
   padding: 0 5% 1.3rem;
@@ -1126,11 +1131,36 @@ tr:nth-child(1) td:first-child{
 .centerbox{
   position: relative;
 }
+.centerbox::before{
+  content: "";
+  position: absolute;
+  left: -10%;
+  top: 0;
+  width: 1%;
+  height: 100%;
+  border-right: 0.1rem solid;
+  border-image: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+.centerbox::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -10%;
+  width: 1%;
+  height: 100%;
+  border-right: 0.1rem solid;
+  border-image: linear-gradient(180deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
 .searchbar {
   /* text-align: center; */
   overflow: hidden;
   position: relative;
   top: -0.8%;
+  border-radius: 10rem;
+  box-shadow: 0 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.2s ease-out;
 }
 
 
@@ -1220,6 +1250,10 @@ i:hover {
 .category li:last-child::before{
   background-image: url("../img_/maso.png");
 }
+.searchbar:hover{
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 2rem 1rem rgba(0, 0, 0, 0.3);
+}
 .searchbar:hover .category{
   top: 140%;
   opacity: 1;
@@ -1248,60 +1282,162 @@ i:hover {
   position: absolute;
   top: 4.5%;
   font-size: 1rem;
-
-
 }
+.centerbox ul::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1rem;
+  border-bottom: 0.1rem solid;
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.4) 30%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+.inner ul::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 1rem;
+  border-bottom: 0;
+  border-image: 0;
+  border-image-slice: 0;
+}
+.recent_comm::before{
+  position: absolute;
+  content: "더보기";
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+  top: 106%;
+  font-size: 0.86rem;
+  color: #4BA9FF;
+}
+.recent_comm1::before{
+  position: absolute;
+  content: "더보기";
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+  top: 108%;
+  font-size: 0.86rem;
+  color: #4BA9FF;
+}
+.recent_comm2::before{
+  position: absolute;
+  content: "더보기";
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+  top: 104%;
+  font-size: 0.86rem;
+  color: #4BA9FF;
+}
+.recent_comm3::before{
+  position: absolute;
+  content: "더보기";
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+  top: 106%;
+  font-size: 0.86rem;
+  color: #4BA9FF;
+}
+.recent_comm4::before{
+  position: absolute;
+  content: "더보기";
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+  top: 106%;
+  font-size: 0.86rem;
+  color: #4BA9FF;
+}
+
 .recent_comm1 {
   width: 100%;
   position: absolute;
-  top: 19%;
+  top: 23%;
   font-size: 1rem;
 }
 .recent_comm2 {
   width: 100%;
   position: absolute;
-  top: 33%;
+  top: 39%;
+  font-size: 1rem;
+}
+.recent_comm3 {
+  width: 100%;
+  position: absolute;
+  top: 61%;
+  font-size: 1rem;
+}
+.recent_comm4 {
+  width: 100%;
+  position: absolute;
+  top: 81%;
   font-size: 1rem;
 }
 .recent_comm ul{
-  margin-top: 3%;
-  padding-left: 0;
+  margin: 3% 0 0 0;
+  padding-left: 3%;
   white-space: nowrap;
   overflow-x: scroll;
-  height: 11rem;
+  height: 12rem;
+  -webkit-mask-box-image:-webkit-linear-gradient(left,transparent, transparent 0%, white 5%, white 95%, transparent 100%);
 }
 .recent_comm1 ul{
-  margin-top: 3%;
-  padding-left: 0;
+  margin: 3% 0 0 0;
+  padding-left: 3%;
   white-space: nowrap;
   overflow-x: scroll;
-  height: 9rem;
+  height: 9.5rem;
+    -webkit-mask-box-image:-webkit-linear-gradient(left,transparent, transparent 0%, white 5%, white 95%, transparent 100%);
 }
 .recent_comm2 ul{
-  margin-top: 3%;
-  padding-left: 0;
+  margin: 3% 0 0 0;
+  padding-left: 3%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  height: 15.4rem;
+    -webkit-mask-box-image:-webkit-linear-gradient(left,transparent, transparent 0%, white 5%, white 95%, transparent 100%);
+}
+.recent_comm3 ul{
+  margin: 3% 0 0 0;
+  padding-left: 3%;
   white-space: nowrap;
   overflow-x: scroll;
   height: 11rem;
+    -webkit-mask-box-image:-webkit-linear-gradient(left,transparent, transparent 0%, white 5%, white 95%, transparent 100%);
 }
 .recent_comm ul li{
   display: inline-block;
   list-style-type: none;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 .recent_comm1 ul li{
   display: inline-block;
   list-style-type: none;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 .recent_comm2 ul li{
   display: inline-block;
   list-style-type: none;
-  margin-right: 2%;
+  margin-right: 3%;
+}
+.recent_comm3 ul li{
+  display: inline-block;
+  list-style-type: none;
+}
+.recent_comm4 ul li{
+  /* display: inline-block; */
+  list-style-type: none;
 }
 .recent_comm ul li{
-  width: 6.5rem;
-  height: 6.5rem;
+  width: 7rem;
+  height: 7rem;
   background-image: url("../img_/nvidia.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -1409,8 +1545,8 @@ i:hover {
   background-image: url("../img_/starbucks.png");
 }
 .recent_comm1 ul li{
-  width: 5.2rem;
-  height: 5.2rem;
+  width: 5.8rem;
+  height: 5.8rem;
   background-image: url("../img_/adobe.png");
   background-size: contain;
   background-repeat: no-repeat;
@@ -1500,13 +1636,346 @@ i:hover {
 }
 .recent_comm1 ul li:nth-child(12):after{
   content: "카카오";
-
 }
 .recent_comm2 ul li{
-  width: 6rem;
-  height: 6rem;
-  background-image: url("../img_/tesla.png");
+  width: 11rem;
+  height: 13rem;
+  border: 0.16rem solid transparent;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 0.6rem;
+  background-image:linear-gradient(#171717,#171717), 
+  linear-gradient(107.42deg, #414955 1.37%, rgba(44, 50, 59, 0) 97.97%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.recent_comm3 ul li{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 0.6rem;
+}
+ul::-webkit-scrollbar-thumb {
+  background-color: rgba(152, 196, 255, 0.08);
+  border-radius: 9rem;
+  
+}
+ul::-webkit-scrollbar {
+  height: 0.7rem;
+  background: transparent;
+}
+
+.img{
+  position: relative;
+  top: 32%;
+  left: 50%;
+  width: 9rem;
+  height: 6.2rem;
+  transform: translateX(-50%) translateY(-50%);
+  background-image: url("../img_/avatar7.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+.recent_comm2 ul li:nth-child(2) .img{
+  background-image: url("../img_/avatar.png");
+}
+.recent_comm2 ul li:nth-child(3) .img{
+  background-image: url("../img_/avatar1.png");
+}
+.recent_comm2 ul li:nth-child(4) .img{
+  background-image: url("../img_/avatar2.png");
+}
+.recent_comm2 ul li:nth-child(5) .img{
+  background-image: url("../img_/avatar3.png");
+}
+.recent_comm2 ul li:nth-child(6) .img{
+  background-image: url("../img_/avatar4.png");
+}
+.recent_comm2 ul li:nth-child(7) .img{
+  background-image: url("../img_/avatar5.png");
+}
+.recent_comm2 ul li:nth-child(8) .img{
+  background-image: url("../img_/avatar6.png");
+}
+.recent_comm2 ul li:nth-child(9) .img{
+  background-image: url("../img_/avatar7.png");
+}
+.recent_comm2 ul li:nth-child(10) .img{
+  background-image: url("../img_/avatar8.png");
+}
+.recent_comm2 ul li:nth-child(11) .img{
+  background-image: url("../img_/avatar9.png");
+}
+.recent_comm2 ul li:nth-child(12) .img{
+  background-image: url("../img_/avatar10.png");
+}
+.recent_comm2 ul li:nth-child(13) .img{
+  background-image: url("../img_/avatar11.png");
+}
+.img::before{
+  content: "메르큐노";
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 110%;
+}
+.recent_comm2 ul li:nth-child(2) .img::before{
+  content: "istj";
+}
+.recent_comm2 ul li:nth-child(3) .img::before{
+  content: "삼냥";
+}
+.recent_comm2 ul li:nth-child(4) .img::before{
+  content: "DeepRin";
+}
+.recent_comm2 ul li:nth-child(5) .img::before{
+  content: "xcvsp";
+}
+.recent_comm2 ul li:nth-child(6) .img::before{
+  content: "노란고구마";
+}
+.recent_comm2 ul li:nth-child(7) .img::before{
+  content: "야매분석가";
+}
+.recent_comm2 ul li:nth-child(8) .img::before{
+  content: "bubble";
+}
+.recent_comm2 ul li:nth-child(9) .img::before{
+  content: "춘심";
+}
+.recent_comm2 ul li:nth-child(10) .img::before{
+  content: "dadot";
+}
+.recent_comm2 ul li:nth-child(11) .img::before{
+  content: "감쟈도리";
+}
+.recent_comm2 ul li:nth-child(12) .img::before{
+  content: "앤";
+}
+.recent_comm2 ul li:nth-child(13) .img::before{
+  content: "엄지척";
+}
+.recent_comm2 ul li:nth-child(14) .img::before{
+  content: "Zno";
+}
+.recent_comm2 ul li:nth-child(15) .img::before{
+  content: "삼립빵좋아";
+}
+.recent_comm2 ul li .img::after{
+  content: "팔로우";
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 125%;
+  border: 0.1rem solid #ffffff30;
+  border-radius: 0.25rem;
+  padding: 0.35rem 0.4rem;
+  background-color: #202328;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: all 0.08s ease-out;
+}
+.recent_comm2 ul li .img:hover:after{
+  background-color: #2790F1;
+}
+.recent_comm3 ul li .img{
+  position: relative;
+  top: 32%;
+  left: 50%;
+  width: 7.6rem;
+  height: 7.6rem;
+  transform: translateX(-50%) translateY(-50%);
+  background-image: url("../img_/reicon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.recent_comm3 ul li:nth-child(2) .img{
+  background-image: url("../img_/reicon1.png");
+}
+.recent_comm3 ul li:nth-child(3) .img{
+  background-image: url("../img_/reicon2.png");
+}
+.recent_comm3 ul li:nth-child(4) .img{
+  background-image: url("../img_/reicon3.png");
+}
+.recent_comm3 ul li:nth-child(5) .img{
+  background-image: url("../img_/reicon4.png");
+}
+.recent_comm3 ul li:nth-child(6) .img{
+  background-image: url("../img_/reicon5.png");
+}
+.recent_comm3 ul li:nth-child(7) .img{
+  background-image: url("../img_/reicon6.png");
+}
+.recent_comm3 ul li:nth-child(8) .img{
+  background-image: url("../img_/reicon7.png");
+}
+.recent_comm3 ul li:nth-child(9) .img{
+  background-image: url("../img_/reicon8.png");
+}
+.recent_comm3 ul li:nth-child(10) .img{
+  background-image: url("../img_/reicon9.png");
+}
+.recent_comm3 ul li:nth-child(11) .img{
+  background-image: url("../img_/reicon10.png");
+}
+.recent_comm3 ul li:nth-child(12) .img{
+  background-image: url("../img_/reicon11.png");
+}
+.recent_comm3 ul li .img::before{
+  content: "주목할 산업";
+  display: block;
+  text-align: center;
+  position: relative;
+  top: 110%;
+}
+
+.recent_comm3 ul li:nth-child(2) .img::before{
+  content: "인기 테마";
+}
+.recent_comm3 ul li:nth-child(3) .img::before{
+  content: "최근 뜨는";
+}
+.recent_comm3 ul li:nth-child(4) .img::before{
+  content: "수익성 좋은";
+}
+.recent_comm3 ul li:nth-child(5) .img::before{
+  content: "시총 상위 종목";
+}
+.recent_comm3 ul li:nth-child(6) .img::before{
+  content: "고민될 땐 ETF";
+}
+.recent_comm3 ul li:nth-child(7) .img::before{
+  content: "헤지 종목";
+}
+.recent_comm3 ul li:nth-child(8) .img::before{
+  content: "조각 투자 종목";
+}
+.community_title4{
+  margin-bottom: 3.5%;
+}
+#income_bt {
+  /* background:var(--bluew); */
+  position: relative;
+  right: 0;
+  cursor: pointer;
+  padding: 1.2% 1.4% 0.8% 1.4%;
+  margin: 0 0.6% 0 0.6%;
+  border-bottom: 0.1rem solid;
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 49%, rgba(255, 255, 255, 0) 50%, rgba(240, 240, 240, 0) 51%);
+  border-image-slice: 1;
+  transition: all 0.2s ease-out;
+  z-index: 11;
+  font-size: 0.9rem;
+
+}
+#income_bt:nth-child(8)::after{
+  opacity: 0;
+}
+.in_bt{
+  position: relative;
+}
+#outcome_bt:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+#outcome_bt1:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+
+#outcome_bt2:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+
+#outcome_bt3:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+
+#outcome_bt4:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+#outcome_bt5:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+
+#outcome_bt6:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+
+#outcome_bt7:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+
+#outcome_bt8:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+#outcome_bt9:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+
+#outcome_bt10:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+
+#outcome_bt11:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+
+#outcome_bt12:checked+label {
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+.category_title{
+  margin: 4% 0 2% 0;
+  display: flex;
+
+}
+.recent_comm4 ul:after{
+  border: 0;
+}
+.all_cate{
+  display: flex;
+  padding: 0 0 0 1.2rem;
+}
+.titlename{
+  flex: 3 1 0;
+  padding: 0 0 0 1.2rem;
+}
+.classifi{
+  flex: 1 1 0;
+}
+.upload{
+  flex: 1 1 0;
+}
+.left{
+  white-space: nowrap;
+  flex: 3 1 0;
+}
+.center{
+  white-space: nowrap;
+  flex: 1 1 0;
+}
+.right{
+  white-space: nowrap;
+  flex: 1 1 0;
+}
+.fianance ul{
+  padding: 0 0 0 0;
+}
+.stock ul{
+  padding: 0 0 0 0;
+}
+.NFT ul{
+  padding: 0 0 0 0;
 }
