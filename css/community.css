@@ -773,7 +773,7 @@ a {
   height: fit-content;
   padding-bottom: 1.8rem;
   margin-bottom: 1.3rem;
-  border-bottom: 0.1rem solid #ffffff60;
+  border-bottom: 0.1rem solid #ffffff40;
 }
 table {
   clear:both;
@@ -896,7 +896,7 @@ tr:nth-child(1) td:first-child{
 .sche:last-child{
   margin-top: 2%;
   font-size: 0.86rem;
-  color: #ffffff60;
+  color: #ffffff40;
 }
 .follower{
   position: relative;
@@ -904,7 +904,7 @@ tr:nth-child(1) td:first-child{
   line-height: 2rem;
   padding: 0 5% 1.3rem;
   margin-bottom: 1.8rem;
-  border-bottom: 0.1rem solid #ffffff60;
+  border-bottom: 0.1rem solid #ffffff40;
 }
 .follower::after{
   position: absolute;
@@ -921,7 +921,7 @@ tr:nth-child(1) td:first-child{
   font-size: 0.86rem;
   padding: 0 5% 3.6rem;
   margin-bottom: 1.8rem;
-  border-bottom: 0.1rem solid #ffffff60;
+  border-bottom: 0.1rem solid #ffffff40;
 }
 .count{
   margin-bottom: 1.5rem;
@@ -1015,7 +1015,7 @@ tr:nth-child(1) td:first-child{
   font-size: 0.86rem;
   padding: 0 5% 1.8rem;
   margin-bottom: 1.8rem;
-  border-bottom: 0.1rem solid #ffffff60;
+  border-bottom: 0.1rem solid #ffffff40;
 }
 .mar{
   margin-bottom: 1.5rem;
@@ -1090,7 +1090,7 @@ tr:nth-child(1) td:first-child{
   font-size: 0.86rem;
   padding: 0 5% 1rem;
   margin-bottom: 1.3rem;
-  border-bottom: 0.1rem solid #ffffff60;
+  border-bottom: 0.1rem solid #ffffff40;
 }
 .recent_listbox1{
   position: relative;
@@ -1233,7 +1233,7 @@ i:hover {
   margin-bottom: 1.5%;
   width: 98%;
   padding: 0 0 0.3rem 0;
-  /* border-bottom: 0.1rem solid #ffffff60; */
+  /* border-bottom: 0.1rem solid #ffffff40; */
   line-height: 2rem;
 }
 .category li::before{
@@ -1259,7 +1259,7 @@ i:hover {
   opacity: 1;
 }
 .searchbar:hover input{
-  border-bottom: 0.1rem solid #ffffff60;
+  border-bottom: 0.1rem solid #ffffff40;
 }
 .searchbar:hover .inner{
   border-radius: 0.5rem;
@@ -1291,7 +1291,7 @@ i:hover {
   width: 100%;
   height: 1rem;
   border-bottom: 0.1rem solid;
-  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.4) 30%, rgba(240, 240, 240, 0) 100%);
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.3) 15%, rgba(255, 255, 255, 0.3) 75%, rgba(240, 240, 240, 0) 100%);
   border-image-slice: 1;
 }
 .inner ul::after{
@@ -1859,21 +1859,105 @@ ul::-webkit-scrollbar {
   position: relative;
   right: 0;
   cursor: pointer;
-  padding: 1.2% 1.4% 0.8% 1.4%;
-  margin: 0 0.6% 0 0.6%;
+  padding: 1.2% 1.2% 0.8% 1.2%;
+  margin: 0 0.4% 0 0.4%;
   border-bottom: 0.1rem solid;
   border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 49%, rgba(255, 255, 255, 0) 50%, rgba(240, 240, 240, 0) 51%);
   border-image-slice: 1;
   transition: all 0.2s ease-out;
   z-index: 11;
   font-size: 0.9rem;
-
+  opacity: 0.8;
 }
 #income_bt:nth-child(8)::after{
   opacity: 0;
 }
 .in_bt{
   position: relative;
+}
+
+.category_title{
+  margin: 1.5rem 0 1.8rem 0;
+  padding-top: 1.4rem;
+  display: flex;
+  border-top: 0.1rem solid;
+  border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.3) 5%, rgba(255, 255, 255, 0.3) 95%, rgba(240, 240, 240, 0) 100%);
+  border-image-slice: 1;
+}
+.recent_comm4 ul:after{
+  border: 0;
+}
+.all_cate{
+  display: flex;
+  padding: 0 1.6rem 0 2.5rem;
+}
+.titlename{
+  flex: 4.5 1 0;
+  padding: 0 0 0 2.5rem;
+}
+.classifi{
+  flex: 1 1 0;
+}
+.upload{
+  flex: 0.5 1 0;
+  padding: 0 1.6rem 0 0;
+}
+.left{
+  white-space: nowrap;
+  flex: 4.5 1 0;
+  opacity: 0;
+  display: none;
+}
+.center{
+  white-space: nowrap;
+  flex: 1 1 0;
+  opacity: 0;
+  display: none;
+}
+.right{
+  white-space: nowrap;
+  flex: 0.5 1 0;
+  opacity: 0;
+  display: none;
+}
+.fianance ul{
+  padding: 0 0 0 0;
+}
+.stock ul{
+  padding: 0 0 0 0;
+}
+.NFT ul{
+  padding: 0 0 0 0;
+}
+.fianance{
+  opacity: 0;
+  display: none;
+}
+.fianance li{
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+.stock{
+  opacity: 0;
+  display: none;
+}
+.stock li{
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+.NFT{
+  opacity: 0;
+  display: none;
+}
+.NFT li{
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 1rem;
 }
 #outcome_bt:checked+label {
   border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
@@ -1882,6 +1966,31 @@ ul::-webkit-scrollbar {
 #outcome_bt1:checked+label {
   border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
   border-image-slice: 1;
+  opacity: 1;
+}
+#outcome_bt1:checked ~ .all_cate .left{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt1:checked ~ .all_cate .center{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt1:checked ~ .all_cate .right{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt1:checked ~ .all_cate .left .fianance{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt1:checked ~ .all_cate .center .fianance{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt1:checked ~ .all_cate .right .fianance{
+  opacity: 1;
+  display: block;
 }
 
 #outcome_bt2:checked+label {
@@ -1897,7 +2006,33 @@ ul::-webkit-scrollbar {
 #outcome_bt4:checked+label {
   border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
   border-image-slice: 1;
+  opacity: 1;
 }
+#outcome_bt4:checked ~ .all_cate .left{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt4:checked ~ .all_cate .center{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt4:checked ~ .all_cate .right{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt4:checked ~ .all_cate .left .stock{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt4:checked ~ .all_cate .center .stock{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt4:checked ~ .all_cate .right .stock{
+  opacity: 1;
+  display: block;
+}
+
 #outcome_bt5:checked+label {
   border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
   border-image-slice: 1;
@@ -1911,6 +2046,31 @@ ul::-webkit-scrollbar {
 #outcome_bt7:checked+label {
   border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
   border-image-slice: 1;
+  opacity: 1;
+}
+#outcome_bt7:checked ~ .all_cate .left{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt7:checked ~ .all_cate .center{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt7:checked ~ .all_cate .right{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt7:checked ~ .all_cate .left .NFT{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt7:checked ~ .all_cate .center .NFT{
+  opacity: 1;
+  display: block;
+}
+#outcome_bt7:checked ~ .all_cate .right .NFT{
+  opacity: 1;
+  display: block;
 }
 
 #outcome_bt8:checked+label {
@@ -1936,46 +2096,220 @@ ul::-webkit-scrollbar {
   border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.9) 50%, rgba(240, 240, 240, 0) 100%);
   border-image-slice: 1;
 }
-.category_title{
-  margin: 4% 0 2% 0;
-  display: flex;
 
+.content_center {
+  position: absolute;
+  top: 4.5%;
+  /* background: #fff; */
 }
-.recent_comm4 ul:after{
-  border: 0;
+
+.media_container {
+  
 }
-.all_cate{
+.panel{
+  position: absolute;
+  top: 50%;
+}
+
+.media_container hr {
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.08);
+  border-width: 1px;
+}
+
+.news_feed{
+  margin-top: 3rem;
+  background: #fff;
+  border-radius: 0.3rem;
+}
+.news_feed_title {
+  padding: 15px;
   display: flex;
-  padding: 0 0 0 1.2rem;
+  justify-content: start;
+  align-items: center;
 }
-.titlename{
-  flex: 3 1 0;
-  padding: 0 0 0 1.2rem;
+
+.news_feed_title img {
+  width: 40px;
+  margin-right: 7px;
 }
-.classifi{
-  flex: 1 1 0;
+
+.news_feed_title_content {
+  text-align: left;
 }
-.upload{
-  flex: 1 1 0;
+
+.news_feed_title_content p {
+  color: #e4e6eb;
+  font-weight: 500;
 }
-.left{
-  white-space: nowrap;
-  flex: 3 1 0;
+
+.news_feed_title_content span {
+  color: #b7babe;
+  font-size: 12px;
 }
-.center{
-  white-space: nowrap;
-  flex: 1 1 0;
+
+.news_feed_description {
+  min-height: 400px;
 }
-.right{
-  white-space: nowrap;
-  flex: 1 1 0;
+
+
+.news_feed_description img {
+  object-fit: cover;
+  width: 100%;
+  height: 400px;
 }
-.fianance ul{
-  padding: 0 0 0 0;
+
+
+.likes_area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
 }
-.stock ul{
-  padding: 0 0 0 0;
+
+.emojis img {
+  width: 25px;
+  margin-right: -3px;
 }
-.NFT ul{
-  padding: 0 0 0 0;
+
+.emojis span {
+  color: #b7babe;
+  margin-left: 10px;
+}
+
+.comment_counts {
+  color: #b7babe;
+}
+
+.divider {
+  padding: 0 15px 0 15px;
+}
+
+.likes_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 15px;
+  height: 35px;
+}
+
+.likes_buttons_links {
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b4b7bb;
+  font-weight: 500;
+}
+
+.likes_buttons_links:hover {
+  background: #3a3b3c;
+  border-radius: 5px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.likes_buttons_links i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+/* content right starts here */
+
+
+
+
+.fb-user-thumb img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+
+.fb-user-details h3 {
+  margin: 15px 0 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.fb-user-details p {
+  color: #c3c3c3;
+}
+
+
+.fb-user-status {
+  padding: 10px 0;
+  line-height: 20px;
+}
+
+.fb-time-action {
+  padding: 15px 0;
+}
+
+
+.fb-border {
+  border-top: 1px solid #ebeef5;
+}
+
+.fb-time-action span,
+.fb-time-action a {
+  margin-right: 5px;
+}
+
+.fb-time-action a {
+  color: #2972a1;
+}
+
+.fb-time-action a:hover {
+  text-decoration: underline;
+}
+
+.fb-time-action span {
+  color: #5a5a5a;
+}
+
+.fb-status-container,
+.fb-comments li {
+  margin: 0 -15px 0 -15px;
+  padding: 0 15px;
+}
+
+.fb-gray-bg {
+  background: #f6f6f6;
+}
+
+.fb-comments li {
+  border-top: 1px solid #ebeef5;
+  padding: 15px;
+}
+
+.fb-comments .cmt-thumb {
+  width: 50px;
+  float: left;
+  margin-right: 15px;
+}
+
+.fb-comments .cmt-thumb img {
+  width: 50px;
+}
+
+.fb-comments .cmt-details {
+  padding-top: 5px;
+}
+
+
+.cmt-form {
+  display: inline-block;
+  width: 90%;
+}
+
+
+.fb-comments {
+  list-style-type: none;
+}
+.profile-info{
+  margin-bottom: 8%;
 }
