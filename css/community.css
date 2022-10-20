@@ -1,9 +1,7 @@
 * {
   margin: 0;
 }
-
-/* Sticky Header Style */
-/* ---------------------------------------- */
+/* 
 .sticky-header {
   padding-top: 100px;
 }
@@ -18,7 +16,7 @@
   -ms-transform: scale(0, 0);
   -webkit-transform: scale(0, 0);
   transform: scale(0, 0);
-}
+} */
 :root{
   --white:#fff;
   --dark:#000;
@@ -200,7 +198,7 @@ body{
     width: 100%;
     /* padding: 1rem 0 0; */
     /* background: var(--bshadow); */
-    z-index: 3;
+    z-index: 20;
     will-change: transform;
     transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
     transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
@@ -217,7 +215,7 @@ body{
     animation-duration: 0.5s;
     animation-delay: 0s;
     animation-timing-function: ease-out;
-    box-shadow: 0 0.16rem 0.26rem rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.5);
     overflow: hidden;
   }
   header nav .logo {
@@ -311,15 +309,14 @@ body{
     }
   }
   .hide-nav {
-    transform: translateY(-84%) !important;
-    -webkit-transform: translateY(-84%) !important;
-    position: fixed;
+    transform: translateY(-83.6%) !important;
+    -webkit-transform: translateY(-83.6%) !important;
   }
   .show-nav{
     transform: translateY(0) !important;
     -webkit-transform: translateY(0) !important;
   }
-  
+
   ul.menu-left {
     position: relative;
     margin-right: 4%;
@@ -475,7 +472,7 @@ input[type=radio] {
   transition: all 0.06s ease-out;
 }
 
-#ca_bt:nth-child(6) {
+#ca_bt1{
   position: absolute;
   bottom: 18%;
   left: 50.5%;
@@ -486,15 +483,17 @@ input[type=radio] {
 }
 
 #ca_bt:hover {
-
+  cursor: pointer;
+}
+#ca_bt1:hover {
   cursor: pointer;
 }
 
-#cate_bt:checked+#ca_bt:nth-child(4) {
+#cate_bt:checked + label{
   color: var(--bluew);
 }
 
-#cate_bt1:checked+#ca_bt:nth-child(6) {
+#cate_bt1:checked + label{
   color: var(--bluew);
 }
 
@@ -683,7 +682,7 @@ input[type=radio] {
 
 }
 #nav_bg{
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   top: 0;
@@ -727,14 +726,9 @@ input[type=radio] {
 #cate_bt1:checked ~ .rightlogoblock:hover::after{
   content: "폰, 넷북 운영체제 점유율 1위의 구글 우세! ";
 }
-header{
-  position: relative;
-  /* transition: all 0.45s ease-out; */
-  scroll-snap-type: y mandatory;
-}
 .framecontainer{
   position: relative;
-  top: 0;
+  top: 48vh;
   margin: 0 10%;
   padding: 4% 0 20% 0;
   display: flex;
@@ -745,7 +739,6 @@ header{
   /* align-items: center; */
   /* background: #F0F0F0; */
   transition: all 0.2s ease-out;
-  scroll-snap-type: y mandatory;
   background: var(--bgdark);
 }
 .left_menu{
@@ -2978,4 +2971,8 @@ ul + button{
 }
 #comment_bt8:checked + label{
   display: none;
+}
+.offset{
+  top: 12vh;
+  padding-top: 5%;
 }

@@ -2,437 +2,952 @@
 <html lang="ko">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="../img_/faviconlogo.png">
-  <link rel="stylesheet" href="../css/btop.css">
-  <link rel="stylesheet" href="../css/scrollbar.css">
-  <link rel="stylesheet" href="../css/community.css">
-  <link rel="stylesheet" href="../css/community1.css">
-  <link rel="stylesheet" href="../css/boslider.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Lato:wght@100&family=Poiret+One&family=Roboto:wght@100;300;400;500&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-    crossorigin="anonymous" />
-  <script src="https://kit.fontawesome.com/308b309426.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
-  <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <title>comma</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img_/faviconlogo.png">
+    <link rel="stylesheet" href="../css/btop.css">
+    <link rel="stylesheet" href="../css/scrollbar.css">
+    <link rel="stylesheet" href="../css/community.css">
+    <link rel="stylesheet" href="../css/community1.css">
+    <link rel="stylesheet" href="../css/boslider.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Lato:wght@100&family=Poiret+One&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <script src="https://kit.fontawesome.com/308b309426.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.3.0/snap.svg-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>comma</title>
 </head>
 
 <body>
-  <a id="btop"></a>
+    <a id="btop"></a>
+    <header>
+        <div class="header">
+            <nav id="navigation">
+                <a href="../../main/main.html" class="logo"><span class="logospan">comma</span></a>
 
-  <header>
-    <div class="header">
-      <nav id="navigation">
-        <a href="../../main/main.html" class="logo"><span class="logospan">comma</span></a>
+                <!-- <a aria-label="mobile menu" class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+    </a> -->
+                <ul class="menu-left">
+                    <li><a href="../main/main.html">About</a></li>
+                    <li><a href="#exp">Resume</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#contact"></a></li>
+                    <li><a href="#contact"></a></li>
+                </ul>
 
-        <!-- <a aria-label="mobile menu" class="nav-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-        </a> -->
-        <ul class="menu-left">
-          <li><a href="../main/main.html">About</a></li>
-          <li><a href="#exp">Resume</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#contact"></a></li>
-          <li><a href="#contact"></a></li>
-        </ul>
+                <input type="radio" name="button" id="cate_bt" checked="checked" />
+                <label for="cate_bt" id="ca_bt">•</label>
+                <input type="radio" name="button" id="cate_bt1" />
+                <label for="cate_bt1" id="ca_bt">•</label>
 
-        <input type="radio" name="button" id="cate_bt" checked="checked" />
-        <label for="cate_bt" id="ca_bt">•</label>
-        <input type="radio" name="button" id="cate_bt1" />
-        <label for="cate_bt1" id="ca_bt">•</label>
-
-        <div class="toptitle"></div>
-        <div class="toptitle1"></div>
-        <div class="participation"><span></span> 명 참여 중</div>
-        <div class="leftlogoblock"></div>
-        <div class="rightlogoblock"></div>
-
+                <div class="toptitle"></div>
+                <div class="toptitle1"></div>
+                <div class="participation"><span></span> 명 참여 중</div>
+                <div class="leftlogoblock"></div>
+                <div class="rightlogoblock"></div>
 
 
-        <div id="nav_bg"></div>
-      </nav>
-      <ul class="centernav">
-        <li><a href="../logo/logo.html">Brand Resource Center</a></li>
-        <li><a href="../color/color.html">공지사항</a></li>
-        <li><a href="../app icon/appicon.html">고객센터</a></li>
-        <li><a href="../text rules/textrules.html">자주 묻는 질문</a></li>
-        <!-- <li><a href="../press/press.html">Press</a></li> -->
-      </ul>
 
-
-      <div class="boslider">
-        <div class="boslide-track">
-          <div class="boslide">
-            <span class="red">▼ -3.52%</span>ETH
-          </div>
-          <div class="boslide">
-            <span class="red">▼-15.63%</span>USDKRW
-          </div>
-          <div class="boslide">
-            <span class="red">▼ -3.83%</span>035420
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +8.26%</span>010780
-          </div>
-          <div class="boslide">
-            <span class="red">▼-3.23%</span>ARM
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +0.92%</span>BTC
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +4.24%</span>AAPL
-          </div>
-          <div class="boslide">
-            <span class="red">▼-1.22%</span>003490
-          </div>
-          <div class="boslide">
-            <span class="red">▼-4.25%</span>NVDA
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +2.19%</span>KS11
-          </div>
-          <div class="boslide">
-            <span class="red">▼-5.81%</span>AMD
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +3.01%</span>001394
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +0.47%</span>023644
-          </div>
-          <div class="boslide">
-            <span class="red">▼-3.10%</span>ADBE
-          </div>
-          <div class="boslide">
-            <span class="red">▼ -3.52%</span>ETH
-          </div>
-          <div class="boslide">
-            <span class="red">▼-15.63%</span>USDKRW
-          </div>
-          <div class="boslide">
-            <span class="red">▼ -3.83%</span>035420
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +8.26%</span>010780
-          </div>
-          <div class="boslide">
-            <span class="red">▼-3.23%</span>ARM
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +0.92%</span>BTC
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +4.24%</span>AAPL
-          </div>
-          <div class="boslide">
-            <span class="red">▼-1.22%</span>003490
-          </div>
-          <div class="boslide">
-            <span class="red">▼-4.25%</span>NVDA
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +2.19%</span>KS11
-          </div>
-          <div class="boslide">
-            <span class="red">▼-5.81%</span>AMD
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +3.01%</span>001394
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +0.47%</span>023644
-          </div>
-          <div class="boslide">
-            <span class="red">▼-3.10%</span>ADBE
-          </div>
-          <div class="boslide">
-            <span class="red">▼ -3.52%</span>ETH
-          </div>
-          <div class="boslide">
-            <span class="red">▼-15.63%</span>USDKRW
-          </div>
-          <div class="boslide">
-            <span class="red">▼ -3.83%</span>035420
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +8.26%</span>010780
-          </div>
-          <div class="boslide">
-            <span class="red">▼-3.23%</span>ARM
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +0.92%</span>BTC
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +4.24%</span>AAPL
-          </div>
-          <div class="boslide">
-            <span class="green">▲ +0.47%</span>023644
-          </div>
-          <div class="boslide">
-            <span class="red">▼-3.10%</span>ADBE
-          </div>
-          <div class="boslide">
-            <span class="red">▼ -3.52%</span>ETH
-          </div>
-          <div class="boslide">
-            <span class="red">▼-15.63%</span>USDKRW
-          </div>
-          <div class="boslide">
-            <span class="red">▼ -3.83%</span>035420
-          </div>
-
-
-        </div>
-      </div>
-
-    </div>
-  </header>
-
-  <div class="framecontainer">
-    <div class="leftbox">
-      <ul class="left_menu">
-        <li><a href="#">최근 인기 있는 커뮤니티</a></li>
-        <li><a href="#">방문한 커뮤니티</a></li>
-        <li><a href="#">최근 인기 있는 사용자</a></li>
-        <li><a href="#">트렌드</a></li>
-        <li><a href="#">재테크 팁</a></li>
-      </ul>
-      <ul class="left_menu_bottom">
-        <li>개발자</li>
-        <li>광고하기</li>
-        <li>더보기</li>
-      </ul>
-    </div>
-    <div class="centerbox">
-      <div class="searchbar">
-        <div class="inner">
-          <input type="search" placeholder="커뮤니티 검색">
-          <div class="searching">
-            <img src="../img/search.svg" alt="">
-          </div>
-          <div class="icon_ect">
-            <i class="fas fa-keyboard"></i>
-            <i class="fas fa-microphone"></i>
-          </div>
-          <ul class="category">
-            <li><a href="./microsoft.html">Microsoft</a></li>
-            <li><a href="./tesla.html">Tesla</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="content_center">
-        <div class="media_container">
-          <div class="profile-info">
-            <form><textarea class="form-control input-lg p-text-area" rows="2"
-                placeholder="Whats in your mind today?"></textarea></form>
-            <footer class="panel-footer"> <button type="button" class="btn btn-info pull-right">Post</button>
-              <ul class="nav nav-pills">
-                <li><a href="#"><i class="fa fa-map-marker"></i></a></li>
-                <li><a href="#"><i class="fa fa-camera"></i></a></li>
-                <li><a href="#"><i class=" fa fa-film"></i></a></li>
-                <li><a href="#"><i class="fa fa-microphone"></i></a></li>
-              </ul>
-            </footer>
-          </div>
-          <!-- news feed -->
-          <div class="news_feed">
-            <div class="news_feed_title">
-              <img src="assets/user.png" alt="user" />
-              <div class="news_feed_title_content">
-                <p>Codersbite Magazine</p>
-                <span>12h . <i class="fas fa-globe-americas"></i></span>
-              </div>
-            </div>
-            <div class="news_feed_description">
-              <p class="news_feed_subtitle">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                esse cum id vero odit tempora dicta. Saepe corporis voluptatibus
-                laboriosam?
-              </p>
-              <img src="../img_/teslafeed1.jpg" alt="sunflower" />
-              <div class="news_feed_description_title">
-                <span>YOUTUBE / CODERSBITE</span>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Nesciunt repudiandae exercitationem mollitia, suscipit labore
-                  rem reiciendis distinctio atque totam facere placeat officia
-                  ea quia? Atque.
-                </p>
-              </div>
-            </div>
-
-            <div class="likes_area">
-              <div class="emojis">
-                <img src="assets/emoji_like.png" alt="like" />
-                <img src="assets/emoji_surprised.png" alt="surprised" />
-                <img src="assets/emoji_angry.png" alt="angry" />
-                <span>25</span>
-              </div>
-              <div class="comment_counts">
-                <span>4 Comments</span>
-                <span>13 Shares</span>
-              </div>
-            </div>
-
-            <div class="divider">
-              <hr />
-            </div>
-            <div class="likes_buttons">
-              <div class="likes_buttons_links">
-                <i class="far fa-thumbs-up"></i>
-                <span>Like</span>
-              </div>
-              <div class="likes_buttons_links">
-                <i class="far fa-comment-alt"></i>
-                <span>Comment</span>
-              </div>
-              <div class="likes_buttons_links">
-                <i class="fas fa-share"></i>
-                <span>Share</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-body">
-          <div class="fb-user-thumb"> <img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt=""></div>
-          <div class="fb-user-details">
-            <h3><a href="#" class="#">Margarita Elina</a></h3>
-            <p>7 minutes ago near Alaska, USA</p>
-          </div>
-          <div class="clearfix"></div>
-          <p class="fb-user-status">John is world famous professional photographer. with forward thinking clients to
-            create beautiful, honest and amazing things that bring positive results. John is world famous professional
-            photographer. with forward thinking clients to create beautiful, honest and amazing things that bring
-            positive results.</p>
-          <div class="fb-status-container fb-border">
-            <div class="fb-time-action"> <a href="#" title="Like this">Like</a> <span>-</span> <a href="#"
-                title="Leave a comment">Comments</a> <span>-</span> <a href="#"
-                title="Send this to friend or post it on your time line">Share</a></div>
-          </div>
-          <div class="fb-status-container fb-border fb-gray-bg">
-            <div class="fb-time-action like-info"> <a href="#">Jhon Due,</a> <a href="#">Danieal Kalion</a>
-              <span>and</span> <a href="#">40 more</a> <span>like this</span>
-            </div>
-            <ul class="fb-comments">
-              <li> <a href="#" class="cmt-thumb"> <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
-                </a>
-                <div class="cmt-details"> <a href="#">Jhone due</a> <span> is world famous professional photographer.
-                    with forward thinking clients to create beautiful, </span>
-                  <p>40 minutes ago - <a href="#" class="like-link">Like</a></p>
-                </div>
-              </li>
-              <li> <a href="#" class="cmt-thumb"> <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="">
-                </a>
-                <div class="cmt-details"> <a href="#">Tawseef</a> <span> is world famous professional photographer.
-                    with forward thinking clients to create beautiful, </span>
-                  <p>34 minutes ago - <a href="#" class="like-link">Like</a></p>
-                </div>
-              </li>
-              <li> <a href="#" class="cmt-thumb"> <img src="https://bootdey.com/img/Content/avatar/avatar4.png" alt="">
-                </a>
-                <div class="cmt-details"> <a href="#">Jhone due</a> <span> is world famous professional photographer.
-                  </span>
-                  <p>15 minutes ago - <a href="#" class="like-link">Like</a></p>
-                </div>
-              </li>
-              <li> <a href="#" class="cmt-thumb"> <img src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="">
-                </a>
-                <div class="cmt-details"> <a href="#">Tawseef</a> <span> thinking clients to create beautiful world
-                    famous professional photographer. </span>
-                  <p>2 minutes ago - <a href="#" class="like-link">Like</a></p>
-                </div>
-              </li>
-              <li> <a href="#" class="cmt-thumb"> <img src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="">
-                </a>
-                <div class="cmt-form"><textarea class="form-control" placeholder="Write a comment..."
-                    name=""></textarea>
-                </div>
-              </li>
+                <div id="nav_bg"></div>
+            </nav>
+            <ul class="centernav">
+                <li><a href="../logo/logo.html">Brand Resource Center</a></li>
+                <li><a href="../color/color.html">공지사항</a></li>
+                <li><a href="../app icon/appicon.html">고객센터</a></li>
+                <li><a href="../text rules/textrules.html">자주 묻는 질문</a></li>
+                <!-- <li><a href="../press/press.html">Press</a></li> -->
             </ul>
 
-          </div>
+
+            <div class="boslider">
+                <div class="boslide-track">
+                    <div class="boslide">
+                        <span class="red">▼ -3.52%</span>ETH
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-15.63%</span>USDKRW
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼ -3.83%</span>035420
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +8.26%</span>010780
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-3.23%</span>ARM
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +0.92%</span>BTC
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +4.24%</span>AAPL
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-1.22%</span>003490
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-4.25%</span>NVDA
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +2.19%</span>KS11
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-5.81%</span>AMD
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +3.01%</span>001394
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +0.47%</span>023644
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-3.10%</span>ADBE
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼ -3.52%</span>ETH
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-15.63%</span>USDKRW
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼ -3.83%</span>035420
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +8.26%</span>010780
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-3.23%</span>ARM
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +0.92%</span>BTC
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +4.24%</span>AAPL
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-1.22%</span>003490
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-4.25%</span>NVDA
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +2.19%</span>KS11
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-5.81%</span>AMD
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +3.01%</span>001394
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +0.47%</span>023644
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-3.10%</span>ADBE
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼ -3.52%</span>ETH
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-15.63%</span>USDKRW
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼ -3.83%</span>035420
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +8.26%</span>010780
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-3.23%</span>ARM
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +0.92%</span>BTC
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +4.24%</span>AAPL
+                    </div>
+                    <div class="boslide">
+                        <span class="green">▲ +0.47%</span>023644
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-3.10%</span>ADBE
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼ -3.52%</span>ETH
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼-15.63%</span>USDKRW
+                    </div>
+                    <div class="boslide">
+                        <span class="red">▼ -3.83%</span>035420
+                    </div>
+
+
+                </div>
+            </div>
+
         </div>
-      </div>
+    </header>
+
+    <div class="framecontainer">
+        <div class="leftbox">
+            <ul class="left_menu">
+                <li><a href="#">최근 인기 있는 커뮤니티</a></li>
+                <li><a href="#">방문한 커뮤니티</a></li>
+                <li><a href="#">최근 인기 있는 사용자</a></li>
+                <li><a href="#">트렌드</a></li>
+                <li><a href="#">재테크 팁</a></li>
+            </ul>
+            <ul class="left_menu_bottom">
+                <li>개발자</li>
+                <li>광고하기</li>
+                <li>더보기</li>
+            </ul>
+        </div>
+        <div class="centerbox">
+            <div class="searchbar">
+                <div class="inner">
+                    <input type="search" placeholder="커뮤니티 검색">
+                    <div class="searching">
+                        <img src="../img/search.svg" alt="">
+                    </div>
+                    <div class="icon_ect">
+                        <i class="fas fa-keyboard"></i>
+                        <i class="fas fa-microphone"></i>
+                    </div>
+                    <ul class="category">
+                        <li><a href="./microsoft.html">Microsoft</a></li>
+                        <li><a href="./tesla.html">Tesla</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content_center">
+                <div class="profilefeed">
+                    <div class="profile-info">
+                        <form><textarea class="form-control input-lg p-text-area" rows="2"
+                                placeholder="당신의 의견을 게시해보세요."></textarea></form>
+                        <footer class="panel-footer">
+                            <ul class="nav nav-pills">
+                                <li><a><i class="fa fa-map-marker"></i></a></li>
+                                <li><a><i class="fa fa-camera"></i></a></li>
+                                <li><a><i class=" fa fa-film"></i></a></li>
+                                <li><a><i class="fa fa-microphone"></i></a></li>
+                            </ul>
+                            <button type="button" class="btn btn-info pull-right">Post</button>
+                        </footer>
+                    </div>
+                </div>
+                <!-- news feed -->
+                <div class="feedpadding">
+                    <div class="news_feed">
+                        <div class="news_feed_title">
+                            <img src="../img_/people74.png" alt="user" />
+                            <div class="news_feed_title_content">
+                                <p>포그박</p>
+                                <span>5월 12일 15:51 <i class="fas fa-globe-americas"></i></span>
+                            </div>
+                        </div>
+                        <div class="news_feed_description">
+                            <input type="checkbox" name="button" class="mo_bt" id="more_bt2" />
+                            <label for="more_bt2" id="more_bt">더보기...</label>
+                            <p class="news_feed_subtitle">자율주행 기술 역시 앞으로 개척할 분야가 많이 남은 시장이죠.
+                                <br>
+                                자율주행은 총 5단계 레벨로 나뉘는데. 현재 우리가 이용할 수 있는 자율주행 단계는 레벨2에 불과하죠. 아직 자율주행 기술은 불완전하고 인간의 운전을 보조하는
+                                수단에 머물러있지만 레벨5 단계에 올라가면 인간의 개입은 전혀 필요하지 않다고하죠.
+                                <br>
+                                <br>
+                                운전자는 그저 차에 올라타서 목적지만 설정하면 되는.레벨5까지 도달하기 위해선 아직 넘어야 할 산이 많고 완벽한 자율주행 기술을 구현하려면 방대한 데이터가
+                                필요합니다.
+                                도로 위에서 일어날 수 있는 모든 변수를 데이터화하고, 이 데이터를 효율적으로 활용해야 하는데 바로 이 데이터를 압도적으로 많이 쌓은 기업이 테슬라죠.
+                                자율주행 차 시대가 본격적으로 시작되면 자동차는 하드웨어보다는 자율주행 기술이라는 소프트웨어가 더 중요해지죠. 물론 기존 자동차 기업들도 이런 현실을 잘 알고
+                                있죠. 그래서 방대한 데이터를 보유한 구글, MS와 전략적 제휴를 맺는 중이고요.
+                            </p>
+                            <img src="../img_/teslafeed1.jpg" alt="" />
+                        </div>
+
+                        <div class="likes_area">
+                            <div class="likes_buttons">
+                                <div class="likes_buttons_links">
+                                    <i class="far fa-thumbs-up"></i>
+                                    <span>공감</span>
+                                </div>
+                                <div class="likes_buttons_links">
+                                    <i class="far fa-comment-alt"></i>
+                                    <span>댓글</span>
+                                </div>
+                                <div class="likes_buttons_links">
+                                    <i class="fas fa-share"></i>
+                                    <span>공유</span>
+                                </div>
+                            </div>
+
+                            <div class="comment_counts">
+                                <span>3 댓글</span>
+                                <span>21 공유</span>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="paddingbox">
+                                    <div class="news_feed_title">
+                                        <img src="../img_/people18.png" alt="user" />
+
+                                        <div class="news_feed_title_content">
+                                            <p style="font-size: 0.9rem;">리즈리</p>
+                                            <span id="time">1시간 12분전</span>
+                                        </div>
+                                    </div>
+                                    <p class="fb-user-status">도요타, 폭스바겐, 제너럴모터스, 혼다, 현대차, 포드, 피아트크라이슬러, 닛산, 푸조 등 거의 모든 자동차 기업이 전기차 시장에 뛰어들었는데. 저는 이런 기업이 곧 테슬라를 따라잡을 수 있으리라 생각하는 편이긴합니다. 역사가 100년이나 넘은 기업들이 쌓은 자동차 제조 노하우는 무시할 수 없지 않을까요?
+                                    </p>
+                                    <input type="checkbox" name="button" class="co_bt" id="bottom_comment_bt1" />
+                                    <label for="bottom_comment_bt1" id="bottom_comment_bt"></label>
+
+                                    <ul class="fb-comments a">
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people73.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>끼리코</a> <span>오.. 그렇게 볼 수도 있겠네요.</span>
+                                                <p>1시간 5분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people72.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>vhzjzld12</a> <span>공감가는 글이네요.</span>
+                                                <p>59분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people71.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>롤하고싶다</a> <span>그래도 소프트웨어에서 차이가 많이 나지 않을까요?</span>
+                                                <p>31분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people70.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>azure</a> <span>피드 공유해도될까요?</span>
+                                                <p>19분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+
+                                        <input type="checkbox" name="button" class="co_bt" id="comment_bt1" />
+                                        <label for="comment_bt1" id="comment_bt">— 다음 답글 표시</label>
+
+                                        <div class="commentbox a1">
+                                            <li style="border-top: 1px solid #ffffff25;"> <a class="cmt-thumb"> <img
+                                                        src="../img_/people69.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>xlwmf</a> <span>인정합니다. ㅎㅎ</span>
+                                                    <p>14분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                            <li> <a class="cmt-thumb"> <img src="../img_/people68.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>티즐_</a> <span>엔비디아와 이제 협엄하지 않는다 들었는데 요즘은 데이터처리를 어떻게 하는지 궁금하네요</span>
+                                                    <p>8분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                        </div>
+                                    </ul>
+
+                                </div>
+                                <li id="mychat"> <a class="cmt-thumb1"> <img src="../img/peoplecomma.svg" alt="">
+                                    </a>
+
+                                    <textarea class="form-control1" placeholder="댓글 달기" name=""></textarea>
+
+                                    <div id="send"></div>
+                                </li>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="feedpadding">
+                    <div class="news_feed">
+                        <div class="news_feed_title">
+                            <img src="../img_/people66.png" alt="user" />
+                            <div class="news_feed_title_content">
+                                <p>제임스밴드</p>
+                                <span>5월 12일 15:51 <i class="fas fa-globe-americas"></i></span>
+                            </div>
+                        </div>
+                        <div class="news_feed_description">
+                            <input type="checkbox" name="button" class="mo_bt" id="more_bt3" />
+                            <label for="more_bt3" id="more_bt" style="visibility: hidden;">더보기</label>
+                            <p class="news_feed_subtitle">
+                                투자는 개인의 선택이죠. 누가 어떤 종목이 좋다고 해서 공부 없이 무조건 그 종목을 사는 건 투자가 아니라 도박입니다. 테슬라 주식을 살까 말까 고민된다면, 앞으로 전기차, 자율차 시장이 얼마나 발전할지 공부해야 하면됩니다. 그리고 이 시장에서 테슬라가 다른 자동차 기업과 비교해 어떤 강점이 있는지 분석해보면서 선별할 수 있는 능력을 키우는 것이 중요합니다.
+                            </p>
+                            <!-- <img src="../img_/teslafeed1.jpg" alt="" /> -->
+                        </div>
+
+                        <div class="likes_area">
+                            <div class="likes_buttons">
+                                <div class="likes_buttons_links">
+                                    <i class="far fa-thumbs-up"></i>
+                                    <span>공감</span>
+                                </div>
+                                <div class="likes_buttons_links">
+                                    <i class="far fa-comment-alt"></i>
+                                    <span>댓글</span>
+                                </div>
+                                <div class="likes_buttons_links">
+                                    <i class="fas fa-share"></i>
+                                    <span>공유</span>
+                                </div>
+                            </div>
+
+                            <div class="comment_counts">
+                                <span>12 댓글</span>
+                                <span>24 공유</span>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="paddingbox">
+                                    <div class="news_feed_title">
+                                        <img src="../img_/people65.png" alt="user" />
+
+                                        <div class="news_feed_title_content">
+                                            <p style="font-size: 0.9rem;">아라리요</p>
+                                            <span id="time">1시간 12분전</span>
+                                        </div>
+                                    </div>
+                                    <p class="fb-user-status">오늘 하락이 문제가 아닌 것 같습니다. 내년에 자사주 매입한다지만..
+                                    </p>
+                                    <input type="checkbox" name="button" class="co_bt" id="bottom_comment_bt3" />
+                                    <label for="bottom_comment_bt3" id="bottom_comment_bt"></label>
+
+                                    <ul class="fb-comments c">
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people64.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>에이펙스</a> <span>실적 부분에서는 전혀 문제가 없다 보여집니다.</span>
+                                                <p>14분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people63.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>dfflxk</a> <span>캐시우드와 함께합니다~</span>
+                                                <p>9분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people62.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>시계는와치</a> <span>좋은 글 감사드립니다.</span>
+                                                <p>2분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+
+                                        <input type="checkbox" name="button" class="co_bt" id="comment_bt3" />
+                                        <label for="comment_bt3" id="comment_bt">— 다음 답글 표시</label>
+
+                                        <div class="commentbox c1">
+                                            <li style="border-top: 1px solid #ffffff25;"> <a class="cmt-thumb"> <img
+                                                        src="../img_/people61.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>깔깔티비</a> <span>감사합니다.</span>
+                                                    <p>14분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                            <li> <a class="cmt-thumb"> <img src="../img_/people60.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>젤라또</a> <span>고민되네요.. ㅜㅜ</span>
+                                                    <p>8분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                        </div>
+
+
+                                    </ul>
+
+
+
+                                    <div class="news_feed_title">
+                                        <img src="../img_/people59.png" alt="user" />
+
+                                        <div class="news_feed_title_content">
+                                            <p style="font-size: 0.9rem;">abko</p>
+                                            <span id="time">1시간 26분전</span>
+                                        </div>
+                                    </div>
+                                    <p class="fb-user-status">
+                                        실적과 가이던스에는 중국의 수요이슈를 제외하면 문제가 전혀 없으며 4분기 또한 강한 자신감을 표현했습니다.
+                                        테슬라 자체의 펀더멘탈은 전혀 바뀐게 없으며 여전히 높은 성장률과 성장하는 현금창출을 보여주고 있다고 생각합니다.
+                                    </p>
+                                    <input type="checkbox" name="button" class="co_bt" id="bottom_comment_bt4" />
+                                    <label for="bottom_comment_bt4" id="bottom_comment_bt"></label>
+
+                                    <ul class="fb-comments d">
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people58.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>apfhdxlql</a> <span>긍정적으로 보시네요...</span>
+                                                <p>1시간 12분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people57.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>누룽지</a> <span>테슬라 4분기 미래는 좋아보인답니다. AI데이를 진행했으며 많은 진전이 있었답니다.</span>
+                                                <p>43분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people56.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>알랑방구</a> <span>주가하락은 언제나 마음 아픈 것..</span>
+                                                <p>34분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people55.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>cacoo</a> <span>좋은 정보 감사합니다.</span>
+                                                <p>26분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+
+                                        <input type="checkbox" name="button" class="co_bt" id="comment_bt4" />
+                                        <label for="comment_bt4" id="comment_bt">— 다음 답글 표시</label>
+
+                                        <div class="commentbox d1">
+                                            <li style="border-top: 1px solid #ffffff25;"> <a class="cmt-thumb"><img
+                                                        src="../img_/people54.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>피콜로</a> <span>왜 갑자기 꼬라박는거같죠?</span>
+                                                    <p>20분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                            <li> <a class="cmt-thumb"> <img src="../img_/people53.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>yaak</a> <span>적금처럼 모아가봅니다.</span>
+                                                    <p>14분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                            <li> <a class="cmt-thumb"> <img src="../img_/people52.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>초콜라</a> <span>좋은 글 감사드립니다.</span>
+                                                    <p>2분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                        </div>
+
+
+                                    </ul>
+
+
+                                </div>
+                                <li id="mychat"> <a class="cmt-thumb1"> <img src="../img/peoplecomma.svg" alt="">
+                                    </a>
+
+                                    <textarea class="form-control1" placeholder="댓글 달기" name=""></textarea>
+
+                                    <div id="send"></div>
+                                </li>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <input type="checkbox" name="button" class="co_bt" id="nextfeed_bt1" />
+                <label for="nextfeed_bt1" id="nextfeed_bt">더 많은 의견 보기</label>
+
+                <div class="feedpadding">
+                    <div class="news_feed">
+                        <div class="news_feed_title">
+                            <img src="../img_/people51.png" alt="user" />
+                            <div class="news_feed_title_content">
+                                <p>dhzlehzl</p>
+                                <span>5월 12일 15:51 <i class="fas fa-globe-americas"></i></span>
+                            </div>
+                        </div>
+                        <div class="news_feed_description">
+                            <input type="checkbox" name="button" class="mo_bt" id="more_bt4" />
+                            <label for="more_bt4" id="more_bt" style="visibility: hidden;">더보기</label>
+                            <p class="news_feed_subtitle">
+                                테슬라 슈퍼차저를 한국 정부도 개발중인데 정부 목표는 기존 50kW급 공공 급속충전기 대비 최대 8분의 1 충전 시간을 단축한 1000V/400A의 400kW급 초급속 충전시스템 기술 확보가 목표라네요.
+                                이 기술이 확보되면 5분 충전으로도 200km를 주행할 수 있다는 것이 정부 측의 예측이고요.
+                                대다수 기업들이 400kW급 충전기를 개발하고 있기에 전기차 본격 시대가 될 2023년부터는 500kW급 이상 급속 충전기를 볼 수 있을 것으로 전망됩니다.
+                            </p>
+                            <img src="../img_/teslafeed.jpg" alt="" />
+                        </div>
+
+                        <div class="likes_area">
+                            <div class="likes_buttons">
+                                <div class="likes_buttons_links">
+                                    <i class="far fa-thumbs-up"></i>
+                                    <span>공감</span>
+                                </div>
+                                <div class="likes_buttons_links">
+                                    <i class="far fa-comment-alt"></i>
+                                    <span>댓글</span>
+                                </div>
+                                <div class="likes_buttons_links">
+                                    <i class="fas fa-share"></i>
+                                    <span>공유</span>
+                                </div>
+                            </div>
+
+                            <div class="comment_counts">
+                                <span>7 댓글</span>
+                                <span>24 공유</span>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="paddingbox">
+                                    <div class="news_feed_title">
+                                        <img src="../img_/people50.png" alt="user" />
+
+                                        <div class="news_feed_title_content">
+                                            <p style="font-size: 0.9rem;">다프니</p>
+                                            <span id="time">1시간 12분전</span>
+                                        </div>
+                                    </div>
+                                    <p class="fb-user-status">
+                                        현재 테슬라 측에서 대한민국 내의 슈퍼차저 충전소 개수를 늘리고 있지만 아직은 지도를 보고 어딘지 찾아가는 경우가 많죠..
+                                    </p>
+                                    <input type="checkbox" name="button" class="co_bt" id="bottom_comment_bt5" />
+                                    <label for="bottom_comment_bt5" id="bottom_comment_bt"></label>
+
+                                    <ul class="fb-comments e">
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people49.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>dopa</a> <span>아직 적기는 하죠</span>
+                                                <p>1시간 5분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people48.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>주먹밥</a> <span>존버해봅니다.</span>
+                                                <p>59분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people47.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>갈라파고스</a> <span>확실히 초창기때보다 늘어나기는했는데 아직도 많이 부족하죠..</span>
+                                                <p>31분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people46.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>까르보국밥</a> <span>글 공유해도될까요?</span>
+                                                <p>19분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+
+                                        <input type="checkbox" name="button" class="co_bt" id="comment_bt5" />
+                                        <label for="comment_bt5" id="comment_bt">— 다음 답글 표시</label>
+
+                                        <div class="commentbox e1">
+                                            <li style="border-top: 1px solid #ffffff25;"> <a class="cmt-thumb"> <img
+                                                        src="../img_/people45.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>팀쿡</a> <span>아무래도 그렇죠죠</span>
+                                                    <p>14분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                            <li> <a class="cmt-thumb"> <img src="../img_/people43.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>allone</a> <span>데슬라 갖고싶다..ㅠ</span>
+                                                    <p>8분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                        </div>
+
+
+                                    </ul>
+
+
+
+                                    <div class="news_feed_title">
+                                        <img src="../img_/people42.png" alt="user" />
+
+                                        <div class="news_feed_title_content">
+                                            <p style="font-size: 0.9rem;">Sertonin</p>
+                                            <span id="time">1시간 26분전</span>
+                                        </div>
+                                    </div>
+                                    <p class="fb-user-status">
+                                        전기차 보조금 정책이 시행되면서 22년 현재 거리에 나가보면 많은 테슬라 차량이 보이죠.
+                                    </p>
+                                    <input type="checkbox" name="button" class="co_bt" id="bottom_comment_bt6" />
+                                    <label for="bottom_comment_bt6" id="bottom_comment_bt"></label>
+
+                                    <ul class="fb-comments f">
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people41.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>럼블</a> <span>장거리 출장이나 여행갈때는 충전할 곳이 많지는 않아 힘들죠..</span>
+                                                <p>1시간 12분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people40.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>캬라멜</a> <span>테슬라 슈퍼차저 속도 빠른가요?</span>
+                                                <p>43분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people39.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>xptmffk</a> <span>그래도 주가가 너무 하락하니 걱정이네요.</span>
+                                                <p>34분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people38.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>파랑호두</a> <span>좋은 정보 감사합니다.</span>
+                                                <p>26분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+
+                                        <input type="checkbox" name="button" class="co_bt" id="comment_bt6" />
+                                        <label for="comment_bt6" id="comment_bt">— 다음 답글 표시</label>
+
+                                        <div class="commentbox f1">
+                                            <li style="border-top: 1px solid #ffffff25;"> <a class="cmt-thumb"><img
+                                                        src="../img_/people37.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>밤이</a> <span>조용히 모아갑니다..</span>
+                                                    <p>20분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                            <li> <a class="cmt-thumb"> <img src="../img_/people36.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>Ekak</a> <span>전 오너리스크가 걸리네요.</span>
+                                                    <p>14분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                            <li> <a class="cmt-thumb"> <img src="../img_/people35.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>무닌</a> <span>전기차 시장을 계속 선도할 수 있을까요.</span>
+                                                    <p>9분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                            <li> <a class="cmt-thumb"> <img src="../img_/people34.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>ghemb2</a> <span>좋은 글 감사드립니다.</span>
+                                                    <p>2분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                        </div>
+
+
+                                    </ul>
+
+
+                                </div>
+                                <li id="mychat"> <a class="cmt-thumb1"> <img src="../img/peoplecomma.svg" alt="">
+                                    </a>
+
+                                    <textarea class="form-control1" placeholder="댓글 달기" name=""></textarea>
+
+                                    <div id="send"></div>
+                                </li>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="feedpadding">
+                    <div class="news_feed">
+                        <div class="news_feed_title">
+                            <img src="../img_/people33.png" alt="user" />
+                            <div class="news_feed_title_content">
+                                <p>프리즈마</p>
+                                <span>5월 12일 15:51 <i class="fas fa-globe-americas"></i></span>
+                            </div>
+                        </div>
+                        <div class="news_feed_description">
+                            <input type="checkbox" name="button" class="mo_bt" id="more_bt5" />
+                            <label for="more_bt5" id="more_bt" style="opacity: 0;">더보기...</label>
+                            <p class="news_feed_subtitle">전기차는 국가에서 보조금까지 주면서 구매를 장려하는 상품입니다.
+                                <br>
+                                잘 떠올려 보면 국가나 기업이 이렇게 보조금까지 지원하면서 보급 확산에 주력했던 상품이 하나 있었죠. 바로 핸드폰입니다. 2000년대 초에 핸드폰 보급이 급격하게 확산했는데, 이동 통신사들이 앞다퉈 단말기 보조금을 지원해준 영향이 컸습니다. 정부 역시 이런 과열 경쟁을 눈감아주며 핸드폰 보급 확산을 도왔죠. 결국 한국에는 빠르게 모바일 기기가 퍼졌고, 덕분에 이동통신 분야 강국이 됐다고 볼 수도 있죠.
+                                <br>
+                                보조금까지 얹어주면서 정부가 국민에게 추천하는 전기차 역시 미래에 핸드폰만큼이나 보편적인 상품이 될 것으로 봅니다.
+                            </p>
+                            <!-- <img src="../img_/teslafeed1.jpg" alt="" /> -->
+                        </div>
+
+                        <div class="likes_area">
+                            <div class="likes_buttons">
+                                <div class="likes_buttons_links">
+                                    <i class="far fa-thumbs-up"></i>
+                                    <span>공감</span>
+                                </div>
+                                <div class="likes_buttons_links">
+                                    <i class="far fa-comment-alt"></i>
+                                    <span>댓글</span>
+                                </div>
+                                <div class="likes_buttons_links">
+                                    <i class="fas fa-share"></i>
+                                    <span>공유</span>
+                                </div>
+                            </div>
+
+                            <div class="comment_counts">
+                                <span>5 댓글</span>
+                                <span>28 공유</span>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-body">
+                                <div class="paddingbox">
+                                    <div class="news_feed_title">
+                                        <img src="../img_/people32.png" alt="user" />
+
+                                        <div class="news_feed_title_content">
+                                            <p style="font-size: 0.9rem;">잉진</p>
+                                            <span id="time">1시간 12분전</span>
+                                        </div>
+                                    </div>
+                                    <p class="fb-user-status">
+                                        현재도 보면 전기차들이 정말 많이 돌아다니죠.
+                                    </p>
+                                    <input type="checkbox" name="button" class="co_bt" id="bottom_comment_bt7" />
+                                    <label for="bottom_comment_bt7" id="bottom_comment_bt"></label>
+
+                                    <ul class="fb-comments g">
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people31.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>퍼리펄</a> <span>주가하락 멈춰..!</span>
+                                                <p>1시간 5분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people30.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>조니브라운</a> <span>모아가는 재미가 있어요 ㅎㅎ</span>
+                                                <p>59분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people29.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>aodeorhs</a> <span>저도 계속 조금씩 모아가고 있습니다.</span>
+                                                <p>31분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+                                        <li> <a class="cmt-thumb"> <img src="../img_/people28.png" alt="">
+                                            </a>
+                                            <div class="cmt-details"> <a>내일은금요일</a> <span>피드 공유해도될까요?</span>
+                                                <p>19분전 - <a class="like-link">답글</a></p>
+                                            </div>
+                                        </li>
+
+                                        <input type="checkbox" name="button" class="co_bt" id="comment_bt7" />
+                                        <label for="comment_bt7" id="comment_bt">— 다음 답글 표시</label>
+
+                                        <div class="commentbox g1">
+                                            <li style="border-top: 1px solid #ffffff25;"> <a class="cmt-thumb"> <img
+                                                        src="../img_/people27.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>테레비</a> <span>공감222222</span>
+                                                    <p>14분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                            <li> <a class="cmt-thumb"> <img src="../img_/people26.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>냉동참치</a> <span>이게 맞죠.</span>
+                                                    <p>9분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                            <li> <a class="cmt-thumb"> <img src="../img_/people25.png" alt="">
+                                                </a>
+                                                <div class="cmt-details"> <a>깔깔</a> <span>인정합니다~</span>
+                                                    <p>2분전 - <a class="like-link">답글</a></p>
+                                                </div>
+                                            </li>
+                                        </div>
+                                    </ul>
+
+                                </div>
+                                <li id="mychat"> <a class="cmt-thumb1"> <img src="../img/peoplecomma.svg" alt="">
+                                    </a>
+
+                                    <textarea class="form-control1" placeholder="댓글 달기" name=""></textarea>
+
+                                    <div id="send"></div>
+                                </li>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="rightbox">
+            <div class="datebox">
+                <span id="date"></span>
+                <div id="day"></div>
+                <div id="sche">
+                    <div class="sche">Federal Reserve issues FOMC statement</div>
+                    <div class="sche">연방준비제도이사회 FOMC 성명</div>
+                </div>
+                <div class="calendar-wrapper">
+                    <button id="btnNext" type="button">Next</button>
+                    <button id="btnPrev" type="button">Prev</button>
+                    <div id="divCal"></div>
+                </div>
+
+                <div class="follower">최근에 추가된 팔로워</div>
+
+                <div class="subscribe">
+                    <div class="count">구독자</div>
+
+                    <div class="listbox">
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                    </div>
+                </div>
+
+                <div class="recentupload">
+                    <div class="mar">최근에 의견 업로드 한 사용자</div>
+
+                    <div class="recent_listbox">
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                        <div class="list"></div>
+                    </div>
+                </div>
+
+                <div class="recentupload1">
+                    <div class="mar">최근 업로드</div>
+
+                    <div class="recent_listbox1">
+                        <div class="list"></div>
+                        <div class="list"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="rightbox">
-      <div class="datebox">
-        <span id="date"></span>
-        <div id="day"></div>
-        <div id="sche">
-          <div class="sche">Federal Reserve issues FOMC statement</div>
-          <div class="sche">연방준비제도이사회 FOMC 성명</div>
-        </div>
-        <div class="calendar-wrapper">
-          <button id="btnNext" type="button">Next</button>
-          <button id="btnPrev" type="button">Prev</button>
-          <div id="divCal"></div>
-        </div>
+    <footer class="content">
 
-        <div class="follower">최근에 추가된 팔로워</div>
 
-        <div class="subscribe">
-          <div class="count">구독자</div>
 
-          <div class="listbox">
-            <div class="list"></div>
-            <div class="list"></div>
-            <div class="list"></div>
-            <div class="list"></div>
-            <div class="list"></div>
-            <div class="list"></div>
-          </div>
-        </div>
-
-        <div class="recentupload">
-          <div class="mar">최근에 의견 업로드 한 사용자</div>
-
-          <div class="recent_listbox">
-            <div class="list"></div>
-            <div class="list"></div>
-            <div class="list"></div>
-            <div class="list"></div>
-            <div class="list"></div>
-          </div>
-        </div>
-
-        <div class="recentupload1">
-          <div class="mar">최근 업로드</div>
-
-          <div class="recent_listbox1">
-            <div class="list"></div>
-            <div class="list"></div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </div>
-  <footer class="content">
-            
-              
-            
-  </footer>
-  <script src="../js/btop.js"></script>
-  <script src="../js/community.js"></script>
+    </footer>
+    <script src="../js/btop.js"></script>
+    <script src="../js/nav1.js"></script>
+    <script src="../js/community.js"></script>
 </body>
 
 </html>
