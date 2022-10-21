@@ -251,7 +251,20 @@
 let year = today.getFullYear();
 let month = today.getMonth() + 1; 
 let date = today.getDate(); 
-var week = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday');
+var week = new Array('Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'); 
 
 document.getElementById('date').innerHTML =year + ' / ' + month + ' / ' + date
 document.getElementById('day').innerHTML =week[today.getDay()]
+
+// let time = new Date();   
+
+
+// document.getElementById('time').innerHTML =time
+
+
+function getClock() {
+    const date = new Date();
+    document.getElementById('time').innerHTML  = `${date}`;
+}
+
+setInterval(getClock, 1000);
