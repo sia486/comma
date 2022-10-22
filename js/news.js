@@ -54,7 +54,7 @@ $('.slider').each(function() {
         } else {
           move(0);
         }
-      }, 10000);
+      }, 12000);
     }
     
     

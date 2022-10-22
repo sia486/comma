@@ -26,7 +26,7 @@ body {
 
 .slide_viewer {
     width: 100%;
-    height: 25vw;
+    height: 28vw;
     overflow: hidden;
     position: relative;
 }
@@ -47,25 +47,64 @@ body {
 .slide:first-child {
     display: block;
 }
-
+.slide > video{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-25%);
+    /* filter: brightness(20%); */
+}
 .titlene {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 100%;
     height: 100%;
     margin: 0 auto;
+    backdrop-filter: brightness(40%);
 }
-
+.slide .titlene:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
 .titlene h1 {
     /* position: absolute; */
     text-align: center;
     color: var(--white);
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
+    text-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.4);
+    line-height: 2.5rem;
+    font-size: 1.65rem;
     /* margin: auto auto; */
-
+}
+.slide .titlene h1::before{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slide:nth-child(1) .titlene h1::before{
+    content: url("../img/commanewsicon.svg");
+}
+.slide:nth-child(2) .titlene h1::before{
+    content: url("../img/gookmin.svg");
+    top: 37%;
+}
+.slide:nth-child(3) .titlene h1::before{
+    content: url("../img/gyung.svg");
+}
+.slide:nth-child(4) .titlene h1::before{
+    content: url("../img/mbn.svg");
+}
+.slide:nth-child(5) .titlene h1::before{
+    content: url("../img/joongang.svg");
+    top: 39%;
 }
 
 .topbox {
@@ -112,24 +151,26 @@ body {
 
 
 .slide:nth-of-type(1) {
-    background-image: url("../img_/sl1.jpg");
+    /* background-image: url("../img_/sl2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center 40%; */
 }
 
 .slide:nth-of-type(2) {
-    background-image: url("../img_/sl2.png");
+    background-image: url("../img_/sl.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center 42%;
+    
 }
 
 .slide:nth-of-type(3) {
-    background-image: url("../img_/sl3.jpg");
+    background-image: url("../img_/apsl1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center 42%;
+    
 }
 
 .slide:nth-of-type(4) {
@@ -137,21 +178,24 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    
 }
 
 .slide:nth-of-type(5) {
-    background-image: url("../img_/sl5.png");
+    background-image: url("../img_/slll.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center 55%;
+    
 }
 
 .slide_buttons {
     left: 0;
     position: absolute;
+    top: 80%;
     right: 0;
     text-align: center;
-    bottom: 30%;
+    top: 58%;
     z-index: 1;
 }
 
@@ -227,15 +271,18 @@ a.slide_btn:nth-last-child(11) {
     transition: all 0.2s ease-out;
     background: var(--bgdark);
 }
-
+.stockbox{
+    display: flex;
+    flex-direction: column;
+}
 .offset {
     top: 12vh;
     padding-top: 5%;
 }
 
 .hide-nav {
-    transform: translateY(-84.1%) !important;
-    -webkit-transform: translateY(-84.1%) !important;
+    transform: translateY(-86%) !important;
+    -webkit-transform: translateY(-86%) !important;
 }
 
 .op {
@@ -244,6 +291,13 @@ a.slide_btn:nth-last-child(11) {
     position: relative;
     top: 0;
     flex: 1 1 0;
+    border: 0.16rem solid transparent;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 0.4rem;
+    background-image: linear-gradient(90deg, #111 0%, #202328 20%),
+        linear-gradient(107.42deg, #414955 1.37%, rgba(44, 50, 59, 0) 97.97%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
 }
 
 .op .slide_viewer {
@@ -258,6 +312,8 @@ a.slide_btn:nth-last-child(11) {
     height: 100%;
     position: absolute;
     width: 100%;
+    border-radius: 0.4rem;
+    
 }
 
 .slide1:first-child {
@@ -775,13 +831,12 @@ tr:nth-child(1) td:first-child {
 
 .grafico {
     padding: 1.2rem 1.4rem 1rem;
-    top: 16%;
+    top: 17.2%;
     left: 23%;
     width: 90%;
     height: 53%;
     position: absolute;
     color: #fff;
-    font-size: 90%;
 }
 
 
@@ -896,6 +951,7 @@ tr:nth-child(1) td:first-child {
     width: 7.9%;
     float: left;
     text-align: center;
+    font-size: 0.8rem;
 }
 
 .graph_value {
@@ -1012,7 +1068,7 @@ tr:nth-child(1) td:first-child {
 
 #toggle2+label {
     position: absolute;
-    top: 12.5%;
+    top: 14%;
     right: 8%;
     z-index: 1;
     font-size: 0.8rem;
@@ -1749,7 +1805,7 @@ input[type=checkbox] {
 .topboxinfo {
     position: absolute;
     left: 24%;
-    top: 9.5%;
+    top: 11%;
     font-size: 0.75rem;
     margin: 2% 0 0 7%;
 }
@@ -1817,7 +1873,7 @@ input[type=checkbox] {
     font-weight: 300;
 }
 #ch_bt:nth-child(2){
-    margin-top: 5.2%;
+    margin-top: 5%;
 }
 #ch_bt:nth-child(2) .num2 {
     color: #F53D26;
@@ -2042,6 +2098,7 @@ input[type=checkbox] {
     position: relative;
     left: -3.6rem;
     top: -.6rem;
+    font-size: 0.8rem;
     transition: all 0.1s ease-out;
 }
 .eje-y li:nth-child(1)::after{

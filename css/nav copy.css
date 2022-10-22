@@ -62,6 +62,7 @@ body{
   }
   #navigation{
     padding: 1.05% 0;
+    height: 47vh;
     
   }
   .menu-left a {
@@ -129,9 +130,7 @@ body{
     box-shadow: 0 0.16rem 0.26rem rgba(0, 0, 0, 0.7);
     overflow: hidden;
   }
-  #navigation{
-    height: 40vh;
-  }
+
   header nav .logo {
     position: relative;
     float: left;
