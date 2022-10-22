@@ -265,6 +265,7 @@ document.getElementById('day').innerHTML =week[today.getDay()]
 function getClock() {
     const date = new Date();
     document.getElementById('time').innerHTML  = `${date}`;
+    document.getElementById('time1').innerHTML  = `${date}`;
 }
 
 setInterval(getClock, 1000);

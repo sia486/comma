@@ -47,8 +47,8 @@ body{
     top: 0;
   }
   .boslider .boslide-track {
-    -webkit-animation: scroll 74s linear infinite alternate;
-            animation: scroll 74s linear infinite alternate;
+    -webkit-animation: scroll 140s linear infinite alternate;
+            animation: scroll 140s linear infinite alternate;
     display: flex;
     width: calc(220px * 38);
   }

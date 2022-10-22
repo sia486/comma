@@ -132,7 +132,6 @@ $('.op').each(function() {
       }, 8000);
     }
 
-    
     $.each($slides1, function(index1) {
       var $button = $('<a class="slide_btn">&bull;</a>');
       
