@@ -790,7 +790,7 @@ td {
   /* border-right:1px solid @calendar-border;
   border-top:1px solid @calendar-border; */
   width:100% / 7;
-  font-size:0.86rem;
+  font-size:0.8rem;
   color: #ffffff99;
 }
 
@@ -851,7 +851,7 @@ tr td:first-child{
 tr:nth-child(1) td:first-child{
   color: #fff;
   text-align: left;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 .days:nth-child(1) td:first-child{
   text-align: center;
@@ -876,12 +876,12 @@ tr:nth-child(1) td:first-child{
   color: #ffffff;
 }
 #date{
-  font-size: 1.9rem;
-  font-weight: 500;
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 #day{
   margin-top: 0.6rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 200;
 }
 #sche{
@@ -945,6 +945,7 @@ tr:nth-child(1) td:first-child{
   transform: translateX(-50%);
   width: 5rem;
   text-align: center;
+  font-size: 0.8rem;
 }
 .listbox .list:nth-child(1){
   width: 3rem;
@@ -1032,6 +1033,7 @@ tr:nth-child(1) td:first-child{
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 0.9rem;
+  font-size: 0.8rem;
 }
 .recent_listbox .list:last-child{
   margin-bottom: 0;
@@ -1095,6 +1097,7 @@ tr:nth-child(1) td:first-child{
 }
 .recent_listbox1{
   position: relative;
+  font-size: 0.8rem;
 }
 .recent_listbox1 .list{
   width: 95%;

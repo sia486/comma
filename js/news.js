@@ -54,7 +54,7 @@ $('.slider').each(function() {
         } else {
           move(0);
         }
-      }, 12000);
+      }, 16000);
     }
     
     
@@ -129,7 +129,7 @@ $('.op').each(function() {
         } else {
           move(0);
         }
-      }, 8000);
+      }, 14000);
     }
 
     $.each($slides1, function(index1) {
