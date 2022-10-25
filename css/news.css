@@ -21,12 +21,12 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    top: -5vh;
+    top: -3.1rem;
 }
 
 .slide_viewer {
     width: 100%;
-    height: 28vw;
+    height: 111%;
     overflow: hidden;
     position: relative;
 }
@@ -697,8 +697,8 @@ a.slide_btn:nth-last-child(11) {
 }
 
 .hide-nav {
-    transform: translateY(-86%) !important;
-    -webkit-transform: translateY(-86%) !important;
+    transform: translateY(-42.1rem) !important;
+    -webkit-transform: translateY(-42.1rem) !important;
 }
 
 .op {
@@ -3455,6 +3455,21 @@ input[type=checkbox] {
     border-image-slice: 1;
     opacity: 1;
 }
+#section_bt3:checked ~ .section .leftsec{
+    display: none;
+}
+#section_bt3:checked ~ .section .rightsec{
+    display: none;
+}
+#section_bt3:checked ~ .section{
+    flex-direction: column;
+}
+#section_bt4:checked ~ .section .leftsec1{
+    display: none;
+}
+#section_bt4:checked ~ .section .rightsec1{
+    display: none;
+}
 .section{
     display: flex;
     column-gap: 12%;
@@ -3679,6 +3694,19 @@ input[type=checkbox] {
     background-size:contain;
     background-position:center;
 }
+.leftnewsbox{
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.newsbox{
+    border: 0.1rem solid #3d3d3d;
+    margin: 0.5% 0.8%;
+    width: 14%;
+    text-align: center;
+    padding: 0.45rem 0;
+}
 @media screen and (max-width:2200px){
     .topbox{
         display: flex;
@@ -3688,5 +3716,9 @@ input[type=checkbox] {
         margin-bottom: 5%;
         margin-left: 3rem;
         margin-right: 3rem;
+    }
+    .hide-nav {
+        transform: translateY(-42.1rem) !important;
+        -webkit-transform: translateY(-42.1rem) !important;
     }
 }

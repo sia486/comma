@@ -15,6 +15,10 @@
 #navigation {
     padding: 1.1rem 0 7rem;
 }
+.hide-nav {
+    transform: translateY(-28.7rem) !important;
+    -webkit-transform: translateY(-28.7rem) !important;
+  }
 .toptitle {
     margin: 7.4% 0 1.6%;
     text-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 1);

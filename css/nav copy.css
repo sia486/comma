@@ -62,7 +62,7 @@ body{
   }
   #navigation{
     padding: 1.1rem 0 0;
-    height: 29rem;
+    height: 41rem;
     
   }
   .menu-left a {
@@ -352,5 +352,30 @@ body{
     100%{
       opacity: 1;
       transform: translateY(0%);
+    }
+  }
+
+
+  @media screen and (max-width:2200px){
+    #navigation{
+      padding: 1.1rem 0 0;
+      height: 29rem;
+      
+    }
+    .hide-nav {
+      transform: translateY(-23.1rem) !important;
+      -webkit-transform: translateY(-23.1rem) !important;
+    }
+  }
+  
+  @media screen and (max-width:1600px){
+    #navigation{
+      padding: 1.1rem 0 0;
+      height: 29rem;
+      
+    }
+    .hide-nav {
+      transform: translateY(-16.8rem) !important;
+      -webkit-transform: translateY(-16.8rem) !important;
     }
   }
