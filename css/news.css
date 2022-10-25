@@ -3679,3 +3679,14 @@ input[type=checkbox] {
     background-size:contain;
     background-position:center;
 }
+@media screen and (max-width:2200px){
+    .topbox{
+        display: flex;
+        justify-content: space-around;
+        column-gap: 1.8%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+}

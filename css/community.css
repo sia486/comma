@@ -149,7 +149,7 @@ body{
 
   }
   #navigation{
-    padding: 1.05% 0 11.5%;
+    padding: 1.1rem 0 12rem;
 
     
   }
@@ -309,8 +309,8 @@ body{
     }
   }
   .hide-nav {
-    transform: translateY(-83.6%) !important;
-    -webkit-transform: translateY(-83.6%) !important;
+    transform: translateY(-23.1rem) !important;
+    -webkit-transform: translateY(-23.1rem) !important;
   }
   .show-nav{
     transform: translateY(0) !important;
@@ -334,18 +334,7 @@ body{
     z-index: 10;
     height: 2rem;
   }
-  /* @media (min-width: 768px) {
-    ul.menu-left {
-      /* display: block;
-      float: right;
-      max-height: none; */
-    }
-  } */
-  /* ul.menu-left:before {
-    content: '';
-    display: table;
-    clear: both;
-  } */
+
   ul.menu-left.collapse {
     max-height: 15em !important;
   }
@@ -2978,4 +2967,9 @@ ul + button{
 .offset{
   top: 12vh;
   padding-top: 5%;
+}
+@media screen and (max-width:2200px){
+  .leftbox{
+    display: none;
+  }
 }

@@ -29,7 +29,7 @@ body{
   
   .hero-hardware {
   background-repeat: no-repeat;
-    background-image: url("../img_/display5.png");
+    background-image: url("../img_/display5-1.png");
     background-size: contain;
     background-position: center;
     position: relative;
@@ -45,7 +45,7 @@ body{
   }
   .hidden{
     background-repeat: no-repeat;
-    background-image: url("../img_/display3.png");
+    background-image: url("../img_/display3-1.png");
     background-size: contain;
     background-position: center;
     position: relative;
