@@ -146,3 +146,10 @@ $('.op').each(function() {
     
     advance();
   });
+
+  document.getElementById("txt_search")
+    .addEventListener("keyup", function(e) {
+        if (e.keyCode === 13) {
+            document.getElementById("submit").click();
+        }
+    });

@@ -981,37 +981,506 @@
 
                     <div class="leftsec1">
                         <input type="radio" name="button3" class="gr_bt" id="section_bt5" />
-                        <label for="section_bt5" id="sc_bt">데일리 이슈</label>
+                        <label for="section_bt5" id="sc_bt">전체 언론사</label>
                         <input type="radio" name="button3" class="gr_bt" id="section_bt6" />
-                        <label for="section_bt6" id="sc_bt">개장 전 브리핑</label>
+                        <label for="section_bt6" id="sc_bt">구독한 언론사</label>
                         <input type="radio" name="button3" class="gr_bt" id="section_bt7" />
-                        <label for="section_bt7" id="sc_bt">장 마감 브리핑</label>
+                        <label for="section_bt7" id="sc_bt">조회수 높은 언론사</label>
 
                         <div class="leftnewsbox">
-                            <div class="newsbox"><img src="../img/seoul.svg" alt="" height="17rem"></div>
-                            <div class="newsbox"><img src="../img/knn.svg" alt="" height="17rem"></div>
-                            <div class="newsbox"><img src="../img/wiki.svg" alt="" height="19rem"></div>
-                            <div class="newsbox"><img src="../img/newsko.svg" alt="" height="25rem"></div>
-                            <div class="newsbox"><img src="../img/gyung.svg" alt="" height="17rem"></div>
-                            <div class="newsbox"><img src="../img/meconomy.svg" alt="" height="17rem"></div>
-                            <div class="newsbox"><img src="../img/asia.svg" alt="" height="21rem"></div>
-                            <div class="newsbox"><img src="../img/yeonhap.svg" alt="" height="17rem"></div>
-                            <div class="newsbox"><img src="../img/insight.svg" alt="" height="23rem"></div>
-                            <div class="newsbox"><img src="../img/obs.svg" alt="" height="24rem"></div>
-                            <div class="newsbox"><img src="../img/every.svg" alt="" height="19rem"></div>
-                            <div class="newsbox"><img src="../img/daily.svg" alt="" height="25rem"></div>
-                            <div class="newsbox"><img src="../img/hangook.svg" alt="" height="19rem"></div>
-                            <div class="newsbox"><img src="../img/sisa.svg" alt="" height="19rem"></div>
-                            <div class="newsbox"><img src="../img/kbs.svg" alt="" height="19rem"></div>
-                            <div class="newsbox"><img src="../img/ai.svg" alt="" height="21rem"></div>
-                            <div class="newsbox"><img src="../img/han.svg" alt="" height="19rem"></div>
-                            <div class="newsbox"><img src="../img/jtbc.svg" alt="" height="23rem"></div>
-                            <div class="newsbox"><img src="../img/gookmin.svg" alt="" height="17rem"></div>
-                            <div class="newsbox"><img src="../img/economic.svg" alt="" height="17rem"></div>
-                            <div class="newsbox"><img src="../img/sbs.svg" alt="" height="20rem"></div>
-                            <div class="newsbox"><img src="../img/joongang.svg" alt="" height="19rem"></div>
-                            <div class="newsbox"><img src="../img/mbc.svg" alt="" height="17rem"></div>
-                            <div class="newsbox"><img src="../img/mbn.svg" alt="" height="17rem"></div>
+                            <div class="newsbox"><img src="../img/seoul.svg" alt="" height="50%"></div>
+                            <div class="newsbox"><img src="../img/knn.svg" alt="" height="48%"></div>
+                            <div class="newsbox"><img src="../img/wiki.svg" alt="" height="50%"></div>
+                            <div class="newsbox"><img src="../img/newsko.svg" alt="" height="66%"></div>
+                            <div class="newsbox"><img src="../img/gyung.svg" alt="" height="50%"></div>
+                            <div class="newsbox"><img src="../img/meconomy.svg" alt="" height="49%"></div>
+                            <div class="newsbox"><img src="../img/asia.svg" alt="" height="54%"></div>
+                            <div class="newsbox"><img src="../img/yeonhap.svg" alt="" height="42%"></div>
+                            <div class="newsbox"><img src="../img/insight.svg" alt="" height="56%"></div>
+                            <div class="newsbox"><img src="../img/obs.svg" alt="" height="62%"></div>
+                            <div class="newsbox"><img src="../img/every.svg" alt="" height="48%"></div>
+                            <div class="newsbox"><img src="../img/daily.svg" alt="" height="65%"></div>
+                            <div class="newsbox"><img src="../img/hangook.svg" alt="" height="60%"></div>
+                            <div class="newsbox"><img src="../img/sisa.svg" alt="" height="62%"></div>
+                            <div class="newsbox"><img src="../img/kbs.svg" alt="" height="60%"></div>
+                            <div class="newsbox"><img src="../img/ai.svg" alt="" height="64%"></div>
+                            <div class="newsbox"><img src="../img/han.svg" alt="" height="60%"></div>
+                            <div class="newsbox"><img src="../img/jtbc.svg" alt="" height="64%"></div>
+                            <div class="newsbox"><img src="../img/gookmin.svg" alt="" height="56%"></div>
+                            <div class="newsbox"><img src="../img/economic.svg" alt="" height="56%"></div>
+                            <div class="newsbox"><img src="../img/sbs.svg" alt="" height="67%"></div>
+                            <div class="newsbox"><img src="../img/joongang.svg" alt="" height="50%"></div>
+                            <div class="newsbox"><img src="../img/mbc.svg" alt="" height="51%"></div>
+                            <div class="newsbox"><img src="../img/mbn.svg" alt="" height="51%"></div>
+                        </div>
+
+                        <div class="searchbar">
+                            <div class="inner">
+                                <input type=text name="txt_search" id="txt_search" value="" placeholder="뉴스 검색">
+                                <button id="submit" onclick="javascript:goSearch();"></button>
+                                <div class="searching">
+                                    <img src="../img/search.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+
+                        </div>
+
+                        <div id="news_result" style="color:#fff;">
+
+                        </div>
+
+
+                        <div class="masonry">
+                            <div class="grid">
+                                <img src="../img_/surfacepro9.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link" href="newsfeed.html"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">IT</div>
+                                            <div class="tag1">[Daily TOP] MS, 신형 '서피스 랩탑 5‧프로 9' 공개</div>
+                                            <div class="tag2">마이크로소프트 서피스 시제품 스펙과 가격 살펴보니? 한국은?</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed2.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">신재생에너지</div>
+                                            <div class="tag1">IEA “올해 RE 발전용량 신기록 세울 듯”</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed1.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">IT</div>
+                                            <div class="tag1">MSFT, 데이터센터 구축..“韓 cloud 공략”</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feedad.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed4.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">증시</div>
+                                            <div class="tag1">“닷컴 버블 때보다.. 주가 45% 폭락할 것”</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed5.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">IT</div>
+                                            <div class="tag1">삼성과 TSMC
+                                                5나노 공정: 4차 산업혁명의 기폭제</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed6.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">IT</div>
+                                            <div class="tag1">美 CPI 예상치 급락..애플 5% 하락</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed7.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">IT</div>
+                                            <div class="tag1">구글 I/O 2022, 어떤 것들이 공개될까?</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed8.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">일상 / 생활</div>
+                                            <div class="tag1">재테크 쉽고 재밌게 하는 방법 없을까?</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed9.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">암호화폐</div>
+                                            <div class="tag1">불룸버그 “테라 충격으로 암호화폐 공황”</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed10.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">IT</div>
+                                            <div class="tag1">[Daily] 애플 ‘세계 시총 1위’ 뺏겼다.</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed11.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">일상 / 생활</div>
+                                            <div class="tag1">‘wear weather’ 앱으로 보는 오늘의 OOTD </div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed12.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed13.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">금융</div>
+                                            <div class="tag1">토스 프라임 혜택 간단 정리</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed14.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">IT</div>
+                                            <div class="tag1">메타, '모든 것이 내 세상, 밋 메타 팝업' 연다</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed15.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">암호화폐</div>
+                                            <div class="tag1">‘파일 코인’ 제대로 알야야 돈 된다.</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed16.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">NFT</div>
+                                            <div class="tag1">나만의 NFT 작품을 제작할 수 있을까?</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed17.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">IT</div>
+                                            <div class="tag1">메타버스와 게임산업에 뛰어드는 넷플릭스?</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed18.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">일상 / 생활</div>
+                                            <div class="tag1">롤러코스터장, 든든한 재테크 전략은?</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed20.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">IT</div>
+                                            <div class="tag1">견고한 노트북 시장 크기 현재와 미래</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed21.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">원자재</div>
+                                            <div class="tag1">한돈에 32만원대, 달러지수는 103.80↓</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed22.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">무역</div>
+                                            <div class="tag1">명품 소비 급증…한국 무역수지 적자</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed23.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">증시</div>
+                                            <div class="tag1">美 11월 CPI 예상치 급락..애플 5% 하락</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed24.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed25.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">일상 / 생활</div>
+                                            <div class="tag1">실생활에서 얻는 재테크 아이디어</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed26.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">자동차</div>
+                                            <div class="tag1">‘국민 전기차’ 등극한 현대 아이오닉 5</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed27.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">일상 / 생활</div>
+                                            <div class="tag1">다양한 재테크들.. 슈테크란?</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed28.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">일상 / 생활</div>
+                                            <div class="tag1">좋은 재테크 전략을 위해선..</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid">
+                                <img src="../img_/feed30.png">
+                                <div class="grid__body">
+                                    <div class="relative">
+                                        <a class="grid__link"></a>
+                                    </div>
+                                    <div class="mt-auto">
+
+                                        <span class="grid__tag">
+                                            <div class="tag">암호화폐</div>
+                                            <div class="tag1">암호화페의 미래와 현재</div>
+                                        </span>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -1204,21 +1673,6 @@
     </div>
 
 
-    <!-- <div style="width:1000px; margin-top:40px; text-align:center">
-                <input type=text name="txt_search" id="txt_search" value=""
-                    style="width:180px; height:24px; vertical-align:top" placeholder="검색어를">
-                <button onclick="javascript:goSearch();">검색</button>
-            </div> -->
-    <!-- <div style="margin-left:50px; margin-top:15px; color: blue; font-weight:bold">
-        블로그
-    </div> -->
-    <!-- <div id="blog_result" style="width:1000px; height:500px; margin-top:40px">
-                검색하시면
-            </div> -->
-    </div>
-
-
-
     <footer class="content"></footer>
 
     <!-- <script src="../js/nav.js"></script> -->
@@ -1261,21 +1715,21 @@
                 // });
                 // });
                 .done(function (result) {
-                    var blog_html = "";
+                    var news_html = "";
                     for (var i = 0; i < (result.items.length > 5 ? 5 : result.items.length); i++) {
                         //result.items[i].title 블로그 글의 제목
                         //result.items[i].link
                         //result.items il.description 해당 블로그 글의 내용(설명)
                         //result.items il postdate 해당 블로그 글의 날짜
                         var row_html = "";
-                        row_html += "<div style='width:100%;text-align:left;padding-left:50px; font-weight:bold'> <a href='" + result.items[i].link + "'target='_new' style='color: black; text-decoration: none'>" + (i + 1) + ". " + result.items[i].title + " (" + result.items[i].postdate + ")</a></div>";
-                        row_html += "<div style='width:100%;text-align:left;padding-left:70px; color:#888888; padding-top:4px'>" + result.items[i].description + "</div>";
-                        row_html += "<div style='width:100%; height:30px'> </div>";
-                        blog_html += row_html;
+                        row_html += "<div style='width:90%;text-align:left;padding-left:50px; font-weight:400' color:#fff; margin-top:3%> <a href='" + result.items[i].link + "'target='_new' style='color: #fff; text-decoration: none'>" + (i + 1) + ". " + result.items[i].title + " (" + result.items[i].pubDate + ")</a></div>";
+                        row_html += "<div style='width:90%;text-align:left;padding-left:70px; color:#fff; padding-top:4px'>" + result.items[i].description + "</div>";
+                        row_html += "<div style='width:90%; height:2rem'> </div>";
+                        news_html += row_html;
                     }
 
-                    if (blog_html) {
-                        $("#blog_result").html(blog_html);
+                    if (news_html) {
+                        $("#news_result").html(news_html);
                     }
                 });
         }

@@ -418,7 +418,7 @@ a.slide_btn:nth-last-child(11) {
 
 .framecontainer {
     position: relative;
-    top: 51vh;
+    top: 0;
     margin: 0 10%;
     padding: 6% 0 20% 0;
     /* display: flex; */
@@ -707,15 +707,6 @@ a.slide_btn:nth-last-child(11) {
     display: block;
 }
 
-.offset {
-    top: 12vh;
-    padding-top: 5%;
-}
-
-.hide-nav {
-    transform: translateY(-42.1rem) !important;
-    -webkit-transform: translateY(-42.1rem) !important;
-}
 
 .op {
     height: 100%;
@@ -807,6 +798,7 @@ a.slide_btn:nth-last-child(11) {
 
 .centerbox {
     position: relative;
+    width: 60%;
 }
 
 .rightbox {
@@ -3876,12 +3868,7 @@ i:hover {
   .inner:hover{
     border: 1px solid #2790F1;
   }
-  input + button{
-    position: absolute;
-    top: 50%;
-    right: -2%;
-    transform: translateY(-50%);
-  }
+
 
 @media (max-width: 1200px) {
     .masonry {
