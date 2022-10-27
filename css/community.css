@@ -111,11 +111,9 @@ body{
     animation-delay: 0s;
     opacity: 1;
     animation-timing-function: ease-out;
-  }
-  .centernav{
     padding: 0.6% 0;
     list-style-type: none;
-    background: linear-gradient(0deg, rgba(32,35,40,1) 0%, rgba(32,35,40,0) 100%);
+    background: linear-gradient(0deg, rgba(11,11,11,0.8) 0%, rgba(11,11,11,0.2) 100%);
     backdrop-filter: blur(4px);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     
@@ -123,21 +121,25 @@ body{
   }
   .centernav li{
     margin-left: 4rem;
-    font-size: 1.05rem;
+    font-size: 1rem;
     border-right: 0.1rem solid rgba(255, 255, 255, 0.15);
     padding-right: 4rem;
-    
+
   }
   .centernav a{
-    font-weight: 300;
-    color: var(--white-main);
+    font-weight: 500;
+    color: #d8d8d8;
+    transition: all 0.06s ease-out;
+  }
+  .centernav a:hover{
+    color: #fff;
   }
   .centernav li:nth-last-child(1){
     border-right: 0;
 
   }
   #navigation{
-    padding: 1.1rem 0 20rem;
+    padding: 1.5rem 0 20rem;
     
   }
   .menu-left a {
@@ -194,7 +196,7 @@ body{
     -webkit-transform: translateY(0);
     
     background-color: rgba(20,23,28,1);
-    /* border-bottom: 0.12rem solid; */
+    border-bottom: 0.01rem solid;
     border-image: linear-gradient(90deg, rgba(240,240,240,0.3) 0%, rgba(255, 255, 255, 0.6) 50%, rgba(240,240,240,0.3) 100%);
     border-image-slice: 1;
     /* margin-bottom: 0.15rem; */
@@ -296,8 +298,8 @@ body{
     }
   }
   .hide-nav {
-    transform: translateY(-33.82rem) !important;
-    -webkit-transform: translateY(-33.82rem) !important;
+    transform: translateY(-34.26rem) !important;
+    -webkit-transform: translateY(-34.26rem) !important;
   }
   .show-nav{
     transform: translateY(0) !important;
@@ -546,6 +548,7 @@ input[type=radio] {
 }
 .rightbox{
   position: relative;
+  width: 16rem;
 }
 .leftlogoblock {
   position: absolute;
@@ -705,7 +708,7 @@ input[type=radio] {
 .framecontainer{
   position: relative;
   top: 48vh;
-  margin: 0 10%;
+  margin: 0 12%;
   padding: 4% 0 20% 0;
   display: flex;
   justify-content: space-around;
@@ -724,7 +727,7 @@ input[type=radio] {
 }
 .left_menu li{
   margin-bottom: 12%;
-  font-size: 1rem;
+  font-size: 0.86rem;
 }
 .margin1{
   transform: translateY(15%);
@@ -746,9 +749,9 @@ a {
 
 .calendar-wrapper {
   position: relative;
-  width:18rem;
-  height: fit-content;
-  padding-bottom: 1.8rem;
+  width: 16rem;
+
+  padding-bottom: 1.5rem;
   margin-bottom: 1.3rem;
   border-bottom: 0.1rem solid #ffffff40;
 }
@@ -761,20 +764,20 @@ table {
   color:@calendar-color;
 }
 td {
-  height:2.4rem;
+  height:2.2rem;
   vertical-align:middle;
   /* border-right:1px solid @calendar-border;
   border-top:1px solid @calendar-border; */
-  width:100% / 7;
-  font-size:0.8rem;
+  width:1rem;
+  font-size:0.75rem;
   color: #ffffff99;
 }
 
 td.today {
   font-weight:500;
-  color:#2790F1;
-  font-size:1em;
-  border: 1px solid #2790F1;
+  color:#4BA9FF;
+  font-size:0.86rem;
+  border: 1px solid #4BA9FF;
 }
 .days{
   border-bottom: 0.05rem solid #fff;
@@ -805,7 +808,7 @@ td.today {
   border:none;
   outline:none;
   display: inline-block;
-  font-size:0.8rem;
+  font-size:0.75rem;
   color:#fff;
   cursor:pointer;
   font-family:"Roboto", sans-serif;
@@ -827,7 +830,7 @@ tr td:first-child{
 tr:nth-child(1) td:first-child{
   color: #fff;
   text-align: left;
-  font-size: 0.9rem;
+  font-size: 0.75rem;
 }
 .days:nth-child(1) td:first-child{
   text-align: center;
@@ -1128,7 +1131,7 @@ tr:nth-child(1) td:first-child{
   content: "";
   position: absolute;
   top: 0;
-  right: -10%;
+  right: -9%;
   width: 1%;
   height: 100%;
   border-right: 0.1rem solid;
@@ -1267,7 +1270,7 @@ i:hover {
   transform: translateY(37%);
 }
 .inner:hover{
-  border: 1px solid #2790F1;
+  border: 1px solid #4BA9FF;
   padding-top: 0.3px;
 }
 
@@ -2237,6 +2240,8 @@ ul::-webkit-scrollbar {
   border: 0.16rem solid transparent;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 0.4rem;
+  font-size: 0.95rem;
+  font-weight: 300;
   background-image:linear-gradient(#202328,#202328), 
   linear-gradient(107.42deg, #414955 1.37%, rgba(44, 50, 59, 0) 97.97%);
   background-origin: border-box;

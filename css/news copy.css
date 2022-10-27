@@ -21,7 +21,7 @@ body {
     width: 100%;
     height: 100%;
     position: relative;
-    top: -3.1rem;
+    top: -3.48rem;
 }
 
 .slide_viewer {
@@ -419,8 +419,8 @@ a.slide_btn:nth-last-child(11) {
 .framecontainer {
     position: relative;
     top: 0;
-    margin: 0 10%;
-    padding: 6% 0 20% 0;
+    margin: 0 12%;
+    padding: 6% 0 10% 0;
     /* display: flex; */
     /* justify-content: space-around; */
     transition: all 0.2s ease-out;
@@ -801,10 +801,10 @@ a.slide_btn:nth-last-child(11) {
     width: 60%;
 }
 
-.rightbox {
+.rightbox{
     position: relative;
-}
-
+    width: 16rem;
+  }
 .rightbox::before {
     content: "";
     position: absolute;
@@ -819,9 +819,8 @@ a.slide_btn:nth-last-child(11) {
 
 .calendar-wrapper {
     position: relative;
-    width: 18rem;
-    height: fit-content;
-    padding-bottom: 1.8rem;
+    width: 16rem;
+    padding-bottom: 1.5rem;
     margin-bottom: 1.3rem;
     border-bottom: 0.1rem solid #ffffff40;
 }
@@ -836,20 +835,20 @@ table {
 }
 
 td {
-    height: 2.4rem;
+    height: 2.2rem;
     vertical-align: middle;
     /* border-right:1px solid @calendar-border;
   border-top:1px solid @calendar-border; */
-    width: 100% / 7;
-    font-size: 0.8rem;
+    width: 1rem;
+    font-size: 0.75rem;
     color: #ffffff99;
 }
 
 td.today {
     font-weight: 500;
-    color: #2790F1;
-    font-size: 1em;
-    border: 1px solid #2790F1;
+    color: #4BA9FF;
+    font-size: 0.86rem;
+    border: 1px solid #4BA9FF;
 }
 
 .days {
@@ -884,7 +883,7 @@ td.today {
     border: none;
     outline: none;
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     color: #fff;
     cursor: pointer;
     font-family: "Roboto", sans-serif;
@@ -907,7 +906,7 @@ tr td:first-child {
 tr:nth-child(1) td:first-child {
     color: #fff;
     text-align: left;
-    font-size: 0.9rem;
+    font-size: 0.75rem;
 }
 
 .days:nth-child(1) td:first-child {
@@ -3807,6 +3806,7 @@ input[type=checkbox] {
     grid-template-columns: repeat(4);
     grid-template-rows: repeat(3);
 }
+
 .searchbar {
     /* text-align: center; */
     overflow: hidden;
@@ -3815,10 +3815,10 @@ input[type=checkbox] {
     border-radius: 10rem;
     box-shadow: 0 0.2rem 0.2rem 0.2rem rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.1s ease-out;
-  }
-  
-  
-  .inner {
+}
+
+
+.inner {
     position: relative;
     height: 2.6rem;
     margin: 0 0 0 0;
@@ -3827,23 +3827,25 @@ input[type=checkbox] {
     background-color: #202328;
     /* transition: all 0.05s ease-out; */
     z-index: 10;
-  }
-  
-  input {
+}
+
+input {
     position: absolute;
     width: 88.5%;
     left: 3rem;
     height: 2.6rem;
-    background-color:#202328;
+    background-color: #202328;
     border: 0;
     font-size: 1rem;
     color: #fff;
     z-index: 10;
     overflow: hidden;
-  }
-  input:focus{
+}
+
+input:focus {
     outline: none;
-  }
+}
+
 .searching {
     position: absolute;
     left: 1rem;
@@ -3851,23 +3853,23 @@ input[type=checkbox] {
     transform: translateY(-46%);
     color: #ebebeb;
     background-color: #202328;
-  }
-  
+}
+
 i:hover {
     cursor: pointer;
-  }
-  
+}
 
-  
-  .fa-keyboard {
+
+
+.fa-keyboard {
     margin-right: 10px;
     color: #ffffff99;
-  }
+}
 
 
-  .inner:hover{
-    border: 1px solid #2790F1;
-  }
+.inner:hover {
+    border: 1px solid #4BA9FF;
+}
 
 
 @media (max-width: 1200px) {
@@ -3907,6 +3909,7 @@ i:hover {
     grid-column: 4 / 5;
     grid-row: 2 / 4;
 }
+
 .masonry .grid:nth-child(6) {
 
     grid-column: 1 / 3;
@@ -3918,6 +3921,7 @@ i:hover {
     grid-column: 1 / 5;
     grid-row: 7 / 8;
 }
+
 .masonry .grid:nth-child(24) {
 
     grid-column: 1 / 3;
@@ -3942,16 +3946,20 @@ i:hover {
     border-radius: 5px;
     transition: all 0.2s ease-out;
 }
-.grid:hover img{
+
+.grid:hover img {
     transform: scale(1.1);
 }
-.grid:nth-child(4):hover img{
+
+.grid:nth-child(4):hover img {
     transform: none;
 }
-.grid:nth-child(13):hover img{
+
+.grid:nth-child(13):hover img {
     transform: none;
 }
-.grid:nth-child(24):hover img{
+
+.grid:nth-child(24):hover img {
     transform: none;
 }
 
@@ -4008,14 +4016,17 @@ i:hover {
     z-index: 1;
     left: 1rem;
 }
-.masonry .grid:first-child .grid__tag{
+
+.masonry .grid:first-child .grid__tag {
     top: 75%;
 }
+
 .masonry .grid:first-child .grid__tag .tag {
     top: 1.3rem;
     left: 1.8rem;
     font-size: 1rem;
 }
+
 .masonry .grid:first-child .grid__tag .tag1 {
     top: 2.1rem;
     left: 1.8rem;
@@ -4029,18 +4040,211 @@ i:hover {
     font-size: 1rem;
     font-size: 0.9rem;
 }
-.tag{
+
+.tag {
     top: 0.9rem;
     font-size: 0.8rem;
 }
-.tag1{
+
+.tag1 {
     top: 1.5rem;
     font-size: 0.86rem;
 }
+
 .mt-auto {
     margin-top: auto;
 }
 
+.newstitle {
+    position: relative;
+    top: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.newstitle::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 14rem;
+    height: 1.4rem;
+    line-height: 1.5rem;
+    background-image: url("../img/newstitleright.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.newstitle::before {
+    position: absolute;
+    top: 2.2rem;
+    content: "기사입력 2022.11.03. 오후 08:04 | 최종수정 2022.11.0. 오후 09:42 ";
+    font-size: 0.86rem;
+    font-weight: 300;
+    color: #aaaaaa;
+
+}
+
+.newsparagraph {
+    margin-top: 70px;
+    font-size: 0.95rem;
+    font-weight: 300;
+    line-height: 1.42rem;
+    letter-spacing: 0.2px;
+    word-spacing: 0.5px;
+    color: #f0f0f0;
+}
+
+.newsreportbox iframe {
+    margin: 2rem auto;
+}
+
+.newsreportbox img {
+    margin: 2rem 0 1rem 0;
+}
+
+.newsreportbox img::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1rem;
+    height: 1rem;
+    background-image: url("../img/itwolrd.svg");
+}
+
+.newsreportbox img:nth-child(29) {
+    float: left;
+    margin: 0 2rem 1rem 0;
+}
+
+.iframecenter {
+    position: relative;
+}
+
+.iframecenter iframe {
+    margin: 3rem auto;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.newsparagraph iframe:nth-child(19) {
+    margin: 0 2rem 1rem 0;
+    float: left;
+}
+
+.author {
+    margin-top: 7rem;
+    font-weight: 600;
+}
+
+.author::after {
+    content: "";
+    display: block;
+    position: relative;
+    bottom: -14rem;
+    left: 0;
+    width: 100%;
+    height: 1%;
+    border-bottom: 0.1rem solid;
+    border-image: linear-gradient(90deg, rgba(240, 240, 240, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(240, 240, 240, 0) 100%);
+    border-image-slice: 1;
+}
+
+.author span::after {
+    margin-left: 1rem;
+    content: "IT world";
+    font-weight: 400;
+}
+
+.authorname {
+    margin-top: 0.6rem;
+    font-weight: 400;
+}
+
+.authorname::after {
+    display: block;
+    content: "Copyright ⓒ IT world. All rights reserved. 무단 전재 및 재배포 금지.";
+    position: relative;
+    left: 0;
+    font-size: 0.8rem;
+    bottom: -2rem;
+    color: #9e9e9e;
+}
+
+.reportscore {
+    position: relative;
+    left: 50%;
+    bottom: -18rem;
+    text-align: center;
+    transform: translateX(-50%);
+    line-height: 1.2rem;
+    margin-bottom: 20rem;
+    cursor: pointer;
+}
+.reportscore > div{
+    position: relative;
+    left: 50%;
+    width: 25%;
+    padding: 1.3% 0;
+    border: 0.1rem solid #ffffff80;
+    border-radius: 0.3rem;
+    transform: translateX(-50%);
+    line-height: 1.2rem;
+    
+}
+.reportscore > div img{
+    line-height: 1.2rem;
+    margin: 0;
+    margin-left: 1rem;
+}
+.reportscore span {
+    display: inline-block;
+    margin: 3rem auto;
+    width: 10px;
+    height: 10px;
+    background: #4BA9FF;
+    border-radius: 50%;
+    margin-right: 4%;
+    margin-left: 4%;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all 0.15s ease-out;
+}
+.reportscore span:nth-child(2) {
+    width: 30px;
+    height: 30px;
+}
+.reportscore span:nth-child(3) {
+    width: 25px;
+    height: 25px;
+}
+.reportscore span:nth-child(4) {
+    width: 20px;
+    height: 20px;
+}
+.reportscore span:nth-child(5) {
+    width: 15px;
+    height: 15px;
+}
+.reportscore span:hover{
+    transform: scale(1.4);
+}
+/* .reportscore::after{
+    content: "IT world 기사 모아보기";
+    display: block;
+    border: 0.1rem solid #ffffff80;
+    padding: 1.6% 0;
+    border-radius: 0.3rem;
+
+} */
+.hide-nav {
+    transform: translateY(-5.38rem) !important;
+    -webkit-transform: translateY(-5.38rem) !important;
+}
 @media screen and (max-width:2200px) {
     .topbox {
         display: flex;

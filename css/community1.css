@@ -1,7 +1,7 @@
 #nav_bg {
-    background-image: url("../img_/teslatitle.jpg");
-    background-position: 5% center;
-    background-size: 101%;
+    background-image: url("../img_/teslatitle3.jpg");
+    background-position: center 20%;
+    background-size: cover;
     background-repeat: no-repeat;
     filter: brightness(68%);
 }
@@ -13,11 +13,11 @@
     display: none;
 }
 #navigation {
-    padding: 1.1rem 0 7rem;
+    padding: 1.5rem 0 7rem;
 }
 .hide-nav {
-    transform: translateY(-28.7rem) !important;
-    -webkit-transform: translateY(-28.7rem) !important;
+    transform: translateY(-29.2rem) !important;
+    -webkit-transform: translateY(-29.2rem) !important;
   }
 .toptitle {
     margin: 7.4% 0 1.6%;
@@ -31,3 +31,20 @@
 .toptitle1::after {
     content: "테슬라에 대한 정보를 자유롭게 나누세요.";
 }
+.framecontainer {
+    position: relative;
+    top: 40vh;
+    margin: 0 12%;
+    padding: 4% 0 20% 0;
+    display: flex;
+    justify-content: space-around;
+    /* width: 80%; */
+    /* align-items: center; */
+    /* background: #F0F0F0; */
+    transition: all 0.2s ease-out;
+    background: var(--bgdark);
+}
+.offset{
+    top: 12vh;
+    padding-top: 5%;
+  }

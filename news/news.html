@@ -23,6 +23,7 @@
     <script src="../js/preload.js"></script>
     <!-- <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
 
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
     <title>comma</title>
@@ -91,11 +92,10 @@
 
             </nav>
             <ul class="centernav">
-                <li><a href="../logo/logo.html">Brand Resource Center</a></li>
-                <li><a href="../color/color.html">공지사항</a></li>
-                <li><a href="../app icon/appicon.html">고객센터</a></li>
-                <li><a href="../text rules/textrules.html">자주 묻는 질문</a></li>
-                <!-- <li><a href="../press/press.html">Press</a></li> -->
+                <li><a href="#issue">실시간 이슈</a></li>
+                <li><a href="#trend">트렌드</a></li>
+                <li><a href="#news">뉴스</a></li>
+                <li><a href="#news">증시 브리핑</a></li>
             </ul>
 
 
@@ -230,7 +230,7 @@
 
     <div class="framecontainer">
         <div id="time1"></div>
-        <div class="topcontainer">
+        <div class="topcontainer scroll">
             <div class="paddingbox">
                 <div class="stockbox">
                     <div class="boxname">KOSPI</div>
@@ -296,7 +296,7 @@
             </div>
         </div>
 
-        <div class="topcontainer">
+        <div class="topcontainer scroll">
             <div class="paddingbox">
                 <div class="stockbox">
                     <div class="boxname">AAPL</div>
@@ -371,7 +371,7 @@
             </div>
         </div>
 
-        <div class="topbox">
+        <div class="topbox" name="issue">
             <div class="slider op">
                 <div class="slide_viewer">
                     <div class="slide_group">
@@ -592,7 +592,8 @@
         </div>
         <div class="flexsection">
             <div class="centerbox">
-                <div class="topcontainer1">
+                <div id="trend">트렌드</div>
+                <div class="topcontainer1 scroll">
                     <div class="paddingbox1">
                         <div class="stockbox">
                             <div class="boxname">AAPL</div>
@@ -679,7 +680,7 @@
                     </div>
                 </div>
 
-                <div class="topcontainer2">
+                <div class="topcontainer2 scroll">
                     <div class="paddingbox2">
 
                         <div class="stockbox">
@@ -768,7 +769,7 @@
                 </div>
 
 
-                <div class="topcontainer3">
+                <div class="topcontainer3 scroll">
                     <div class="paddingbox2">
 
 
@@ -934,7 +935,7 @@
                 <input type="radio" name="button2" class="gr_bt" id="section_bt4" />
                 <label for="section_bt4" id="sc_bt">증시 브리핑</label>
 
-                <div class="section">
+                <div class="section" id="news">
                     <div class="leftsec">
                         <div class="leftsection">
                             <div class="brief">
@@ -980,7 +981,7 @@
                     </div>
 
                     <div class="leftsec1">
-                        <input type="radio" name="button3" class="gr_bt" id="section_bt5" />
+                        <input type="radio" name="button3" class="gr_bt" id="section_bt5" checked="checked"/>
                         <label for="section_bt5" id="sc_bt">전체 언론사</label>
                         <input type="radio" name="button3" class="gr_bt" id="section_bt6" />
                         <label for="section_bt6" id="sc_bt">구독한 언론사</label>
@@ -1043,7 +1044,7 @@
 
                                         <span class="grid__tag">
                                             <div class="tag">IT</div>
-                                            <div class="tag1">[Daily TOP] MS, 신형 '서피스 랩탑 5‧프로 9' 공개</div>
+                                            <div class="tag1">[Daily TOP] MS, 신형 '서피스 랩탑 5‧프로 9' 공개.. 서피스 스튜디오 3는?</div>
                                             <div class="tag2">마이크로소프트 서피스 시제품 스펙과 가격 살펴보니? 한국은?</div>
                                         </span>
 
@@ -1481,16 +1482,19 @@
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
+                        <input type="checkbox" name="button-1" class="co_bt" id="nextfeed_bt1" />
+                <label for="nextfeed_bt1" id="nextfeed_bt">더 많은 의견 보기</label>
                     </div>
 
                     <div class="rightsec">
                         <div class="rightsection">
-                            <input type="radio" name="button3" class="gr_bt" id="section_bt5" />
+                            <input type="radio" name="button4" class="gr_bt" id="section_bt5" checked="checked"/>
                             <label for="section_bt5" id="sc_bt">데일리 이슈</label>
-                            <input type="radio" name="button3" class="gr_bt" id="section_bt6" />
+                            <input type="radio" name="button4" class="gr_bt" id="section_bt6" />
                             <label for="section_bt6" id="sc_bt">개장 전 브리핑</label>
-                            <input type="radio" name="button3" class="gr_bt" id="section_bt7" />
+                            <input type="radio" name="button4" class="gr_bt" id="section_bt7" />
                             <label for="section_bt7" id="sc_bt">장 마감 브리핑</label>
 
                             <div class="menubrief">
@@ -1504,11 +1508,11 @@
                         </div>
 
                         <div class="rightsection2">
-                            <input type="radio" name="button4" class="gr_bt" id="section_bt8" />
+                            <input type="radio" name="button5" class="gr_bt" id="section_bt8" checked="checked"/>
                             <label for="section_bt8" id="sc_bt">결산 브리핑</label>
-                            <input type="radio" name="button4" class="gr_bt" id="section_bt9" />
+                            <input type="radio" name="button5" class="gr_bt" id="section_bt9" />
                             <label for="section_bt9" id="sc_bt">월간전망</label>
-                            <input type="radio" name="button4" class="gr_bt" id="section_bt10" />
+                            <input type="radio" name="button5" class="gr_bt" id="section_bt10" />
                             <label for="section_bt10" id="sc_bt">자산전략</label>
 
                             <div class="menubrief1">
@@ -1522,11 +1526,11 @@
                         </div>
 
                         <div class="rightsection3">
-                            <input type="radio" name="button5" class="gr_bt" id="section_bt11" />
+                            <input type="radio" name="button6" class="gr_bt" id="section_bt11" checked="checked"/>
                             <label for="section_bt11" id="sc_bt">미국</label>
-                            <input type="radio" name="button5" class="gr_bt" id="section_bt12" />
+                            <input type="radio" name="button6" class="gr_bt" id="section_bt12" />
                             <label for="section_bt12" id="sc_bt">중국</label>
-                            <input type="radio" name="button5" class="gr_bt" id="section_bt13" />
+                            <input type="radio" name="button6" class="gr_bt" id="section_bt13" />
                             <label for="section_bt13" id="sc_bt">일본</label>
 
                             <div class="menubrief2">
@@ -1540,17 +1544,17 @@
                         </div>
 
                         <div class="rightsection4">
-                            <input type="radio" name="button6" class="gr_bt" id="section_bt14" />
+                            <input type="radio" name="button7" class="gr_bt" id="section_bt14" checked="checked"/>
                             <label for="section_bt14" id="sc_bt">시황정보</label>
-                            <input type="radio" name="button6" class="gr_bt" id="section_bt15" />
+                            <input type="radio" name="button7" class="gr_bt" id="section_bt15" />
                             <label for="section_bt15" id="sc_bt">투자정보</label>
-                            <input type="radio" name="button6" class="gr_bt" id="section_bt16" />
+                            <input type="radio" name="button7" class="gr_bt" id="section_bt16" />
                             <label for="section_bt16" id="sc_bt">종목분석</label>
-                            <input type="radio" name="button6" class="gr_bt" id="section_bt14" />
+                            <input type="radio" name="button7" class="gr_bt" id="section_bt14" />
                             <label for="section_bt14" id="sc_bt">산업분석</label>
-                            <input type="radio" name="button6" class="gr_bt" id="section_bt15" />
+                            <input type="radio" name="button7" class="gr_bt" id="section_bt15" />
                             <label for="section_bt15" id="sc_bt">월간전략</label>
-                            <input type="radio" name="button6" class="gr_bt" id="section_bt16" />
+                            <input type="radio" name="button7" class="gr_bt" id="section_bt16" />
                             <label for="section_bt16" id="sc_bt">경제분석</label>
 
                             <div class="flbox">
@@ -1607,10 +1611,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="rightsec1">
-
                     </div>
 
                 </div>
@@ -1680,8 +1680,9 @@
     <script src="../js/btop.js"></script>
     <script src="../js/news.js"></script>
     <!-- <script src="../js/newapi.js"></script> -->
-    <script src="../js/community.js"></script>
+    <script src="../js/community copy.js"></script>
     <script src="../js/portfolio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="../php/search.php"></script>
 
 
