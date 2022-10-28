@@ -486,7 +486,7 @@ trigger7.add('[data-trigger7');
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
   
-      if (scroll > 400) {
+      if (scroll > 360) {
         outer.removeClass("hidden1");
       } 
       else {
@@ -500,7 +500,7 @@ trigger7.add('[data-trigger7');
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
   
-      if (scroll > 900) {
+      if (scroll > 720) {
         outer.removeClass("hidden");
       } 
       else {

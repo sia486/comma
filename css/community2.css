@@ -48,3 +48,342 @@
     top: 12vh;
     padding-top: 5%;
   }
+  @media screen and (max-width:1980px) {
+    .leftbox {
+        display: none;
+    }
+
+    #navigation {
+        padding: 1.1rem 0 12rem;
+
+    }
+
+    .hide-nav {
+        transform: translateY(-23rem) !important;
+        -webkit-transform: translateY(-23rem) !important;
+    }
+
+    .toptitle {
+        margin: 3% 0 0.6%;
+        font-size: 1.3rem;
+    }
+
+    .toptitle1 {
+        font-size: 1rem;
+    }
+
+    .participation {
+        font-size: 0.8rem;
+    }
+
+    .participation::before {
+        width: 1rem;
+        height: 1rem;
+    }
+
+    .framecontainer {
+        top: 49vh;
+    }
+
+    .offset {
+        top: 14vh;
+    }
+
+    .recent_comm {
+        font-size: 0.9rem;
+    }
+
+    .recent_comm1 {
+        font-size: 0.9rem;
+    }
+
+    .recent_comm ul {
+        height: 11rem;
+    }
+
+    .recent_comm1 ul {
+        height: 9rem;
+    }
+
+    .recent_comm ul li {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .recent_comm ul li::before {
+        font-size: 0.86rem;
+        font-weight: 500;
+    }
+
+    .recent_comm ul li::after {
+        font-size: 0.86rem;
+    }
+
+    .recent_comm1 ul li::after {
+        font-size: 0.86rem;
+        font-weight: 500;
+    }
+
+    .recent_comm1 ul li {
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+
+    .recent_comm2 {
+        font-size: 0.9rem;
+    }
+    .recent_comm3{
+        font-size: 0.9rem;
+    }
+    .recent_comm4{
+        font-size: 0.9rem;
+    }
+
+    .recent_comm2 ul li {
+        width: 8rem;
+        height: 10rem;
+        margin-right: 2%;
+    }
+
+    .img {
+        width: 7rem;
+        height: 4.6rem;
+    }
+
+    .img::before {
+        font-size: 0.86rem;
+        font-weight: 400;
+    }
+
+    .recent_comm2 ul li .img::after {
+        padding: 0.25rem 0.3rem;
+        font-size: 0.8rem;
+    }
+
+    .recent_comm2 ul {
+        height: 12rem;
+    }
+    .recent_comm3 ul li{
+        width: 7.8rem;
+        height: 7.8rem;
+    }
+    .recent_comm3 ul li .img{
+        width: 6.4rem;
+        height: 6.4rem;
+    }
+    .recent_comm3 ul li .img::before{
+        font-size: 0.86rem;
+        font-weight: 400;
+    }
+    .recent_comm3 ul{
+        height: 9.6rem;
+    }
+    #income_bt{
+        font-size: 0.8rem;
+        padding: 1% 1% 0.8% 1%;
+        margin: 0 0.45% 0 0.45%;
+    }
+    .fianance li{
+        font-size: 0.86rem;
+    }
+    .upload{
+        padding: 0 2.3rem 0 0;
+    }
+    .centerbox{
+        width: 47vw;
+    }
+    .centerbox::before{
+        display: none;
+    }
+    .leftlogoblock::before{
+        font-size: 1.9rem;
+    }
+    .leftlogoblock::after{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .rightlogoblock::before{
+        font-size: 1.9rem;
+    }
+    .rightlogoblock::after{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    #ca_bt:nth-child(4){
+        bottom: 20%;
+    }
+    #ca_bt1{
+        bottom: 20%;
+    }
+    .centernav li{
+        font-size: 0.9rem;
+    }
+    #nextfeed_bt{
+        font-size: 0.9rem;
+    }
+    input{
+        width: 85%;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    .leftbox {
+        display: none;
+    }
+
+    #navigation {
+        padding: 1.1rem 0 9rem;
+
+    }
+
+    .framecontainer {
+        top: 55vh;
+    }
+
+    .offset {
+        top: 19vh;
+    }
+
+    .recent_comm {
+        font-size: 0.86rem;
+    }
+
+    .recent_comm1 {
+        font-size: 0.86rem;
+    }
+
+    .recent_comm ul {
+        height: 10rem;
+    }
+
+    .recent_comm1 ul {
+        height: 8rem;
+    }
+
+    .recent_comm ul li {
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+
+    .recent_comm ul li::before {
+        font-size: 0.8rem;
+        font-weight: 500;
+    }
+
+    .recent_comm ul li::after {
+        font-size: 0.75rem;
+    }
+
+    .recent_comm1 ul li::after {
+        font-size: 0.8rem;
+    }
+
+    .recent_comm::before {
+        font-size: 0.8rem;
+    }
+
+    .recent_comm1 ul li {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .recent_comm2 {
+        font-size: 0.86rem;
+    }
+    .recent_comm3{
+        font-size: 0.86rem;
+    }
+
+    .recent_comm2 ul {
+        height: 11.4rem;
+    }
+
+    .recent_comm2 ul li {
+        width: 7.2rem;
+        height: 9.2rem;
+        margin-right: 2%;
+    }
+
+    .img {
+        width: 6rem;
+        height: 4.1rem;
+    }
+
+    .img::before {
+        font-size: 0.8rem;
+    }
+
+    .recent_comm2 ul li .img::after {
+        padding: 0.25rem 0.3rem;
+        font-size: 0.75rem;
+    }
+    .recent_comm3 ul li{
+        width: 7rem;
+        height: 7rem;
+    }
+    .recent_comm3 ul li .img{
+        width: 6rem;
+        height: 6rem;
+    }
+    .recent_comm3 ul li .img::before{
+        font-size: 0.86rem;
+        font-weight: 400;
+    }
+    .recent_comm3 ul{
+        height: 9rem;
+    }
+    .recent_comm4{
+        font-size: 0.86rem;
+    }
+    #income_bt{
+        font-size: 0.8rem;
+        padding: 1% 1% 0.8% 1%;
+        margin: 0;
+    }
+    .fianance li{
+        font-size: 0.8rem;
+    }
+    .upload{
+        padding: 0 2.8rem 0 0;
+    }
+    .centerbox{
+        width: 70%;
+    }
+    .rightbox{
+        display: none;
+    }
+    .framecontainer{
+        padding: 4% 0 45% 0;
+    }
+    .centerbox::before{
+        display: none;
+    }
+    .centerbox::after{
+        display: none;
+    }
+    .leftlogoblock::before{
+        font-size: 1.7rem;
+    }
+    .leftlogoblock::after{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    .rightlogoblock::before{
+        font-size: 1.7rem;
+    }
+    .rightlogoblock::after{
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    #ca_bt:nth-child(4){
+        bottom: 21%;
+    }
+    #ca_bt1{
+        bottom: 21%;
+    }
+
+    .hide-nav {
+        transform: translateY(-19.4rem) !important;
+        -webkit-transform: translateY(-19.4rem) !important;
+    }
+}

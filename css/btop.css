@@ -1,44 +1,68 @@
-body{
-  font-family: 'Roboto', sans-serif;
+body {
+    font-family: 'Roboto', sans-serif;
 }
+
 #btop {
     display: inline-block;
     background-color: var(--white);
-    width: 42px;
-    height: 42px;
+    width: 48px;
+    height: 48px;
     text-align: center;
     border-radius: 50%;
     position: fixed;
     bottom: 3vh;
     right: 4vh;
-    transition: background-color .3s, 
-      opacity .4s, visibility .4s;
+    transition: background-color .3s,
+        opacity .4s, visibility .4s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
-    border: 1px solid var(--white);
+    border: 2px solid var(--blue);
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
-  }
-  #btop::after {
+}
+
+#btop::after {
     content: url("../img_/btopd.svg");
-    
+
     font-size: 2em;
-    line-height: 42px;
+    line-height: 48px;
     color: var(--dark);
-  }
-  #btop:hover {
+}
+
+#btop:hover {
     cursor: pointer;
-    border: 1.6px solid var(--blue);
     background-color: var(--bgdark);
-  }
-  #btop:hover::after{
+}
+
+#btop:hover::after {
     content: url("../img_/btop.svg");
-    
-  }
-  /* #btop:active {
+
+}
+
+/* #btop:active {
     background-color: #555;
   } */
-  #btop.show {
+#btop.show {
     opacity: 1;
     visibility: visible;
-  }
+}
+
+@media screen and (max-width:1900px) {
+    #btop{
+        width: 42px;
+        height: 42px;
+    }
+    #btop::after{
+        line-height: 42px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    #btop{
+        width: 38px;
+        height: 38px;
+    }
+    #btop::after{
+        line-height: 38px;
+    }
+}

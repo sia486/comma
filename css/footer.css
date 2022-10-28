@@ -11,4 +11,9 @@
     
     bottom: 0;
   }
- 
+  @media screen and (max-width: 1900px) {
+    .content {
+      background-image: url("../img/botban1.svg");
+      min-height: 25vw;
+    }
+  }

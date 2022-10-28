@@ -872,7 +872,22 @@ body{
   height: 14%;
   width: 28%;
 }
-@media screen and (max-width: 1980px) {
+@media screen and (max-width: 1900px) {
+  .hero-hardware {
+      height: 64%;
+    }
+    .hidden{
+      height: 64%;
+    }
+    .hidden1{
+      height: 64%;
+    }
+    .introduce_title{
+      margin: -3% 0% 18.5%;
+    }
+  .introduce_title h1{
+    font-size: 4rem;
+  }
   .introduce_con {
     height: calc(1000px*4);
   }
@@ -887,13 +902,22 @@ body{
     top: 9%;
     
   }
+  .introduce_long_text{
+    font-size: 1.2rem;
+  }
+  .introduce_fixed p{
+    font-size: 1.7rem;
+  }
+  .introduce_box p{
+    font-size: 1.2rem;
+  }
   .introduce_history_box span{
     text-align: left;
     line-height: 1.8rem;
   }
 
   .introduce_history_box .span_box{
-    margin-bottom: 10%;
+    margin-bottom: 9%;
     display: flex;
     flex-basis: 100%;
     align-items: center;
@@ -904,7 +928,7 @@ body{
   .introduce_history_box .span_box .span_bl{
     color: var(--blue);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
   .introduce_history_box .span_box .span_bk{
     color: var(--white-main);
@@ -921,8 +945,63 @@ body{
   .introduce_num{
     font-size: 2.4rem;
   }
+  .animate_5 {
+  color: #202328;
+  }
+  .ti2_introduce{
+    margin: 0.8rem 0% 3rem;
+  }
+  .ti1_introduce{
+    font-size: 2.1rem;
+  }
+  .introduce_boxinner{
+    margin: 5% 6% 0 7%;
+    font-size: 1.1rem;
+  }
+  .introduce_boxtop{
+    margin: 0% 6% 6%;
+  }
+  .introduce_box1{
+    height: 32.4vh;
+    flex: 1 0 35%;
+  }
+  .introduce_box1:nth-child(even){
+    margin-left: 6%;
+  }
+  .introduce_box1:hover .introduce_boxinner{
+    margin: 4.2% 6% 0 7%;
+    font-size: 0.86rem;
+  }
+  .introduce_boxinner i{
+    font-size: 0.75rem;
+  } 
+  .introduce_boxinner_textti{
+    font-size: 1rem;
+  }
+  .introduce_boxinner_text{
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+  }
+  .commalink{
+    font-size: 0.86rem;
+    font-weight: 400;
+  }
+  .commalink::after{
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+  .introduce_rotate {
+    height: 100vh;
 }
-@media screen and (max-width: 1580px){
+.introduce_history_box{
+  margin-top: 11%;
+}
+.introduce_slide h3{
+  font-size: 1.7rem;
+  margin-bottom: 6rem;
+}
+}
+@media screen and (max-width: 1500px){
   .introduce_history_box span{
 
     line-height: 1.7rem;

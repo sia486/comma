@@ -78,10 +78,14 @@
       var st = $(window).scrollTop();
       if(st >= 1){
         $("header").addClass("hide-nav");
+        $("#time1").addClass("none");
+        $(".topcontainer").addClass("none");
         $(".framecontainer").addClass("offset");
       }else{
         if (100 >= st) {
         $("header").removeClass("hide-nav");
+        $("#time1").removeClass("none");
+        $(".topcontainer").removeClass("none");
         $(".framecontainer").removeClass("offset");
         }
       }//if-else
